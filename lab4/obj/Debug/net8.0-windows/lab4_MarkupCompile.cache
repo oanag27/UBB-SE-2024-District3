@@ -1,5 +1,5 @@
 ﻿lab4
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\herta\Desktop\Repo\lab4\App.xaml
-2-1778474440
+11407045341
 
-7-215061530
+4491952488
 198155382431
-LikedPosts.xaml;Statistics.xaml;
+MainWindow.xaml;
 
 False
 

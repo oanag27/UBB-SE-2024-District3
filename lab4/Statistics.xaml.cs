@@ -21,5 +21,7 @@ namespace lab4
             InitializeComponent();
             //scris ceva
         }
+
+    
     }
 }
