@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Facultation\\sem4\\iss\\district 3 app\\district 3 app.csproj": {}
+    "C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\district 3 app\\district 3 app.csproj": {}
   },
   "projects": {
-    "C:\\Facultation\\sem4\\iss\\district 3 app\\district 3 app.csproj": {
+    "C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\district 3 app\\district 3 app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facultation\\sem4\\iss\\district 3 app\\district 3 app.csproj",
+        "projectUniqueName": "C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\district 3 app\\district 3 app.csproj",
         "projectName": "district 3 app",
-        "projectPath": "C:\\Facultation\\sem4\\iss\\district 3 app\\district 3 app.csproj",
+        "projectPath": "C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\district 3 app\\district 3 app.csproj",
         "packagesPath": "C:\\Users\\40723\\.nuget\\packages\\",
-        "outputPath": "C:\\Facultation\\sem4\\iss\\district 3 app\\obj\\",
+        "outputPath": "C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\district 3 app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\40723\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,33 @@
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.exe
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.deps.json
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.runtimeconfig.json
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.dll
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.pdb
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.csproj.AssemblyReference.cache
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\FancierProfilePage.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\CreateNewHighlight.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\HighlightsOnMain.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SeeHighlightPosts.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SelectHighlight.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SelectPostsPage.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app_MarkupCompile.cache
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app_MarkupCompile.lref
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\FancierProfilePage.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\CreateNewHighlight.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\HighlightsOnMain.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SeeHighlightPosts.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SelectHighlight.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\SelectPostsPage.baml
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.g.resources
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.AssemblyInfoInputs.cache
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.AssemblyInfo.cs
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.csproj.CoreCompileInputs.cache
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.dll
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\refint\district 3 app.dll
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.pdb
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.genruntimeconfig.cache
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\ref\district 3 app.dll
