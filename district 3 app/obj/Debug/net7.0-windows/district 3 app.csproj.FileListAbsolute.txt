@@ -3,7 +3,6 @@ C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.runtimeconfig.json
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.dll
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\bin\Debug\net7.0-windows\district 3 app.pdb
-C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.csproj.AssemblyReference.cache
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\FancierProfilePage.g.cs
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\CreateNewHighlight.g.cs
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\HighlightsFE\HighlightsOnMain.g.cs
@@ -31,3 +30,4 @@ C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.pdb
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.genruntimeconfig.cache
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\ref\district 3 app.dll
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\district 3 app\obj\Debug\net7.0-windows\district 3 app.sourcelink.json
