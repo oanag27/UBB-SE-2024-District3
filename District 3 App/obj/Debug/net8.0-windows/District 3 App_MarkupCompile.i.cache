@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\App.xaml
-14326197160
+13-1402538541
 
-1472098986933
+20405182181
 198155382431
-ExtraInfo\ExtraInfo.xaml;ExtraInfo\PaymentConfirmed.xaml;ExtraInfo\PaymentForm.xaml;ExtraInfo\VerifiedAccount.xaml;MainWindow.xaml;Statistics\App.xaml;Statistics\LikedPosts.xaml;Statistics\MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;UserControl5.xaml;UserControl6.xaml;
+ExtraInfo\ExtraInfo.xaml;ExtraInfo\PaymentConfirmed.xaml;ExtraInfo\PaymentForm.xaml;ExtraInfo\VerifiedAccount.xaml;MainWindow.xaml;Statistics\LikedPosts.xaml;Statistics\Statistics.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;UserControl5.xaml;UserControl6.xaml;
 
-False
+True
 

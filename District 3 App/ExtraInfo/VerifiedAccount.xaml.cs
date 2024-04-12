@@ -1,4 +1,5 @@
-﻿using System;
+﻿using District_3_App.Statistics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,11 +53,6 @@ namespace District_3_App.ExtraInfo
 
         }
 
-        private void StatisticsButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void FancierProfileButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -75,7 +71,9 @@ namespace District_3_App.ExtraInfo
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)
         {
             var newContent = new VerifiedAccount();
-
+            Grid.SetColumn(newContent, 2);
+            Grid.SetRow(newContent, 0);
+            Grid.SetRowSpan(newContent, 4);
             VerifiedAccountGrid.Children.Clear();
             VerifiedAccountGrid.Children.Add(newContent);
         }
@@ -88,6 +86,16 @@ namespace District_3_App.ExtraInfo
         private void LikedPostsButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void StatisticsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var statistics = new Statistics.Statistics();
+            Grid.SetColumn(statistics, 2);
+            Grid.SetRow(statistics, 0);
+            Grid.SetRowSpan(statistics, 4);
+            VerifiedAccountGrid.Children.Clear();
+            VerifiedAccountGrid.Children.Add(statistics);
         }
     }
 }
