@@ -7,14 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid x:Name="VerifiedAccountGrid" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="147*"/>
+        </Grid.ColumnDefinitions>
 
-        <Button x:Name="EditProfileButton" Height="35" Margin="128,47,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="EditProfileButton" Height="35" Margin="-38,47,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\userExtraInfo.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Edit Profile" FontSize="20"/>
             </StackPanel>
         </Button>
-        <Button x:Name="SettingsPrivacyButton" Height="41" Margin="128,87,469,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="SettingsPrivacyButton" Height="41" Margin="-38,99,635,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Settings and Privacy" FontSize="20"/>
@@ -25,7 +29,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="StatisticsButton" Height="34" Margin="128,128,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="StatisticsButton" Height="34" Margin="-38,156,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\statistics.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Statistics" FontSize="20"/>
@@ -36,7 +40,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="FancierProfileButton" Height="39" Margin="128,167,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="FancierProfileButton" Height="39" Margin="-38,209,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\fancierProfile.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Fancier Profile" FontSize="20" TextAlignment="Left"/>
@@ -47,7 +51,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  x:Name="SavedPostsButton" Height="32" Margin="128,0,500,0" VerticalAlignment="Center" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button  x:Name="SavedPostsButton" Height="32" Margin="-38,266,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\saved.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Saved" FontSize="20" TextAlignment="Left"/>
@@ -58,7 +62,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="CloseFriendsButton" Height="39" Margin="128,246,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="CloseFriendsButton" Height="38" Margin="-38,312,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="170">
                 <Image Source="\images\closeFriends.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Close Friends" FontSize="20" Width="150"/>
@@ -69,7 +73,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="VerifiedAccountButton" Height="36" Margin="128,290,486,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" FontWeight="DemiBold">
+        <Button x:Name="VerifiedAccountButton" Height="36" Margin="-38,370,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" FontWeight="DemiBold" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="170">
                 <Image Source="\images\verify.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Verified Account" FontSize="20"/>
@@ -80,7 +84,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="FriendsSettingsButton" Height="39" Margin="128,331,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="FriendsSettingsButton" Height="39" Margin="-38,422,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="168">
                 <Image Source="\images\friends.png" Width="16" Height="16" Margin="0,0,4,0"/>
                 <TextBlock Text="Friends Settings" FontSize="20"/>
@@ -91,7 +95,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="LikedPostsButton" Height="42" Margin="128,375,500,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button x:Name="LikedPostsButton" Height="42" Margin="-38,466,666,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\likedPosts.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Liked Posts" FontSize="20"/>
@@ -102,8 +106,8 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBlock Text="District 3" FontWeight="Bold" Margin="-80 0 0 0" FontSize="25" Foreground="#47525E"/>
-        <StackPanel Orientation="Vertical" Margin="-109,21,683,-21">
+        <TextBlock Text="District 3" FontWeight="Bold" Margin="-210,0,0,0" FontSize="25" Foreground="#47525E" Grid.ColumnSpan="2"/>
+        <StackPanel Orientation="Vertical" Margin="-247,21,108,-21">
             <StackPanel Orientation="Horizontal"  Margin="30,15,0,20">
                 <Image Source="\images\home.png" Width="30" Height="30" Margin="0,0,10,0"/>
                 <Button x:Name="Home" Background="Transparent" BorderBrush="Transparent">
@@ -147,20 +151,24 @@
                 </Button>
             </StackPanel>
         </StackPanel>
-        <StackPanel Margin="128,0,0,-105" HorizontalAlignment="Left" Width="203">
+        <StackPanel Margin="-38,0,0,-105" HorizontalAlignment="Left" Width="214" Grid.ColumnSpan="2">
             <TextBlock Text="Extra Info" Foreground="#343B42" FontWeight="Bold" FontSize="25"/>
             <Line X1="200" Y1="-35" X2="200" Y2="800" Stroke="#8492A6" StrokeThickness="1" />
         </StackPanel>
-        <StackPanel Margin="336,0,0,-30" HorizontalAlignment="Left" Width="464">
-            <TextBlock Text="Verified Account" Foreground="#47525E" FontSize="25" Margin="15 30 0 0" FontWeight="Bold"></TextBlock>
-            <Grid Height="283" HorizontalAlignment="Left" Width="490" Background="White" Margin="15 40 0 0">
-                <TextBlock Text="Pricing" Foreground="#47525E" FontSize="25" Margin="15 10 0 0" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-                <Grid Height="150" Width="280" HorizontalAlignment="Center" Margin="0 30 0 0" VerticalAlignment="Center">
+        <StackPanel Margin="116,0,0,-30" HorizontalAlignment="Left" Width="619" Grid.Column="1">
+            <TextBlock Text="Verified Account" Foreground="#47525E" FontSize="25" FontWeight="Bold"/>
+            <Grid Height="335" HorizontalAlignment="Left" Width="565" Background="White" Margin="15 40 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="11*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Pricing" Foreground="#47525E" FontSize="25" Margin="15 10 0 0" FontWeight="Bold" TextAlignment="Center" Grid.ColumnSpan="2"/>
+                <Grid Height="201" Width="376" HorizontalAlignment="Left" Margin="105,82,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
                     <StackPanel Margin="0,0,125,0" Orientation="Vertical">
-                        <TextBlock Text="Classic" Foreground="#47525E" FontSize="20" Margin="0 10 0 0" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="FREE" Foreground="#47525E" FontSize="18" Margin="0 0 0 0" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="Edit Profile" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="Make Connections" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"></TextBlock>
+                        <TextBlock Text="Classic" Foreground="#47525E" FontSize="20" Margin="0 10 0 0" FontWeight="Bold" TextAlignment="Center"/>
+                        <TextBlock Text="FREE" Foreground="#47525E" FontSize="18" Margin="0 0 0 0" FontWeight="Bold" TextAlignment="Center"/>
+                        <TextBlock Text="Edit Profile" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"/>
+                        <TextBlock Text="Make Connections" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"/>
                         <Button x:Name="ChooseFreeButton" Click="ChooseFreeButton_Click" Content="Choose" FontSize="8" Height="20" Width="40" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Background="#47525E" Foreground="White" BorderBrush="DarkGray">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
@@ -169,12 +177,12 @@
                             </Button.Resources>
                         </Button>
                     </StackPanel>
-                    <Line X1="135" Y1="0" X2="135" Y2="800" Stroke="#8492A6" StrokeThickness="1" />
+                    <Line X1="180" Y1="0" X2="180" Y2="800" Stroke="#8492A6" StrokeThickness="1" />
                     <StackPanel Margin="125,0,0,0" Orientation="Vertical">
-                        <TextBlock Text="Business" Foreground="#47525E" FontSize="20" Margin="0 10 0 0" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="$ 200.0" Foreground="#47525E" FontSize="18" Margin="0 0 0 0" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="Verified Account" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"></TextBlock>
-                        <TextBlock Text="See who viewed your profile" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"></TextBlock>
+                        <TextBlock Text="Business" Foreground="#47525E" FontSize="20" Margin="0 10 0 0" FontWeight="Bold" TextAlignment="Center"/>
+                        <TextBlock Text="$ 200.0" Foreground="#47525E" FontSize="18" Margin="0 0 0 0" FontWeight="Bold" TextAlignment="Center"/>
+                        <TextBlock Text="Verified Account" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"/>
+                        <TextBlock Text="See who viewed your profile" Foreground="#8190A5" FontSize="10" Margin="0 10 0 0" TextAlignment="Center"/>
                         <Button x:Name="ChooseBusinessButton" Click="ChooseBusinessButton_Click" Content="Choose" FontSize="8" Height="20" Width="40" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Background="#47525E" Foreground="White" BorderBrush="DarkGray">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
@@ -185,9 +193,9 @@
                     </StackPanel>
                     <Border BorderBrush="#8492A6" BorderThickness="1" CornerRadius="5"/>
                 </Grid>
-                <Border BorderBrush="#8492A6" BorderThickness="1" CornerRadius="10"/>
-                <ContentControl x:Name="FreeAccountControl"></ContentControl>
-                <ContentControl x:Name="BusinessAccountControl"></ContentControl>
+                <Border BorderBrush="#8492A6" BorderThickness="1" CornerRadius="10" Grid.ColumnSpan="2"/>
+                <ContentControl x:Name="FreeAccountControl" Grid.ColumnSpan="2"/>
+                <ContentControl x:Name="BusinessAccountControl" Grid.ColumnSpan="2"/>
             </Grid>
         </StackPanel>
     </Grid>
