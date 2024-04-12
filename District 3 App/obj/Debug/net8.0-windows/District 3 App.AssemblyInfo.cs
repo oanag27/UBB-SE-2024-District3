@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("District 3 App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd8fdf16ee5c38d0aa75a166ef1bd0ab41803c08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+362f03812f48f42db52f7bbe956a6a9ffae95b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("District 3 App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("District 3 App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
