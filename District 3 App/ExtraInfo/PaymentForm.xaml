@@ -8,10 +8,9 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid x:Name="CompleteGrid" Background="White">
         <Grid Height="20" Width="500" Margin="100,52,100,362">
-            <TextBlock Text="Order" Foreground="#8190A5" TextAlignment="Left"></TextBlock>
             <Border BorderThickness="1" CornerRadius="10" Background="#2A2838" Margin="-48,0,-50,0"/>
         </Grid>
-        <Grid Height="290" VerticalAlignment="Center" Width="600" Background="White" >
+        <Grid Height="290" VerticalAlignment="Center" Width="600" Background="White" HorizontalAlignment="Center" >
             <StackPanel Orientation="Vertical" >
                 <StackPanel  Width="500" Height="50" Orientation="Vertical" Background="White" Margin="30 10 0 0" HorizontalAlignment="Left">
                     <TextBlock Text="CARD NUMBER" Foreground="#8190A5"></TextBlock>

@@ -67,7 +67,7 @@ namespace District_3_App
             var newContent = new VerifiedAccount();
             Grid.SetColumn(newContent, 2);
             Grid.SetRow(newContent, 0);   
-            Grid.SetRowSpan(newContent, 4);
+            Grid.SetRowSpan(newContent, 6);
             mainGrid.Children.Add(newContent);
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
