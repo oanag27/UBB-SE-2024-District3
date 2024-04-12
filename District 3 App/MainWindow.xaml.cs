@@ -20,5 +20,61 @@ namespace District_3_App
         {
             InitializeComponent();
         }
+        private void Button_Click_Home(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl6();
+        }
+        private void Button_Click_Search(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl5();
+        }
+        private void Button_Click_Explore(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl4();
+        }
+        private void Button_Click_Reels(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl3();
+        }
+        private void Button_Click_Messages(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl2();
+        }
+        private void Button_Click_Notifications(object sender, RoutedEventArgs e)
+        {
+            CC.Content = new UserControl1();
+        }
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            //MainWindow mainWindow = new MainWindow();
+            //mainWindow.Show(); // Display the MainWindow
+            //this.Close(); // Close the current window
+            CC.Content = null;
+        }
+
+        private void PlusButton_Click(object sender, RoutedEventArgs e)
+        {
+            Popup.IsOpen = true;
+        }
+        private void MoreButton_Click(object sender, RoutedEventArgs e)
+        {
+            Popup2.IsOpen = true;
+        }
+        private void ExtraInfo_Click(object sender, RoutedEventArgs e)
+        {
+            Popup2.IsOpen = false;
+        }
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Popup2.IsOpen = false;
+        }
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Popup2.IsOpen = false;
+        }
+        private void MoreAbout_Click(object sender, RoutedEventArgs e)
+        {
+            MoreAboutPopup.IsOpen = true;
+        }
     }
 }
