@@ -8,10 +8,16 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Canvas Background="White">
         <TextBlock Text="Liked Posts" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.323,0.698" Canvas.Left="45" Canvas.Top="34" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="393" Width="558" Canvas.Left="192" Canvas.Top="47">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="376" Width="558" Canvas.Left="192" Canvas.Top="47" HorizontalAlignment="Center" VerticalAlignment="Top">
             <UniformGrid Columns="4">
-              
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
+                <UniformGrid.Resources>
+                    <Style TargetType="Image">
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="Height" Value="200"/>
+                    </Style>
+                </UniformGrid.Resources>
+
+                <Image Source="C:\Users\herta\OneDrive\Pictures\hd-wallpaper-g598bd113c_1920.jpg" Margin="5" Stretch="Uniform"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>

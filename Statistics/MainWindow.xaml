@@ -6,98 +6,86 @@
         xmlns:local="clr-namespace:Statistics"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Canvas>
 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229.573"/>
+            <ColumnDefinition Width="18.427"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Statistics" FontSize="24" FontWeight="Bold" Margin="83,10,591,258" RenderTransformOrigin="0.323,0.698"/>
-
-        <TextBlock Text="Time Spent on the app" FontSize="16" Margin="83,60,518,200"/>
-
-        <Ellipse Width="100" Height="100" Fill="Blue" Canvas.Left="633" Canvas.Top="50">
-            <Ellipse.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard RepeatBehavior="Forever">
-                            <DoubleAnimation Storyboard.TargetProperty="(Canvas.Left)" From="633" To="623" Duration="0:0:3" AutoReverse="True"/>
-                            <DoubleAnimation Storyboard.TargetProperty="(Canvas.Top)" From="50" To="40" Duration="0:0:4" AutoReverse="True"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Ellipse.Triggers>
-        </Ellipse>
-        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Margin="0,50,67,150"/>
-        <Ellipse Width="100" Height="100" Fill="Green" Canvas.Left="633" Canvas.Top="250">
-            <Ellipse.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard RepeatBehavior="Forever">
-                            <DoubleAnimation Storyboard.TargetProperty="(Canvas.Left)" From="633" To="643" Duration="0:0:4" AutoReverse="True"/>
-                            <DoubleAnimation Storyboard.TargetProperty="(Canvas.Top)" From="250" To="240" Duration="0:0:3" AutoReverse="True"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Ellipse.Triggers>
-        </Ellipse>
-
-        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="0,249,67,85"/>
-        <Ellipse Width="100" Height="100" Fill="Red" Canvas.Left="384" Canvas.Top="150">
-        <Ellipse.Triggers>
-            <EventTrigger RoutedEvent="Loaded">
-                <BeginStoryboard>
-                    <Storyboard RepeatBehavior="Forever">
-                        <DoubleAnimation Storyboard.TargetProperty="(Canvas.Left)" From="384" To="394" Duration="0:0:3" AutoReverse="True"/>
-                        <DoubleAnimation Storyboard.TargetProperty="(Canvas.Top)" From="150" To="140" Duration="0:0:4" AutoReverse="True"/>
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger>
-        </Ellipse.Triggers>
-        </Ellipse>
-        <StackPanel Grid.Row="0" VerticalAlignment="Top" Margin="384,150,316,0"/>
-
-        <StackPanel Margin="83,191,485,62" Grid.RowSpan="2">
-
-            <StackPanel Orientation="Horizontal" Height="34" Width="228">
-                <TextBlock Text="1. " VerticalAlignment="Center" FontSize="16"/>
-                <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
-                <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="34" Width="228">
-                <TextBlock Text="2. " VerticalAlignment="Center" FontSize="16"/>
-                <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
-                <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="34" Width="228">
-                <TextBlock Text="3. " VerticalAlignment="Center" FontSize="16"/>
-                <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
-                <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="34" Width="228">
-                <TextBlock Text="4. " VerticalAlignment="Center" FontSize="16"/>
-                <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
-                <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="34" Width="228">
-                <TextBlock Text="5. " VerticalAlignment="Center" FontSize="16"/>
-                <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
-                <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+        <!-- Left side -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="20,42,0,0" Grid.ColumnSpan="2">
+            <TextBlock Text="Statistics" FontSize="24" FontWeight="Bold"/>
+            <TextBlock Text="Time Spent on the app" FontSize="20" FontFamily="Segoe UI Semibold" Margin="0,10,0,20"/>
+            <TextBlock FontSize="16" Margin="0,20,0,0">
+                <Run FontWeight="Bold" Text="Streaks"/><Run Text=" - Top 5 interactions"/>
+            </TextBlock>
+            <!-- Stack panel containing usernames -->
+            <StackPanel Margin="0,20,0,0">
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="1. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+                    <TextBlock Text="@Username" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="2. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
+                    <TextBlock Text="@LongerUsername" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="3. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="@s" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="4. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
+                <StackPanel Height="34" Width="228" Orientation="Horizontal">
+                    <TextBlock Text="5. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <Image Source="C:\Users\herta\Desktop\Repo\imgs\fire_icon.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
+                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
 
-        <TextBlock Text="Streaks - Top 5 interactions" FontSize="16" Margin="83,160,518,100"/>
-        <TextBlock Text="This Week" FontSize="20" Margin="503,178,197,106"/>
-        <TextBlock Text="Today" FontSize="20" Margin="553,72,197,212"/>
-        <TextBlock Text=" 2h20min" FontSize="20" Margin="532,99,174,186"/>
-        <TextBlock Text="This month" FontSize="20" Margin="510,273,190,11"/>
-        <TextBlock Text=" 2h20min" FontSize="20" Margin="503,204,203,82"/>
-        <TextBlock Text=" 2h20min" FontSize="20" Margin="510,299,196,109" Grid.RowSpan="2"/>
-    </Canvas>
+        <!-- Right side -->
+        <!-- Add your right side elements here -->
+        <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="72,0,44,0">
+            <!-- First circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="180">
+                <StackPanel>
+                    <TextBlock Text="Bold Text 1" FontWeight="Bold"/>
+                    <TextBlock Text="Normal Text 1"/>
+                </StackPanel>
+                <Ellipse Width="100" Height="100" Fill="Red"/>
+            </StackPanel>
+            <!-- Second circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Ellipse Width="100" Height="100" Fill="Green" Margin="0,0,10,0"/>
+                <StackPanel>
+                    <TextBlock Text="Bold Text 2" FontWeight="Bold"/>
+                    <TextBlock Text="Normal Text 2"/>
+                </StackPanel>
+            </StackPanel>
+            <!-- Third circle with bold text and normal text -->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="175">
+                <StackPanel>
+                    <TextBlock Text="Bold Text 3" FontWeight="Bold"/>
+                    <TextBlock Text="Normal Text 3"/>
+                </StackPanel>
+                <Ellipse Width="100" Height="100" Fill="Blue" Margin="0,0,20,0"/>
+
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
 </Window>
