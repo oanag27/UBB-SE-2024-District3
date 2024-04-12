@@ -12,13 +12,13 @@
             <ColumnDefinition Width="147*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="EditProfileButton" Height="35" Margin="-38,47,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="EditProfileButton" Height="35" Margin="-38,47,694,0" Click="EditProfileButton_Click" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\userExtraInfo.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Edit Profile" FontSize="20"/>
             </StackPanel>
         </Button>
-        <Button x:Name="SettingsPrivacyButton" Height="41" Margin="-38,99,635,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="SettingsPrivacyButton" Click="SettingsPrivacyButton_Click" Height="41" Margin="-38,99,635,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Settings and Privacy" FontSize="20"/>
@@ -29,7 +29,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="StatisticsButton" Height="34" Margin="-38,156,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="StatisticsButton" Click="StatisticsButton_Click"  Height="34" Margin="-38,156,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\statistics.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Statistics" FontSize="20"/>
@@ -40,7 +40,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="FancierProfileButton" Height="39" Margin="-38,209,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="FancierProfileButton" Click="FancierProfileButton_Click" Height="39" Margin="-38,209,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\fancierProfile.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Fancier Profile" FontSize="20" TextAlignment="Left"/>
@@ -51,7 +51,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  x:Name="SavedPostsButton" Height="32" Margin="-38,266,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button  x:Name="SavedPostsButton" Click="SavedPostsButton_Click" Height="32" Margin="-38,266,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\saved.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Saved" FontSize="20" TextAlignment="Left"/>
@@ -62,7 +62,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="CloseFriendsButton" Height="38" Margin="-38,312,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="CloseFriendsButton" Click="CloseFriendsButton_Click" Height="38" Margin="-38,312,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="170">
                 <Image Source="\images\closeFriends.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Close Friends" FontSize="20" Width="150"/>
@@ -73,7 +73,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="VerifiedAccountButton" Height="36" Margin="-38,370,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" FontWeight="DemiBold" Grid.ColumnSpan="2">
+        <Button x:Name="VerifiedAccountButton" Height="36" Margin="-38,370,694,0" Click="VerifiedAccountButton_Click" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" FontWeight="DemiBold" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="170">
                 <Image Source="\images\verify.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Verified Account" FontSize="20"/>
@@ -84,7 +84,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="FriendsSettingsButton" Height="39" Margin="-38,422,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="FriendsSettingsButton" Click="FriendsSettingsButton_Click" Height="39" Margin="-38,422,694,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Width="168">
                 <Image Source="\images\friends.png" Width="16" Height="16" Margin="0,0,4,0"/>
                 <TextBlock Text="Friends Settings" FontSize="20"/>
@@ -95,7 +95,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="LikedPostsButton" Height="42" Margin="-38,466,666,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+        <Button x:Name="LikedPostsButton" Height="42" Click="LikedPostsButton_Click" Margin="-38,466,666,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal">
                 <Image Source="\images\likedPosts.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Liked Posts" FontSize="20"/>
