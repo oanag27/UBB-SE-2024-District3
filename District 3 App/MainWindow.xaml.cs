@@ -1,4 +1,5 @@
 ﻿using District_3_App.ExtraInfo;
+using District_3_App.HighlightsFE;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -85,7 +86,17 @@ namespace District_3_App
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void onAddHighlight_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Children.Clear();
+            var newContent = new SelectPostsPage();
+            Grid.SetColumn(newContent, 2); // Place in the third column
+            Grid.SetRow(newContent, 0);    // Place in the first row
+            Grid.SetRowSpan(newContent, 4); // Span multiple rows if necessary
+            mainGrid.Children.Add(newContent);
         }
     }
 }
