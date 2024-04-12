@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using District_3_App.ExtraInfo;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -62,7 +63,12 @@ namespace District_3_App
         }
         private void ExtraInfo_Click(object sender, RoutedEventArgs e)
         {
-            Popup2.IsOpen = false;
+            //Popup2.IsOpen = false;
+            //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
+            var newContent = new ExtraInfo.ExtraInfo();
+
+            mainGrid.Children.Clear();
+            mainGrid.Children.Add(newContent);
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
@@ -75,6 +81,11 @@ namespace District_3_App
         private void MoreAbout_Click(object sender, RoutedEventArgs e)
         {
             MoreAboutPopup.IsOpen = true;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

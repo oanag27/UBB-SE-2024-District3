@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:District_3_App"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.20*"/>
             <ColumnDefinition Width="5"/>
@@ -57,6 +57,7 @@
                         <TextBlock Text="Profile" Margin="5,0,0,0" FontSize="22px"/>
                     </Button>
                 </StackPanel>
+                <ContentControl x:Name="ExtraInfoControl"></ContentControl>
             </StackPanel>
         </StackPanel>
         <GridSplitter Grid.Column="1" Width="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#8492A6" ResizeBehavior="PreviousAndNext" ResizeDirection="Columns" />
