@@ -62,7 +62,7 @@ namespace District_3_App
         {
             //Popup2.IsOpen = false;
             //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
-            //mainGrid.Children.Clear();
+            mainGrid.Children.Clear();
             var newContent = new VerifiedAccount();
             Grid.SetColumn(newContent, 2); // Place in the third column
             Grid.SetRow(newContent, 0);    // Place in the first row
