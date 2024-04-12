@@ -27,7 +27,7 @@ namespace District_3_App.ExtraInfo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new VerifiedAccount();
+            var newContent = new MainWindow();
 
             ConfirmationGrid.Children.Clear();
             ConfirmationGrid.Children.Add(newContent);

@@ -37,7 +37,6 @@ E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\bin\Debug\net8.0-windows\District 3 App.dll
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\bin\Debug\net8.0-windows\District 3 App.pdb
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\ExtraInfo.g.cs
-E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\MainWindow.g.cs
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\PaymentConfirmed.g.cs
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\PaymentForm.g.cs
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\VerifiedAccount.g.cs
@@ -52,7 +51,6 @@ E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\District 3 App_MarkupCompile.cache
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\District 3 App_MarkupCompile.lref
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\ExtraInfo.baml
-E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\MainWindow.baml
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\PaymentConfirmed.baml
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\PaymentForm.baml
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\VerifiedAccount.baml
