@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\extrainfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\software engineering\\app\\ubb-se-2024-district3\\district 3 app\\usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 194,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PaymentForm.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml.cs",
               "RelativeDocumentMoniker": "ExtraInfo\\PaymentForm.xaml.cs",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ExtraInfo.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml",
@@ -187,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -200,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ExtraInfo.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml.cs",
               "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml.cs",

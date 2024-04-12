@@ -23,7 +23,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="E:\facultate\Sem4\software engineering\lab4\user.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0"/>
+                    <Image Source="E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\images\userExtraInfo.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0"/>
                     <TextBlock Text="Edit Profile" FontSize="8" Grid.Column="1"/>
                 </Grid>
             </Button>
@@ -33,7 +33,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="E:\facultate\Sem4\software engineering\lab4\settings.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0" />
+                    <Image Source="E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0" />
                     <TextBlock Text="Settings and Privacy" FontSize="8" Grid.Column="1"/>
                 </Grid>
                 <Button.Resources>
@@ -48,7 +48,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="E:\facultate\Sem4\software engineering\lab4\statistics.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0"/>
+                    <Image Source="E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\images\statistics.png" Width="16" Height="16" Margin="0,0,4,0" Grid.Column="0"/>
                     <TextBlock Text="Statistics" FontSize="8" Grid.Column="1"/>
                 </Grid>
                 <Button.Resources>

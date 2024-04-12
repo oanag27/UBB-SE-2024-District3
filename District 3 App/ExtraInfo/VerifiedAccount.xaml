@@ -9,13 +9,13 @@
     <Grid x:Name="VerifiedAccountGrid" Background="White">
         <Button x:Name="EditProfileButton" Height="28" Margin="128,47,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\user.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\userExtraInfo.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Edit Profile" FontSize="8"/>
             </StackPanel>
         </Button>
         <Button x:Name="SettingsPrivacyButton" Height="28" Margin="128,87,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Settings and Privacy" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
@@ -26,7 +26,7 @@
         </Button>
         <Button x:Name="StatisticsButton" Height="28" Margin="128,128,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\statistics.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\statistics.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Statistics" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
@@ -37,7 +37,7 @@
         </Button>
         <Button x:Name="FancierProfileButton" Height="28" Margin="128,167,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E"  BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\fancierProfile.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\fancierProfile.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Fancier Profile" FontSize="8" TextAlignment="Left"/>
             </StackPanel>
             <Button.Resources>
@@ -48,7 +48,7 @@
         </Button>
         <Button  x:Name="SavedPostsButton" Height="28" Margin="128,0,569,0" VerticalAlignment="Center" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\saved.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\saved.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Saved" FontSize="8" TextAlignment="Left"/>
             </StackPanel>
             <Button.Resources>
@@ -59,7 +59,7 @@
         </Button>
         <Button x:Name="CloseFriendsButton" Height="28" Margin="128,246,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\closeFriends.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\closeFriends.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Close Friends" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
@@ -70,7 +70,7 @@
         </Button>
         <Button x:Name="VerifiedAccountButton" Height="28" Margin="128,290,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left" FontWeight="DemiBold">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\verify.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\verify.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Verified Account" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
@@ -81,7 +81,7 @@
         </Button>
         <Button x:Name="FriendsSettingsButton" Height="28" Margin="128,331,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\friends.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\friends.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Friends Settings" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
@@ -92,7 +92,7 @@
         </Button>
         <Button x:Name="LikedPostsButton" Height="28" Margin="128,375,569,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal">
-                <Image Source="E:\facultate\Sem4\software engineering\lab4\likedPosts.png" Width="16" Height="16" Margin="0,0,4,0" />
+                <Image Source="\images\likedPosts.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Liked Posts" FontSize="8"/>
             </StackPanel>
             <Button.Resources>
