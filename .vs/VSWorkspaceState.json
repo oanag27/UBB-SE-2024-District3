@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\district 3 app"
   ],
   "SelectedNode": "\\district 3 app\\district 3 app.sln",
+=======
+    ""
+  ],
+  "SelectedNode": "\\.gitignore",
+>>>>>>> statistics
   "PreviewInSolutionExplorer": false
 }
