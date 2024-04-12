@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:District_3_App.HighlightsFE"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="600"
+             d:DesignHeight="100" d:DesignWidth="500"
              Background="White">
     <Grid>
-        <Frame x:Name="navigationFrame"/>
+        <Frame x:Name="navigationFrame"  NavigationUIVisibility="Hidden"/>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
             <StackPanel Orientation="Horizontal">
                 <ItemsControl ItemsSource="{Binding}" >

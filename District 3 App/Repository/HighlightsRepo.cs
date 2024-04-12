@@ -3,21 +3,42 @@ using District_3_App.Enitities.Mocks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Reflection;
+using System.IO;
 using System.Threading.Tasks;
+using System.IO.Packaging;
+using District_3_App.ExtraInfo;
 
 namespace District_3_App.Repository
 {
     internal class HighlightsRepo
     {
         private List<Highlight> highlights;
+        private string GetImagesDirectoryPath()
+        {
+            string assemblyLocation = Assembly.GetExecutingAssembly().Location;
+            string directoryToExclude = Path.GetDirectoryName(assemblyLocation);
+            directoryToExclude = directoryToExclude.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
+            if (assemblyLocation.Contains(directoryToExclude))
+            {
+                assemblyLocation = assemblyLocation.Replace(directoryToExclude, "");
+            }
+            assemblyLocation = Path.Combine(assemblyLocation, "images");
+            return assemblyLocation;
+        }
+
         public List<MockPhotoPost> getConnectedUserPosts(Object user)
         {
             List<MockPhotoPost> posts = new List<MockPhotoPost>();
-
-            MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", "\\images\\bee1.jpg");
-            MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", "\\images\\bee2.jpg");
-            MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", "\\images\\bee3.jpg");
+            string imagesDirectory = GetImagesDirectoryPath();
+            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
+            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
+            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
+            MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
+            MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
+            MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
 
             posts.Add(post1);
             posts.Add(post2);
@@ -44,14 +65,18 @@ namespace District_3_App.Repository
         public HighlightsRepo()
         {
             this.highlights = new List<Highlight>();
-            var post1 = new MockPhotoPost(null, null, null, "Post 1", "Description 1", "\\images\\bee1.jpg");
-            var post2 = new MockPhotoPost(null, null, null, "Post 2", "Description 2", "\\images\\bee2.jpg");
-            var post3 = new MockPhotoPost(null, null, null, "Post 3", "Description 3", "\\images\\bee3.jpg");
+            string imagesDirectory = GetImagesDirectoryPath();
+            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
+            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
+            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
+            MockPhotoPost post1 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
+            MockPhotoPost post2 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
+            MockPhotoPost post3 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
 
-            var highlight1 = new Highlight("Highlight 1", "\\images\\bee2.jpg");
-            var highlight2 = new Highlight("Highlight 2", "\\images\\bee3.jpg");
-            var highlight3 = new Highlight("Highlight 1", "\\images\\bee1.jpg");
-            var highlight4 = new Highlight("Highlight 2", "\\images\\bee2.jpg");
+            var highlight1 = new Highlight("Highlight 1", bee1Path);
+            var highlight2 = new Highlight("Highlight 2", bee2Path);
+            var highlight3 = new Highlight("Highlight 1", bee3Path);
+            var highlight4 = new Highlight("Highlight 2", bee2Path);
 
             highlight1.addPostToHighlight(post1.getPostId());
             highlight1.addPostToHighlight(post2.getPostId());
@@ -132,10 +157,14 @@ namespace District_3_App.Repository
             //{
             //    mockPhotoPosts.Add(GetUserPosts(guid));
             //}
+            string imagesDirectory = GetImagesDirectoryPath();
+            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
+            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
+            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
             List<MockPhotoPost> posts = new List<MockPhotoPost>();
-            MockPhotoPost post1 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", "\\images\\bee1.jpg");
-            MockPhotoPost post2 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", "\\images\\bee2.jpg");
-            MockPhotoPost post3 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", "\\images\\bee3.jpg");
+            MockPhotoPost post1 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
+            MockPhotoPost post2 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
+            MockPhotoPost post3 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
 
             posts.Add(post1);
             posts.Add(post2);

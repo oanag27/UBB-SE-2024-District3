@@ -168,3 +168,4 @@ C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\District 3 App.pdb
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\District 3 App.genruntimeconfig.cache
 C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ref\District 3 App.dll
+C:\Users\40723\Source\Repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

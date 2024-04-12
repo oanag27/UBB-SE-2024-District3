@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:highlights="clr-namespace:District_3_App.HighlightsFE"
         xmlns:local="clr-namespace:District_3_App"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -90,7 +91,7 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Button Content="Add Highlight" Margin="10" Width="192" Height="50" Background="#47525E" BorderBrush="#8492A6" Foreground="white"/>
+                                <Button Content="Add Highlight" Margin="10" Width="192" Height="50" Background="#47525E" BorderBrush="#8492A6" Foreground="white" Click="onAddHighlight_Click"/>
                                 <Button Grid.Column="1" Content="Add Post" Margin="10" Width="192" Height="50" Background="#47525E" BorderBrush="#8492A6" Foreground="white"/>
                             </Grid>
                         </Grid>
@@ -176,7 +177,7 @@
                     </Popup>
                 </Grid>
                 <StackPanel Grid.Row="2" Margin="20,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center" >
-                    <StackPanel Orientation="Vertical" Margin="0,5,0,5">
+                    <!--<StackPanel Orientation="Vertical" Margin="0,5,0,5">
                         <Image Source="\images\square.png" Width="60" Height="60" Margin="0,0,10,0" />
                         <TextBlock Text="H1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>
@@ -191,7 +192,8 @@
                     <StackPanel Orientation="Vertical" Margin="0,5,0,5">
                         <Image Source="\images\square.png" Width="60" Height="60" Margin="0,0,10,0"/>
                         <TextBlock Text="H4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </StackPanel>
+                    </StackPanel>-->
+                    <highlights:HighlightsOnMain />
                 </StackPanel>
                 <StackPanel Grid.Row="4"  Margin="0,20,0,0">
                     <UniformGrid Columns="3">
