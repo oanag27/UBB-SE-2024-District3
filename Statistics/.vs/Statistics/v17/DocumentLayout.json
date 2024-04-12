@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|c:\\users\\herta\\desktop\\repo\\statistics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|c:\\users\\herta\\desktop\\repo\\statistics\\likedposts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|solutionrelative:likedposts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|c:\\users\\herta\\desktop\\repo\\statistics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3609975B-8C03-463C-A5D1-613EDA6C83D5}|Statistics.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LikedPosts.xaml",
               "DocumentMoniker": "C:\\Users\\herta\\Desktop\\Repo\\Statistics\\LikedPosts.xaml",
               "RelativeDocumentMoniker": "LikedPosts.xaml",
@@ -46,15 +46,15 @@
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\herta\\Desktop\\Repo\\Statistics\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\herta\\Desktop\\Repo\\Statistics\\MainWindow.xaml*",
-              "RelativeToolTip": "MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\herta\\Desktop\\Repo\\Statistics\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-12T13:13:14.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\herta\\Desktop\\Repo\\Statistics\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
