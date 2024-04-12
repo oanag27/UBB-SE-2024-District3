@@ -16,19 +16,19 @@
             <TextBlock Text="District 3" FontWeight="Bold" FontSize="30" Foreground="#47525E" HorizontalAlignment="Center" Margin="0,20,0,0"/>
             <StackPanel Orientation="Vertical" Margin="0,10,0,10">
                 <StackPanel Orientation="Horizontal"  Margin="30,15,0,20">
-                    <Image Source="C:\Users\oanam\source\repos\iss-prj\WpfApp1\WpfApp1\images\home.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                    <Image Source="\images\home.png" Width="30" Height="30" Margin="0,0,10,0"/>
                     <Button x:Name="Home" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_Home">
                         <TextBlock Text="Home" Margin="5,0,0,0" FontSize="22px"/>
                     </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal"  Margin="30,15,0,20">
-                    <Image Source="C:\Users\oanam\source\repos\iss-prj\WpfApp1\WpfApp1\images\search-interface-symbol.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                    <Image Source="\images\search-interface-symbol.png" Width="30" Height="30" Margin="0,0,10,0"/>
                     <Button x:Name="Search" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_Search">
                         <TextBlock Text="Search" Margin="5,0,0,0" FontSize="22px"/>
                     </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal"  Margin="30,15,0,20">
-                    <Image Source="C:\Users\oanam\source\repos\iss-prj\WpfApp1\WpfApp1\images\explore.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                    <Image Source="\images\explore.png" Width="30" Height="30" Margin="0,0,10,0"/>
                     <Button x:Name="Explore" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_Explore">
                         <TextBlock Text="Explore" Margin="5,0,0,0" FontSize="22px"/>
                     </Button>
