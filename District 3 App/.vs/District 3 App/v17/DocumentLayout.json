@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\verifiedaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\verifiedaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\verifiedaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3-iii\\district 3 app\\extrainfo\\paymentform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 194,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,18 +150,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VerifiedAccount.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml.cs",
-              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
-              "RelativeToolTip": "ExtraInfo\\VerifiedAccount.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:40:12.353Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "PaymentForm.xaml.cs",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\PaymentForm.xaml.cs",
@@ -174,18 +162,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ExtraInfo.xaml",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml",
               "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
               "RelativeToolTip": "ExtraInfo\\ExtraInfo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T10:18:16.843Z"
+              "WhenOpened": "2024-04-12T10:18:16.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -203,14 +192,14 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAABOAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAD8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T08:19:19.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "VerifiedAccount.xaml",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml",
@@ -221,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ExtraInfo\\MainWindow.xaml.cs",
@@ -244,6 +233,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ExtraInfo\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\MainWindow.xaml",
+              "RelativeToolTip": "ExtraInfo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T11:34:22.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VerifiedAccount.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
+              "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml.cs",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
+              "RelativeToolTip": "ExtraInfo\\VerifiedAccount.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:40:12.353Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "PaymentForm.xaml",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\PaymentForm.xaml",
@@ -252,17 +265,6 @@
               "RelativeToolTip": "ExtraInfo\\PaymentForm.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-12T10:49:57.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ExtraInfo\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3-iii\\District 3 App\\ExtraInfo\\MainWindow.xaml",
-              "RelativeToolTip": "ExtraInfo\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T11:34:22.879Z"
             },
             {
               "$type": "Document",

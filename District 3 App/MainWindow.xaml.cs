@@ -47,9 +47,6 @@ namespace District_3_App
         }
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
         {
-            //MainWindow mainWindow = new MainWindow();
-            //mainWindow.Show(); // Display the MainWindow
-            //this.Close(); // Close the current window
             CC.Content = null;
         }
 
