@@ -19,3 +19,15 @@ C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\ref
 C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\District 3 App.pdb
 C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\District 3 App.genruntimeconfig.cache
 C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\ref\District 3 App.dll
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl1.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl2.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl3.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl4.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl5.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl6.g.cs
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl1.baml
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl2.baml
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl3.baml
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl4.baml
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl5.baml
+C:\Users\oanam\OneDrive\Documents\d3\District 3 App\obj\Debug\net8.0-windows\UserControl6.baml

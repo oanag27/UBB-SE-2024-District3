@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\oanam\\onedrive\\documents\\d3\\district 3 app\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 194,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +110,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "UserControl6.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl6.xaml",
+              "RelativeDocumentMoniker": "UserControl6.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl6.xaml",
+              "RelativeToolTip": "UserControl6.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:47.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserControl5.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl5.xaml",
+              "RelativeDocumentMoniker": "UserControl5.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl5.xaml",
+              "RelativeToolTip": "UserControl5.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:36.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserControl4.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl4.xaml",
+              "RelativeDocumentMoniker": "UserControl4.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl4.xaml",
+              "RelativeToolTip": "UserControl4.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:28.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -82,6 +154,81 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-12T08:12:23.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControl3.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl3.xaml",
+              "RelativeDocumentMoniker": "UserControl3.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl3.xaml",
+              "RelativeToolTip": "UserControl3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:20.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserControl2.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl2.xaml",
+              "RelativeDocumentMoniker": "UserControl2.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl2.xaml",
+              "RelativeToolTip": "UserControl2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:09.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControl1.xaml",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl1.xaml",
+              "RelativeDocumentMoniker": "UserControl1.xaml",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl1.xaml",
+              "RelativeToolTip": "UserControl1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T08:24:01.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T08:19:19.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControl6.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl6.xaml.cs",
+              "RelativeDocumentMoniker": "UserControl6.xaml.cs",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\UserControl6.xaml.cs",
+              "RelativeToolTip": "UserControl6.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T08:30:42.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\oanam\\OneDrive\\Documents\\d3\\District 3 App\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T08:19:15.671Z",
               "EditorCaption": ""
             }
           ]
