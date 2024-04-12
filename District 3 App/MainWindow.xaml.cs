@@ -62,11 +62,12 @@ namespace District_3_App
         {
             //Popup2.IsOpen = false;
             //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
+            //ines
             mainGrid.Children.Clear();
             var newContent = new VerifiedAccount();
-            Grid.SetColumn(newContent, 2); // Place in the third column
-            Grid.SetRow(newContent, 0);    // Place in the first row
-            Grid.SetRowSpan(newContent, 4); // Span multiple rows if necessary
+            Grid.SetColumn(newContent, 2);
+            Grid.SetRow(newContent, 0);   
+            Grid.SetRowSpan(newContent, 4);
             mainGrid.Children.Add(newContent);
         }
         private void Logout_Click(object sender, RoutedEventArgs e)

@@ -27,10 +27,38 @@ namespace District_3_App.ExtraInfo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new MainWindow();
+            /*var newContent = new MainWindow();
 
             ConfirmationGrid.Children.Clear();
-            ConfirmationGrid.Children.Add(newContent);
+            ConfirmationGrid.Children.Add(newContent);*/
+            Window parentWindow = Window.GetWindow(this);
+
+            // Check if the parent window is MainWindow
+            if (parentWindow != null && parentWindow is MainWindow mainWindow)
+            {
+                // Optional: Debugging output
+                Console.WriteLine("Parent window found: " + parentWindow.GetType().Name);
+
+                // Check if CC is a valid ContentControl in MainWindow
+                if (mainWindow.CC != null)
+                {
+                    // Optional: Debugging output
+                    Console.WriteLine("ContentControl (CC) found in MainWindow");
+
+                    // Set the content of CC to a new UserControl instance (e.g., UserControl1)
+                    mainWindow.CC.Content = new UserControl1();
+                }
+                else
+                {
+                    // Optional: Debugging output
+                    Console.WriteLine("ContentControl (CC) not found in MainWindow");
+                }
+            }
+            else
+            {
+                // Optional: Debugging output
+                Console.WriteLine("Parent window is not MainWindow or not found");
+            }
         }
     }
 }
