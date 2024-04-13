@@ -7,10 +7,26 @@
         mc:Ignorable="d"
         Title="CreateNewHighlight" Height="300" Width="300">
     <Grid>
+        <Popup x:Name="ChooseCoverPopUp" Width="250" Height="150" StaysOpen="False" PlacementTarget="{Binding ElementName=CoverButton}" >
+            <Border Background="White" BorderBrush="#FF47525E" Width="250" Height="150" BorderThickness="1" CornerRadius="5">
+                <StackPanel>
+                    <TextBlock Text="Which post do you want to be the cover?" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" Foreground="#FF47525E" Margin="0,0,0,5"/>
+                    <TextBlock Text="Enter a number between 1 and" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Foreground="#FF47525E"/>
+                    <TextBlock Text="{Binding ElementName=CoverButton, Path=DataContext.guids.Count}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Foreground="#FF47525E" Margin="0,0,0,5"/>
+                    <TextBox x:Name="coverInput" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="70" Height="26" FontSize="8" SelectionTextBrush="#FF8492A6" SelectionBrush="#FF8492A6" BorderBrush="#8492A6" TextChanged="coverInput_TextChanged" Grid.IsSharedSizeScope="True" Background="#FF8492A6">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="3"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </StackPanel>
+            </Border>
+        </Popup>
 
         <Label Content="Add new Highlight" HorizontalAlignment="Left" Margin="20,21,0,0" VerticalAlignment="Top" FontSize="12"  Foreground="#FF47525E" FontWeight="Bold"/>
 
-            <Button HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="Button_Click">
+            <Button x:Name="CoverButton" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="Button_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>

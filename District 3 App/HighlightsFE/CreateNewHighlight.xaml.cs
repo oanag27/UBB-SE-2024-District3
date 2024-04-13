@@ -15,6 +15,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using District_3_App.Service;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace District_3_App.HighlightsFE
 {
@@ -28,52 +30,60 @@ namespace District_3_App.HighlightsFE
         {
             InitializeComponent();
             guids = selectedPostsGuids;
+            DataContext = guids;
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            newHighlightName = textInputBox.Text;
+            if (textInputBox.Text != "Enter Highlight Name")
+               newHighlightName = textInputBox.Text;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            if (guids.Count <= 0)
+            {
+                MessageBox.Show("You didn't add any posts. The cover will be the default black");
+            }
+            else
+            {
+                ChooseCoverPopUp.IsOpen = !ChooseCoverPopUp.IsOpen;
+            }
         }
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
-            Highlight h = new Highlight(newHighlightName, newHighlightCover);
-            if (newHighlightName == null)
+            HighlightsRepo highlightsRepo = new HighlightsRepo();
+            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
+            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+
+            SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
+            try
             {
-                newHighlightName = "Highlight_" + h.getHighlightId().ToString().Replace("-", "_");
-                h.setName(newHighlightName);
+                snapshotsService.addHighlight(newHighlightName, newHighlightCover, guids);
+                this.Close();
             }
-            int rnd = new Random().Next(0, guids.Count());
-            HighlightsRepo repo = new HighlightsRepo();
-            if (guids.Count == 0)
+            catch (Exception ex)
             {
-                newHighlightCover = "../Images/black.png";
+                MessageBox.Show(ex.ToString());
             }
-            while (newHighlightCover == null)
+
+        }
+
+        private void coverInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string highlightCover = coverInput.Text;
+            try
             {
-                foreach (MockPhotoPost photoPost in repo.getConnectedUserPosts(new Object()))
-                {
-                    if (photoPost != null)
-                    {
-                        if (photoPost.getPostId().Equals(guids[rnd]))
-                        {
-                            newHighlightCover = photoPost.getPhoto();
-                            continue;
-                        }
-                    }
+                int numberOfPost = int.Parse(highlightCover);
+                if (numberOfPost < 0 || numberOfPost> guids.Count) {
+                    throw new Exception();
                 }
+                newHighlightCover = guids[numberOfPost].ToString();
             }
-            foreach (Guid postId in guids)
-            {
-                // casualProfileService.GetSnapshotsService().getSnapshotsRepo().getHighlightsRepo().addPostToHighlight(postId, h.getHighlightId());
+            catch (Exception) { 
+                MessageBox.Show("Please enter a number between 1 and " + guids.Count.ToString());
             }
-
-
-
         }
     }
 }
