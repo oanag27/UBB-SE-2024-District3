@@ -47,26 +47,5 @@ namespace District_3_App.ExtraInfo
             VerifiedAccountGrid.Children.Clear();
             VerifiedAccountGrid.Children.Add(paymentForm);
         }
-
-        private void ChooseFreeButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            var paymentForm = new PaymentForm();
-            Grid.SetColumn(paymentForm, 2);
-            Grid.SetRow(paymentForm, 0);
-            Grid.SetRowSpan(paymentForm, 4);
-            VerifiedAccountGrid.Children.Clear();
-            VerifiedAccountGrid.Children.Add(paymentForm);
-        }
-
-        private void ChooseBusinessButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            //FreeAccountControl.Content = new VerifiedAccount();
-            var newContent = new VerifiedAccount();
-            Grid.SetColumn(newContent, 2);
-            Grid.SetRow(newContent, 0);
-            Grid.SetRowSpan(newContent, 4);
-            VerifiedAccountGrid.Children.Clear();
-            VerifiedAccountGrid.Children.Add(newContent);
-        }
     }
 }
