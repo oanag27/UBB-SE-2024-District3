@@ -1,170 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\",
+  "WorkspaceRootPath": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\extrainfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\settings_privacy_gui\\settingsprivacy_usercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:settings_privacy_gui\\settingsprivacy_usercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\highlightsonmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\highlightsonmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\settings_privacy_gui\\settingsprivacy_usercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:settings_privacy_gui\\settingsprivacy_usercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\highlightsonmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\highlightsonmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\selectpostspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\selectpostspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\userextrainfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\userextrainfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\entities\\blockedprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\entities\\blockedprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\verifiedaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\verifiedaccount.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\entities\\closefriendprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\entities\\closefriendprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\profilenetworkinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\profilenetworkinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\groupsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\profilenetworkinfo_repository\\groupsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\profilenetworkinfo_service\\profilenetworkinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\profilenetworkinfo_service\\profilenetworkinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\entities\\userprofilesocialnetworkinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\entities\\userprofilesocialnetworkinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\extrainfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\verifiedaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\verifiedaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\login\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\login\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\login\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\login\\forgotpasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\forgotpasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\fancierprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\fancierprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:fancierprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\fancierprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\fancierprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:fancierprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\service\\casualprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:service\\casualprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\statistics\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:statistics\\statistics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\statistics\\statistics.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:statistics\\statistics.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\statistics\\likedposts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:statistics\\likedposts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentconfirmed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentconfirmed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\statistics\\likedposts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:statistics\\likedposts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentconfirmed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentconfirmed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\sergiu\\desktop\\iss_github_hw4\\ubb-se-2024-district3\\district 3 app\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -173,8 +53,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 194,
-          "SelectedChildIndex": 20,
+          "DockedWidth": 26,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -182,11 +62,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -198,11 +78,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             },
             {
               "$type": "Bookmark",
@@ -234,524 +114,152 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HighlightsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\HighlightsRepo.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs*",
+              "RelativeToolTip": "Repository\\HighlightsRepo.cs*",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAJYAAACcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:41:42.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SettingsPrivacy_UserControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
-              "RelativeDocumentMoniker": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
-              "RelativeToolTip": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:20:38.838Z",
+              "Title": "HighlightsOnMain.xaml",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml",
+              "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml",
+              "RelativeToolTip": "HighlightsFE\\HighlightsOnMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-13T16:42:27.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SettingsPrivacy_UserControl.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
-              "RelativeDocumentMoniker": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
-              "RelativeToolTip": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
+              "Title": "HighlightsOnMain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml.cs",
+              "RelativeToolTip": "HighlightsFE\\HighlightsOnMain.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowD4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T12:03:55.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectPostsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml",
+              "RelativeDocumentMoniker": "HighlightsFE\\SelectPostsPage.xaml",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml",
+              "RelativeToolTip": "HighlightsFE\\SelectPostsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T16:20:34.46Z",
+              "WhenOpened": "2024-04-13T12:54:45.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\Account.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\Account.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\Account.cs",
-              "RelativeToolTip": "ExtraInfo\\Account.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwEwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:15:13.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BlockedProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\BlockedProfile.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\BlockedProfile.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\BlockedProfile.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\entities\\BlockedProfile.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wA4AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:10:53.597Z",
-              "EditorCaption": ""
+              "Title": "CreateNewHighlight.xaml",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
+              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
+              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-13T12:20:08.609Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CloseFriendProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\CloseFriendProfile.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\CloseFriendProfile.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\CloseFriendProfile.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\entities\\CloseFriendProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SnapshotsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\SnapshotsRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\SnapshotsRepo.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\SnapshotsRepo.cs",
+              "RelativeToolTip": "Repository\\SnapshotsRepo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:10:56.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExtraInfo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml.cs",
-<<<<<<< HEAD
-              "ToolTip": "E:\\facultate\\Sem4\\software engineering\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml.cs",
-              "RelativeToolTip": "ExtraInfo\\ExtraInfo.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
-=======
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml.cs*",
-              "RelativeToolTip": "ExtraInfo\\ExtraInfo.xaml.cs*",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAuwJcAAABBAAAA",
->>>>>>> f7fb3bdc248b3ecf4b70934b404a3da79a6f2f4a
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:18:20.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VerifiedAccount.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml.cs",
-              "RelativeToolTip": "ExtraInfo\\VerifiedAccount.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAG0AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:40:12.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T11:53:23.255Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserExtraInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\UserExtraInfo.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\UserExtraInfo.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\UserExtraInfo.cs",
-              "RelativeToolTip": "ExtraInfo\\UserExtraInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
+              "Title": "CreateNewHighlight.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAwEQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:07:50.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T11:45:48.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FancierProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
+              "RelativeDocumentMoniker": "FancierProfilePage.xaml",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
+              "RelativeToolTip": "FancierProfilePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-13T12:22:21.388Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\User.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\User.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\User.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\entities\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Title": "FancierProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "FancierProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
+              "RelativeToolTip": "FancierProfilePage.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:05:52.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T12:37:02.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentForm.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\PaymentForm.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml.cs",
-              "RelativeToolTip": "ExtraInfo\\PaymentForm.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBMAAAASAAAA",
+              "DocumentIndex": 8,
+              "Title": "CasualProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\CasualProfileService.cs",
+              "RelativeDocumentMoniker": "Service\\CasualProfileService.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\CasualProfileService.cs",
+              "RelativeToolTip": "Service\\CasualProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:20:06.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T11:36:12.613Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "UsersRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\UsersRepository.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\UsersRepository.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\UsersRepository.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\UsersRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Title": "SnapshotsService.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
+              "RelativeDocumentMoniker": "Service\\SnapshotsService.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
+              "RelativeToolTip": "Service\\SnapshotsService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:14:23.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProfileNetworkInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\ProfileNetworkInfoRepository.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\ProfileNetworkInfoRepository.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\ProfileNetworkInfoRepository.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\ProfileNetworkInfoRepository.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:14:18.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GroupsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\GroupsRepository.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\GroupsRepository.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\GroupsRepository.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Repository\\GroupsRepository.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAywAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:14:05.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProfileNetworkInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAowBIAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:13:34.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserProfileSocialNetworkInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\UserProfileSocialNetworkInfo.cs",
-              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\UserProfileSocialNetworkInfo.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\UserProfileSocialNetworkInfo.cs",
-              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\entities\\UserProfileSocialNetworkInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:10:59.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAAwEYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T08:19:19.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FancierProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
-              "RelativeDocumentMoniker": "FancierProfilePage.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
-              "RelativeToolTip": "FancierProfilePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T08:47:01.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ExtraInfo.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
-              "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
-              "RelativeToolTip": "ExtraInfo\\ExtraInfo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T10:18:16.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VerifiedAccount.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml",
-              "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml",
-              "RelativeToolTip": "ExtraInfo\\VerifiedAccount.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T10:50:02.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FancierProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "FancierProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
-              "RelativeToolTip": "FancierProfilePage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T08:47:07.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ForgotPasswordPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\ForgotPasswordPage.xaml",
-              "RelativeDocumentMoniker": "LogIn\\ForgotPasswordPage.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\ForgotPasswordPage.xaml",
-              "RelativeToolTip": "LogIn\\ForgotPasswordPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T14:08:27.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SignIn.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignIn.xaml",
-              "RelativeDocumentMoniker": "LogIn\\SignIn.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignIn.xaml",
-              "RelativeToolTip": "LogIn\\SignIn.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T14:08:30.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\Window1.xaml",
-              "RelativeDocumentMoniker": "LogIn\\Window1.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\Window1.xaml",
-              "RelativeToolTip": "LogIn\\Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T14:08:34.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SignUpPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUpPage.xaml",
-              "RelativeDocumentMoniker": "LogIn\\SignUpPage.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUpPage.xaml",
-              "RelativeToolTip": "LogIn\\SignUpPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T14:08:32.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LikedPosts.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\LikedPosts.xaml",
-              "RelativeDocumentMoniker": "Statistics\\LikedPosts.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\LikedPosts.xaml",
-              "RelativeToolTip": "Statistics\\LikedPosts.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T17:05:37.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Statistics.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\Statistics.xaml",
-              "RelativeDocumentMoniker": "Statistics\\Statistics.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\Statistics.xaml",
-              "RelativeToolTip": "Statistics\\Statistics.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T17:12:06.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PaymentForm.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml",
-              "RelativeDocumentMoniker": "ExtraInfo\\PaymentForm.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml",
-              "RelativeToolTip": "ExtraInfo\\PaymentForm.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T10:49:57.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Statistics.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\Statistics.xaml.cs",
-              "RelativeDocumentMoniker": "Statistics\\Statistics.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\Statistics.xaml.cs",
-              "RelativeToolTip": "Statistics\\Statistics.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:14:29.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PaymentConfirmed.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml.cs",
-              "RelativeDocumentMoniker": "ExtraInfo\\PaymentConfirmed.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml.cs",
-              "RelativeToolTip": "ExtraInfo\\PaymentConfirmed.xaml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAASwDoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:32:01.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "LikedPosts.g.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs",
-              "RelativeToolTip": "obj\\Debug\\net8.0-windows\\Statistics\\LikedPosts.g.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAwwEYAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:03:03.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "LikedPosts.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\LikedPosts.xaml.cs",
-              "RelativeDocumentMoniker": "Statistics\\LikedPosts.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\Statistics\\LikedPosts.xaml.cs",
-              "RelativeToolTip": "Statistics\\LikedPosts.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:11:35.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserControl1.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl1.xaml",
-              "RelativeDocumentMoniker": "UserControl1.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl1.xaml",
-              "RelativeToolTip": "UserControl1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:01.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserControl3.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl3.xaml",
-              "RelativeDocumentMoniker": "UserControl3.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl3.xaml",
-              "RelativeToolTip": "UserControl3.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:20.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PaymentConfirmed.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml",
-              "RelativeDocumentMoniker": "ExtraInfo\\PaymentConfirmed.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml",
-              "RelativeToolTip": "ExtraInfo\\PaymentConfirmed.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T10:49:54.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:12:23.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "UserControl4.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl4.xaml",
-              "RelativeDocumentMoniker": "UserControl4.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl4.xaml",
-              "RelativeToolTip": "UserControl4.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:28.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "UserControl5.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl5.xaml",
-              "RelativeDocumentMoniker": "UserControl5.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl5.xaml",
-              "RelativeToolTip": "UserControl5.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:36.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "UserControl2.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl2.xaml",
-              "RelativeDocumentMoniker": "UserControl2.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl2.xaml",
-              "RelativeToolTip": "UserControl2.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:09.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserControl6.xaml",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl6.xaml",
-              "RelativeDocumentMoniker": "UserControl6.xaml",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl6.xaml",
-              "RelativeToolTip": "UserControl6.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-12T08:24:47.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserControl6.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl6.xaml.cs",
-              "RelativeDocumentMoniker": "UserControl6.xaml.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\UserControl6.xaml.cs",
-              "RelativeToolTip": "UserControl6.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T08:30:42.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\District 3 App\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T08:19:15.671Z"
+              "WhenOpened": "2024-04-13T11:35:25.31Z"
             }
           ]
         },
         {
-          "DockedWidth": 206,
+          "DockedWidth": 374,
           "SelectedChildIndex": -1,
           "Children": [
             {
