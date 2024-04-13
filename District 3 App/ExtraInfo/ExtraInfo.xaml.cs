@@ -145,20 +145,20 @@ namespace District_3_App.ExtraInfo
         private void SettingsPrivacyButton_Click(object sender, RoutedEventArgs e)
         {
             var settingsPrivacyUserControl = new SettingsPrivacy_UserControl(currentConnectedUser, profileNetworkInfoService);
-            Grid.SetColumn(settingsPrivacyUserControl, 2);
-            Grid.SetRow(settingsPrivacyUserControl, 0);
+            Grid.SetColumn(settingsPrivacyUserControl, 1);
+            Grid.SetRow(settingsPrivacyUserControl, 1);
             Grid.SetRowSpan(settingsPrivacyUserControl, 4);
-            extraInfoGrid.Children.Clear();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(settingsPrivacyUserControl);
         }
 
         private void FancierProfileButton_Click(object sender, RoutedEventArgs e)
         {
             var paymentForm = new FancierProfilePage();
-            Grid.SetColumn(paymentForm, 2);
-            Grid.SetRow(paymentForm, 0);
+            Grid.SetColumn(paymentForm, 1);
+            Grid.SetRow(paymentForm, 1);
             Grid.SetRowSpan(paymentForm, 4);
-            extraInfoGrid.Children.Clear();
+            //.Children.Clear();
             extraInfoGrid.Children.Add(paymentForm);
         }
 
@@ -174,12 +174,13 @@ namespace District_3_App.ExtraInfo
 
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new VerifiedAccount();
-            Grid.SetColumn(newContent, 2);
-            Grid.SetRow(newContent, 0);
-            Grid.SetRowSpan(newContent, 4);
-            extraInfoGrid.Children.Clear();
+            var newContent = new TestSth();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(newContent);
+            Grid.SetColumn(newContent, 1);
+            Grid.SetRow(newContent, 1);
+            Grid.SetRowSpan(newContent, 4);
+
         }
 
         private void FriendsSettingsButton_Click(object sender, RoutedEventArgs e)
@@ -190,18 +191,20 @@ namespace District_3_App.ExtraInfo
         private void LikedPostsButton_Click(object sender, RoutedEventArgs e)
         {
             var likedPosts = new LikedPosts();
-            Grid.SetColumn(likedPosts, 0);
+            Grid.SetColumn(likedPosts, 1);
+            Grid.SetRow(likedPosts, 1);
             Grid.SetRowSpan(likedPosts, 4);
-            extraInfoGrid.Children.Clear();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(likedPosts);
         }
 
         private void StatisticsButton_Click(object sender, RoutedEventArgs e)
         {
             var statistics = new Statistics.Statistics();
-            Grid.SetColumn(statistics, 2);
+            Grid.SetColumn(statistics, 1);
+            Grid.SetRow(statistics, 1);
             Grid.SetRowSpan(statistics, 4);
-            extraInfoGrid.Children.Clear();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(statistics);
         }
     }

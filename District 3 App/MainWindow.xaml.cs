@@ -65,7 +65,7 @@ namespace District_3_App
             //Popup2.IsOpen = false;
             //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
             //ines
-            mainGrid.Children.Clear();
+            //mainGrid.Children.Clear();
             var newContent = new ExtraInfo.ExtraInfo();
             Grid.SetColumn(newContent, 2);
             Grid.SetRow(newContent, 0);   
