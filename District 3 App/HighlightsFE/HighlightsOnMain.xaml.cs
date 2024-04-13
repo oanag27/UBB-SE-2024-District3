@@ -40,7 +40,8 @@ namespace District_3_App.HighlightsFE
 
 
             SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
-            List<Highlight> highlights = snapshotsService.getHighlightsOfUser();
+            List<Highlight> highlights = snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
+
 
             if (highlights == null || highlights.Count == 0)
             {

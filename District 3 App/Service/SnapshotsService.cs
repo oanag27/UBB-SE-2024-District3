@@ -37,7 +37,7 @@ namespace District_3_App.Service
             }
             while (newHighlightCover == null)
             {
-                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Object()))
+                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")))
                 {
                     if (photoPost != null)
                     {

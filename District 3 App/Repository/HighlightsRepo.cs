@@ -213,7 +213,7 @@ namespace District_3_App.Repository
                 if (userHighlight.ContainsKey(highlightId.ToString()))
                 {
                     Highlight highlight = userHighlight[highlightId.ToString()];
-                    foreach (var post in GetConnectedUserPosts(null))
+                    foreach (var post in GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")))
                     {
                         if (highlight.getPosts().Contains(post.getPostId()))
                         {

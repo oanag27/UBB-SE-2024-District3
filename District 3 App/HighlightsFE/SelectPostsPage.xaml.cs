@@ -38,7 +38,7 @@ namespace District_3_App.HighlightsFE
         public SelectPostsPage()
         {
             InitializeComponent();
-            List<MockPhotoPost> posts = highlightsRepo.GetConnectedUserPosts(new User());
+            List<MockPhotoPost> posts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111"));
 
             foreach (MockPhotoPost post in posts)
             {

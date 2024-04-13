@@ -43,7 +43,7 @@ namespace District_3_App.HighlightsFE
         private void LoadHighlights()
         {
             HighlightsRepo highlightsRepo = new HighlightsRepo();
-            List<Highlight> highlights = highlightsRepo.GetHighlightsOfUser(new Guid());
+            List<Highlight> highlights = highlightsRepo.GetHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
             if (highlights == null || highlights.Count == 0)
             {
                 MessageBox.Show("No highlights found.");
