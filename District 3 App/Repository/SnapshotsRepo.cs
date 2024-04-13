@@ -35,5 +35,9 @@ namespace District_3_App.Repository
         public List<Highlight> GetHighlightsOfUser(){
             return highlightsRepo.GetHighlights();
         }
+        public Highlight GetHighlight(Guid highlightId)
+        {
+            return highlightsRepo.GetHighlight(highlightId);
+        }
     }
 }

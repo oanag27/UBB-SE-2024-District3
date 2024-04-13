@@ -1,5 +1,6 @@
 ﻿using District_3_App.Enitities;
 using District_3_App.Repository;
+using District_3_App.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,16 +35,21 @@ namespace District_3_App.HighlightsFE
         public List<HighlightInfo> Highlights { get; set; }
         private List<Guid> selectedPostsGuid = new List<Guid>();
         private List<Guid> selectedHighlightsGUID = new List<Guid>();
+       
+        private SnapshotsService snapshotsService;
+
         public SelectHighlight(List<Guid> selectedPostsGuids)
         {
             this.selectedPostsGuid = selectedPostsGuids;
+            HighlightsRepo highlightsRepo = new HighlightsRepo();
+            SnapshotsRepo snapshotsRepo =new SnapshotsRepo(highlightsRepo);
+            this.snapshotsService=new SnapshotsService(snapshotsRepo);
             InitializeComponent();
             LoadHighlights();
         }
         private void LoadHighlights()
         {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            List<Highlight> highlights = highlightsRepo.GetHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
+            List<Highlight> highlights=snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
             if (highlights == null || highlights.Count == 0)
             {
                 MessageBox.Show("No highlights found.");
@@ -97,15 +103,15 @@ namespace District_3_App.HighlightsFE
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
             if (selectedHighlightsGUID.Count == 0) { return; }
-            //CasualProfileService casualProfileService = new CasualProfileService();
-            //foreach(Guid highlightGuid in  selectedHighlightsGUID)
-            //{
-            //    if (highlightGuid == Guid.Empty) { continue; }
-            //    foreach (Guid postId in selectedPostsGuid)
-            //    {
-            //       //backend deja
-            //    }
-            //}
+
+            foreach (Guid highlightGuid in selectedHighlightsGUID)
+            {
+                if (highlightGuid == Guid.Empty) { continue; }
+                foreach (Guid postId in selectedPostsGuid)
+                {
+                    snapshotsService.addPostToHighlight(highlightGuid, postId);
+                }
+            }
             this.Close();
         }
 

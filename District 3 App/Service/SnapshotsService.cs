@@ -69,8 +69,13 @@ namespace District_3_App.Service
         {
             return snapshotsRepo.removePostFromHighlight(postId, highlightId);
         }
-        public List<Highlight> getHighlightsOfUser(){
+        public List<Highlight> getHighlightsOfUser(Guid guid)
+        {
             return snapshotsRepo.GetHighlightsOfUser();
+        }
+        public Highlight GetHighlight(Guid highlightId)
+        {
+            return snapshotsRepo.GetHighlight(highlightId);
         }
     }
 }

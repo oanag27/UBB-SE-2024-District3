@@ -22,12 +22,17 @@ namespace District_3_App.HighlightsFE
 {
     public partial class CreateNewHighlight : Window
     {
-        private List<Guid> guids = new List<Guid>();
+        private List<Guid> guids = new();
         private string newHighlightName;
         private string newHighlightCover;
-
+        private SnapshotsService snapshotsService;
         public CreateNewHighlight(List<Guid> selectedPostsGuids)
         {
+            HighlightsRepo highlightsRepo = new HighlightsRepo();
+            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
+            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+            snapshotsService = casualProfileService.getSnapshotsService();
             InitializeComponent();
             guids = selectedPostsGuids;
             int nrPosts=guids.Count;
@@ -53,12 +58,7 @@ namespace District_3_App.HighlightsFE
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
-            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
-
-            SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
+            
             try
             {
                 snapshotsService.addHighlight(newHighlightName, newHighlightCover, guids);

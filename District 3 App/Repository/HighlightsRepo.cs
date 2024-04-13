@@ -99,9 +99,13 @@ namespace District_3_App.Repository
             string path4 = "/Images/poster.jpeg";
 
             MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", path1);
+            post1.setPostId(new Guid("11111111-1111-1111-1111-111111111111"));
             MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", path2);
+            post2.setPostId(new Guid("22222222-2222-2222-2222-222222222222"));
             MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", path3);
+            post3.setPostId(new Guid("33333333-3333-3333-3333-333333333333"));
             MockPhotoPost post4 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 4", "Description 4", path4);
+            post4.setPostId(new Guid("44444444-4444-4444-4444-444444444444"));
 
             posts.Add(post1);
             posts.Add(post2);
