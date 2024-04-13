@@ -19,7 +19,7 @@
                 <TextBlock Text="Edit Profile" FontSize="20"/>
             </StackPanel>
         </Button>
-        <Button Grid.Column="1" x:Name="SettingsPrivacyButton" Click="SettingsPrivacyButton_Click" Height="46" Margin="4,86,0,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
+        <Button Grid.Column="1" x:Name="SettingsPrivacyButton" Click="SettingsPrivacyButton_Click" Height="50" Margin="4,86,0,0" VerticalAlignment="Top" Background="White" Foreground="#47525E" BorderBrush="DarkGray" BorderThickness="0" HorizontalContentAlignment="Left">
             <StackPanel Orientation="Horizontal" Height="70" Width="181">
                 <Image Source="\images\settings.png" Width="16" Height="16" Margin="0,0,4,0" />
                 <TextBlock Text="Settings and Privacy" FontSize="20" Width="164" Height="26"/>
