@@ -156,9 +156,9 @@ namespace District_3_App.ExtraInfo
         {
             var paymentForm = new FancierProfilePage();
             Grid.SetColumn(paymentForm, 2);
-            Grid.SetRow(paymentForm, 0);
+            Grid.SetRow(paymentForm, 1);
             Grid.SetRowSpan(paymentForm, 4);
-            extraInfoGrid.Children.Clear();
+            //.Children.Clear();
             extraInfoGrid.Children.Add(paymentForm);
         }
 
@@ -174,12 +174,13 @@ namespace District_3_App.ExtraInfo
 
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new VerifiedAccount();
-            Grid.SetColumn(newContent, 2);
-            Grid.SetRow(newContent, 0);
-            Grid.SetRowSpan(newContent, 4);
-            extraInfoGrid.Children.Clear();
+            var newContent = new TestSth();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(newContent);
+            Grid.SetColumn(newContent, 2);
+            Grid.SetRow(newContent, 1);
+            Grid.SetRowSpan(newContent, 4);
+
         }
 
         private void FriendsSettingsButton_Click(object sender, RoutedEventArgs e)
@@ -190,9 +191,10 @@ namespace District_3_App.ExtraInfo
         private void LikedPostsButton_Click(object sender, RoutedEventArgs e)
         {
             var likedPosts = new LikedPosts();
-            Grid.SetColumn(likedPosts, 0);
+            Grid.SetColumn(likedPosts, 2);
+            Grid.SetRow(likedPosts, 1);
             Grid.SetRowSpan(likedPosts, 4);
-            extraInfoGrid.Children.Clear();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(likedPosts);
         }
 
@@ -200,8 +202,9 @@ namespace District_3_App.ExtraInfo
         {
             var statistics = new Statistics.Statistics();
             Grid.SetColumn(statistics, 2);
+            Grid.SetRow(statistics, 1);
             Grid.SetRowSpan(statistics, 4);
-            extraInfoGrid.Children.Clear();
+            //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(statistics);
         }
     }
