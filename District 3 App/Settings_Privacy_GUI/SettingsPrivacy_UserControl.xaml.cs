@@ -127,7 +127,7 @@ namespace District_3_App.Settings_Privacy_GUI
 
 
 
-            testSelectedItem.Text = selectedGroupName;
+            //testSelectedItem.Text = selectedGroupName;
         }
 
         private void mantainGroupsButton_Click(object sender, RoutedEventArgs e)
