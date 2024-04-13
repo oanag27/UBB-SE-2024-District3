@@ -1,5 +1,6 @@
 ﻿using District_3_App.Enitities;
 using District_3_App.Repository;
+using District_3_App.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,6 @@ using System.Windows.Shapes;
 
 namespace District_3_App.HighlightsFE
 {
-    /// <summary>
-    /// Interaction logic for HighlightsOnMain.xaml
-    /// </summary>
     public partial class HighlightsOnMain : UserControl
     {
         public List<HighlightInfo> Highlights { get; set; }
@@ -36,7 +34,14 @@ namespace District_3_App.HighlightsFE
         private void LoadHighlights()
         {
             HighlightsRepo highlightsRepo = new HighlightsRepo();
-            List<Highlight> highlights = highlightsRepo.getHighlights();
+            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
+            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+
+
+            SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
+            List<Highlight> highlights = snapshotsService.getHighlightsOfUser();
+
             if (highlights == null || highlights.Count == 0)
             {
                 MessageBox.Show("No highlights found.");
