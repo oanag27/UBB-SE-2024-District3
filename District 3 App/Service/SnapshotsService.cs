@@ -37,7 +37,7 @@ namespace District_3_App.Service
             }
             while (newHighlightCover == null)
             {
-                foreach (MockPhotoPost photoPost in repo.getConnectedUserPosts(new Object()))
+                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Object()))
                 {
                     if (photoPost != null)
                     {
@@ -53,7 +53,7 @@ namespace District_3_App.Service
 
             foreach (Guid postId in guids)
             {
-                repo.addPostToHighlight(postId, h.getHighlightId());
+                repo.AddPostToHighlight(postId, h.getHighlightId());
             }
             return true;
         }

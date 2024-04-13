@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\highlightsonmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\highlightsonmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\seehighlightposts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\seehighlightposts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\highlightsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\profilesocialnetworkinfostuff\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:profilesocialnetworkinfostuff\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\selecthighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\selecthighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\selectpostspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\selectpostspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\entities\\highlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:entities\\highlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\highlightsonmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\40723\\source\\repos\\913-herta-diana\\ubb-se-2024-district3\\district 3 app\\highlightsfe\\selectpostspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\selectpostspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:highlightsfe\\createnewhighlight.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\fancierprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\service\\casualprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:service\\casualprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:repository\\snapshotsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:service\\snapshotsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,20 +138,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateNewHighlight.xaml",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
+              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
+              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-13T12:20:08.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeeHighlightPosts.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SeeHighlightPosts.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\SeeHighlightPosts.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SeeHighlightPosts.xaml.cs",
+              "RelativeToolTip": "HighlightsFE\\SeeHighlightPosts.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwCMAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T18:09:36.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CreateNewHighlight.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs*",
+              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml.cs*",
+              "ViewState": "AQIAADsAAABQWuk9vaQowFQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:45:48.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HighlightsRepo.cs",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs",
               "RelativeDocumentMoniker": "Repository\\HighlightsRepo.cs",
-              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs*",
-              "RelativeToolTip": "Repository\\HighlightsRepo.cs*",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAAAJYAAACcAAAA",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs",
+              "RelativeToolTip": "Repository\\HighlightsRepo.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAFgAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T16:41:42.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "Highlight.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Entities\\Highlight.cs",
+              "RelativeDocumentMoniker": "Entities\\Highlight.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Entities\\Highlight.cs",
+              "RelativeToolTip": "Entities\\Highlight.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:28:37.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HighlightsOnMain.xaml",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml",
               "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml",
@@ -143,28 +214,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "SelectHighlight.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectHighlight.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\SelectHighlight.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectHighlight.xaml.cs",
+              "RelativeToolTip": "HighlightsFE\\SelectHighlight.xaml.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAqwG8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T18:17:20.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SnapshotsService.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
+              "RelativeDocumentMoniker": "Service\\SnapshotsService.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
+              "RelativeToolTip": "Service\\SnapshotsService.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwDcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:35:25.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\User.cs",
+              "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\User.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\User.cs",
+              "RelativeToolTip": "ProfileSocialNetworkInfoStuff\\entities\\User.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:37:17.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SelectPostsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml.cs",
+              "RelativeDocumentMoniker": "HighlightsFE\\SelectPostsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml.cs",
+              "RelativeToolTip": "HighlightsFE\\SelectPostsPage.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAqwCoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T18:15:39.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "HighlightsOnMain.xaml.cs",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml.cs",
               "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml.cs",
               "RelativeToolTip": "HighlightsFE\\HighlightsOnMain.xaml.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowD4AAAA5AAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAADwvz4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T12:03:55.104Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "SelectPostsPage.xaml",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml",
               "RelativeDocumentMoniker": "HighlightsFE\\SelectPostsPage.xaml",
@@ -176,42 +291,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateNewHighlight.xaml",
-              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
-              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml",
-              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
-              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T12:20:08.609Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "SnapshotsRepo.cs",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\SnapshotsRepo.cs",
               "RelativeDocumentMoniker": "Repository\\SnapshotsRepo.cs",
               "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Repository\\SnapshotsRepo.cs",
               "RelativeToolTip": "Repository\\SnapshotsRepo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:53:23.255Z"
+              "WhenOpened": "2024-04-13T11:53:23.255Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateNewHighlight.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
-              "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml.cs",
-              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
-              "RelativeToolTip": "HighlightsFE\\CreateNewHighlight.xaml.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAwEQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:45:48.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "FancierProfilePage.xaml",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
               "RelativeDocumentMoniker": "FancierProfilePage.xaml",
@@ -222,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "FancierProfilePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "FancierProfilePage.xaml.cs",
@@ -234,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "CasualProfileService.cs",
               "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\CasualProfileService.cs",
               "RelativeDocumentMoniker": "Service\\CasualProfileService.cs",
@@ -243,18 +336,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T11:36:12.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SnapshotsService.cs",
-              "DocumentMoniker": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
-              "RelativeDocumentMoniker": "Service\\SnapshotsService.cs",
-              "ToolTip": "C:\\Users\\40723\\source\\repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
-              "RelativeToolTip": "Service\\SnapshotsService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:35:25.31Z"
             }
           ]
         },

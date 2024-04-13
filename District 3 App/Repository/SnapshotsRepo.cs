@@ -18,22 +18,22 @@ namespace District_3_App.Repository
 
 
         public bool addHighlight(Highlight highlight){
-            return highlightsRepo.addHighlight(highlight);
+            return highlightsRepo.AddHighlight(highlight);
         }
         public bool removeHighlight(Highlight highlight) {
-            return highlightsRepo.removeHighlight(highlight);
+            return highlightsRepo.RemoveHighlight(highlight.getHighlightId());
         }
         public bool addPostToHighlight(Guid highlightId, Guid postId){
-            return highlightsRepo.addPostToHighlight(postId, highlightId);
+            return highlightsRepo.AddPostToHighlight(highlightId, postId);
         }
         public bool removePostFromHighlight(Guid highlightId, Guid postId){
-            return highlightsRepo.removePostFromHighlight(postId, highlightId); 
+            return highlightsRepo.RemovePostFromHighlight(highlightId, postId);
         }
         public HighlightsRepo GetHighlightsRepo(){
             return highlightsRepo;
         }
         public List<Highlight> GetHighlightsOfUser(){
-            return highlightsRepo.getHighlights();
+            return highlightsRepo.GetHighlights();
         }
     }
 }

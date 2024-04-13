@@ -1,4 +1,5 @@
 ﻿using District_3_App.Enitities.Mocks;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.Repository;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace District_3_App.HighlightsFE
         public SelectPostsPage()
         {
             InitializeComponent();
-            List<MockPhotoPost> posts = highlightsRepo.getConnectedUserPosts(new object());
+            List<MockPhotoPost> posts = highlightsRepo.GetConnectedUserPosts(new User());
 
             foreach (MockPhotoPost post in posts)
             {

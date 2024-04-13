@@ -27,8 +27,9 @@ namespace District_3_App.HighlightsFE
         public SeeHighlightPosts(Guid highlightId)
         {
             InitializeComponent();
-            Highlight h = highlightsRepo.getHighlight(highlightId);
-            postsToShow = highlightsRepo.getPostsOfHighlight(highlightId);
+            Highlight h = highlightsRepo.GetHighlight(highlightId);
+            List<MockPhotoPost> postsToShow = highlightsRepo.GetPostsOfHighlight(highlightId);
+
             foreach (MockPhotoPost post in postsToShow)
             {
 
