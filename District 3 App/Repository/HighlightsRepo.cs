@@ -17,6 +17,7 @@ namespace District_3_App.Repository
         public HighlightsRepo()
         {
             filePath = generateDefaultFilePath();
+            Console.WriteLine(filePath);
             if (!File.Exists(filePath))
             {
                 createXml(filePath);
@@ -37,51 +38,73 @@ namespace District_3_App.Repository
 
         private void loadHighlights(string filePath)
         {
+            Console.WriteLine("Reading highlights from file: " + filePath);
+
             XDocument xDocument = XDocument.Load(filePath);
             XElement root = xDocument.Element("Highlights");
             if (root.HasElements)
             {
-                foreach (var elem in root.Elements("Highlight"))
+                foreach (var userElem in root.Elements("User"))
                 {
-                    Highlight highlight = new Highlight();
-                    highlight.setUserId (Guid.Parse((string)elem.Attribute("userId")));
-                    highlight.setGuid( Guid.Parse((string)elem.Attribute("guid")));
-                    highlight.setName ( (string)elem.Attribute("name"));
-                    highlight.setListPosts( elem.Element("posts").Elements("post").Select(e => e.Value).ToList());
-                    highlight.setCover( (string)elem.Attribute("cover"));
-
-                    string userId = highlight.getUserId().ToString();
-                    if (!userHighlights.ContainsKey(userId))
+                    string userId = (string)userElem.Attribute("userId");
+                    foreach (var highlightElem in userElem.Elements("Highlight"))
                     {
-                        userHighlights[userId] = new Dictionary<string, Highlight>();
+                        Highlight highlight = new Highlight();
+                        highlight.setUserId(Guid.Parse(userId));
+                        highlight.setGuid(Guid.Parse((string)highlightElem.Attribute("guid")));
+                        highlight.setName((string)highlightElem.Attribute("name"));
+                        highlight.setListPosts(highlightElem.Element("posts").Elements("post").Select(e => Guid.Parse(e.Value)).ToList());
+                        highlight.setCover((string)highlightElem.Attribute("cover"));
+
+                        if (!userHighlights.ContainsKey(userId))
+                        {
+                            userHighlights[userId] = new Dictionary<string, Highlight>();
+                        }
+                        userHighlights[userId].Add(highlight.getHighlightId().ToString(), highlight);
                     }
-                    userHighlights[userId].Add(userId, highlight);
                 }
             }
         }
+
 
         public void SaveHighlightsToXml()
         {
             try
             {
-                XDocument xDocument = new XDocument(new XElement("Highlights"));
+                XDocument xDocument;
+
+                if (File.Exists(filePath))
+                {
+                    xDocument = XDocument.Load(filePath);
+                }
+                else
+                {
+                    xDocument = new XDocument(new XElement("Highlights"));
+                }
+
                 XElement root = xDocument.Element("Highlights");
-                root.RemoveAll();
+                root?.RemoveAll();
+
                 foreach (var userHighlight in userHighlights)
                 {
+                    XElement userElement = new XElement("User", new XAttribute("userId", userHighlight.Key));
+
                     foreach (var highlight in userHighlight.Value)
                     {
                         Highlight highlight1 = highlight.Value;
                         XElement highlightElement = new XElement("Highlight",
-                            new XAttribute("userId", highlight1.getUserId()),
-                            new XAttribute("guid", highlight1.getUserId()),
-                            new XAttribute("name", highlight1.getUserId()),
+                            new XAttribute("userId", userHighlight.Key), // Keep the userId attribute for the User element
+                            new XAttribute("guid", highlight1.getHighlightId()), // Use the highlight's guid
+                            new XAttribute("name", highlight1.getName()), // Use the highlight's name
                             new XElement("posts", highlight1.getPosts().Select(p => new XElement("post", p))),
                             new XAttribute("cover", highlight1.getCover()));
 
-                        root.Add(highlightElement);
+                        userElement.Add(highlightElement);
                     }
+
+                    root.Add(userElement);
                 }
+
                 xDocument.Save(filePath);
             }
             catch (Exception ex)
@@ -89,6 +112,7 @@ namespace District_3_App.Repository
                 Console.WriteLine("Error saving highlights to XML: " + ex.Message);
             }
         }
+
 
         public List<MockPhotoPost> GetConnectedUserPosts(object user)
         {
@@ -112,6 +136,8 @@ namespace District_3_App.Repository
             posts.Add(post3);
             posts.Add(post4);
 
+
+            
             return posts;
         }
 

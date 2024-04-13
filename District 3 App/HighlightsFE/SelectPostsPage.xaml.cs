@@ -91,5 +91,18 @@ namespace District_3_App.HighlightsFE
             selectHighlight.ShowDialog();
 
         }
+
+        private void DoneButton_Click(object sender, RoutedEventArgs e)
+        {
+            Panel parentContainer = Parent as Panel;
+            if (parentContainer != null)
+            {
+
+                parentContainer.Children.Remove(this);
+
+            }
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
     }
 }
