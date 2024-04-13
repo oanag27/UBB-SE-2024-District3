@@ -119,3 +119,16 @@ E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\Statistics\Statistics.g.cs
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\Statistics\LikedPosts.baml
 E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\Statistics\Statistics.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\FancierProfilePage.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\CreateNewHighlight.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\HighlightsOnMain.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SeeHighlightPosts.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SelectHighlight.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SelectPostsPage.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\FancierProfilePage.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\CreateNewHighlight.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\HighlightsOnMain.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SeeHighlightPosts.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SelectHighlight.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\HighlightsFE\SelectPostsPage.baml

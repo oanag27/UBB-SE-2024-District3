@@ -60,7 +60,12 @@ namespace District_3_App.ExtraInfo
 
         private void FancierProfileButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var paymentForm = new FancierProfilePage();
+            Grid.SetColumn(paymentForm, 2);
+            Grid.SetRow(paymentForm, 0);
+            Grid.SetRowSpan(paymentForm, 4);
+            VerifiedAccountGrid.Children.Clear();
+            VerifiedAccountGrid.Children.Add(paymentForm);
         }
 
         private void SavedPostsButton_Click(object sender, RoutedEventArgs e)
