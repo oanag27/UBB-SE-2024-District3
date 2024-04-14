@@ -9,7 +9,14 @@
              Background="White">
     <Grid>
         <Label x:Name="PostsLabel" Content="Posts" HorizontalAlignment="Left" Margin="50,24,0,0" VerticalAlignment="Top" Foreground="#FF47525E" Height="46" Width="117" FontSize="28"/>
-        <Button x:Name="SubmitPostsButton" Content="Submit" HorizontalAlignment="Right" Margin="0,64,100,0" VerticalAlignment="Top" Width="94" Click="SubmitPostsButton_Click" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6">
+        <Button x:Name="SubmitPostsButton" Content="Submit" HorizontalAlignment="Right" Margin="0,46,101,0" VerticalAlignment="Top" Width="94" Click="SubmitPostsButton_Click" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="DoneButton" Content="Done" HorizontalAlignment="Right" Margin="0,84,99,0" VerticalAlignment="Top" Width="94" Click="DoneButton_Click" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="3"/>

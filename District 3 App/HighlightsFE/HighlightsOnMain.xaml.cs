@@ -1,4 +1,5 @@
 ﻿using District_3_App.Enitities;
+using District_3_App.Enitities.Mocks;
 using District_3_App.Repository;
 using District_3_App.Service;
 using System;
@@ -21,40 +22,49 @@ namespace District_3_App.HighlightsFE
     public partial class HighlightsOnMain : UserControl
     {
         public List<HighlightInfo> Highlights { get; set; }
-        private List<Guid> selectedPostsGuid = new List<Guid>();
-        private List<Guid> selectedHighlightsGUID = new List<Guid>();
         private Guid? currentlyOpenHighlightId = null;
+        private SnapshotsService snapshotsService;
 
         public HighlightsOnMain()
         {
+            HighlightsRepo highlightsRepo = new HighlightsRepo();
+            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
+            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+            snapshotsService = casualProfileService.getSnapshotsService();
             InitializeComponent();
             LoadHighlights();
         }
 
         private void LoadHighlights()
         {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
-            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
-
-
-            SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
-            List<Highlight> highlights = snapshotsService.getHighlightsOfUser();
+            List<Highlight> highlights = snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
 
             if (highlights == null || highlights.Count == 0)
             {
-                MessageBox.Show("No highlights found.");
+                Console.WriteLine("No highlights found.");
             }
 
             Highlights = new List<HighlightInfo>();
             foreach (Highlight highlight in highlights)
             {
-                Highlights.Add(new HighlightInfo(highlight.getName(), highlight.getCover(), highlight.getHighlightId()));
+                HighlightsRepo highlightsRepo = new HighlightsRepo();
+                List<MockPhotoPost> userPosts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")); 
+                MockPhotoPost coverPost = userPosts.FirstOrDefault(post => post.getPostId().ToString() == highlight.getCover());
+
+                if (coverPost != null)
+                {
+                    Highlights.Add(new HighlightInfo(highlight.getName(), coverPost.getPhoto(), highlight.getHighlightId()));
+                }
+                else
+                { 
+                    Highlights.Add(new HighlightInfo(highlight.getName(), "/images/black.png", highlight.getHighlightId()));
+                }
             }
 
             DataContext = Highlights;
         }
+
 
         private void SelectHighlight_Click(object sender, RoutedEventArgs e)
         {

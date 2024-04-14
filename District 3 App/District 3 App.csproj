@@ -12,6 +12,9 @@
   <ItemGroup>
     <None Remove="images\app_logo.png" />
     <None Remove="images\avatar.png" />
+    <None Remove="images\bee1.jpg" />
+    <None Remove="images\bee2.jpg" />
+    <None Remove="images\bee3.jpg" />
     <None Remove="images\bell.png" />
     <None Remove="images\closeFriends.png" />
     <None Remove="images\explore.png" />
@@ -19,9 +22,12 @@
     <None Remove="images\friends.png" />
     <None Remove="images\hidePasswordIcon.png" />
     <None Remove="images\home.png" />
+    <None Remove="images\katniss.jpg" />
     <None Remove="images\likedPosts.png" />
     <None Remove="images\menu.png" />
+    <None Remove="images\peeta.jpeg" />
     <None Remove="images\plus.png" />
+    <None Remove="images\poster.jpeg" />
     <None Remove="images\reel.png" />
     <None Remove="images\right-arrow.png" />
     <None Remove="images\saved.png" />
@@ -29,6 +35,7 @@
     <None Remove="images\send.png" />
     <None Remove="images\settings.png" />
     <None Remove="images\showPasswordIcon.png" />
+    <None Remove="images\snow.jpg" />
     <None Remove="images\square.png" />
     <None Remove="images\square1.png" />
     <None Remove="images\statistics.png" />
@@ -41,6 +48,8 @@
   <ItemGroup>
     <Resource Include="images\app_logo.png" />
     <Resource Include="images\avatar.png" />
+    <Resource Include="images\bee2.jpg" />
+    <Resource Include="images\bee3.jpg" />
     <Resource Include="images\bell.png" />
     <Resource Include="images\closeFriends.png" />
     <Resource Include="images\explore.png" />
@@ -48,9 +57,12 @@
     <Resource Include="images\friends.png" />
     <Resource Include="images\hidePasswordIcon.png" />
     <Resource Include="images\home.png" />
+    <Resource Include="images\katniss.jpg" />
     <Resource Include="images\likedPosts.png" />
     <Resource Include="images\menu.png" />
+    <Resource Include="images\peeta.jpeg" />
     <Resource Include="images\plus.png" />
+    <Resource Include="images\poster.jpeg" />
     <Resource Include="images\reel.png" />
     <Resource Include="images\right-arrow.png" />
     <Resource Include="images\saved.png" />
@@ -58,6 +70,7 @@
     <Resource Include="images\send.png" />
     <Resource Include="images\settings.png" />
     <Resource Include="images\showPasswordIcon.png" />
+    <Resource Include="images\snow.jpg" />
     <Resource Include="images\square.png" />
     <Resource Include="images\square1.png" />
     <Resource Include="images\statistics.png" />

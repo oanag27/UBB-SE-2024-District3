@@ -66,8 +66,8 @@ namespace District_3_App
             //Popup2.IsOpen = false;
             //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
             //ines
-            mainGrid.Children.Clear();
-            var newContent = new VerifiedAccount();
+            //mainGrid.Children.Clear();
+            var newContent = new ExtraInfo.ExtraInfo();
             Grid.SetColumn(newContent, 2);
             Grid.SetRow(newContent, 0);   
             Grid.SetRowSpan(newContent, 6);
@@ -91,11 +91,6 @@ namespace District_3_App
             MoreAboutPopup.IsOpen = true;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
         private void onAddHighlight_Click(object sender, RoutedEventArgs e)
         {
             mainGrid.Children.Clear();
@@ -104,6 +99,45 @@ namespace District_3_App
             Grid.SetRow(newContent, 0);    // Place in the first row
             Grid.SetRowSpan(newContent, 4); // Span multiple rows if necessary
             mainGrid.Children.Add(newContent);
+        }
+        private void PostsButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Show PostsPanel and hide ReelsPanel and TagsPanel
+            PostsPanel.Visibility = Visibility.Visible;
+            ReelsPanel.Visibility = Visibility.Collapsed;
+            TagsPanel.Visibility = Visibility.Collapsed;
+        }
+
+        private void ReelsButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Show ReelsPanel and hide PostsPanel and TagsPanel
+            PostsPanel.Visibility = Visibility.Collapsed;
+            ReelsPanel.Visibility = Visibility.Visible;
+            TagsPanel.Visibility = Visibility.Collapsed;
+        }
+
+        private void TagsButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Show TagsPanel and hide PostsPanel and ReelsPanel
+            PostsPanel.Visibility = Visibility.Collapsed;
+            ReelsPanel.Visibility = Visibility.Collapsed;
+            TagsPanel.Visibility = Visibility.Visible;
+        }
+        private bool isDescriptionVisible = false;
+        private void MoreDescriptionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (isDescriptionVisible)
+            {
+                // Hide the additional description
+                AdditionalDescription.Visibility = Visibility.Collapsed;
+                isDescriptionVisible = false;
+            }
+            else
+            {
+                // Show the additional description
+                AdditionalDescription.Visibility = Visibility.Visible;
+                isDescriptionVisible = true;
+            }
         }
     }
 }

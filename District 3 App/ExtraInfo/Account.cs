@@ -13,7 +13,7 @@ namespace District_3_App.ExtraInfo
         private string expirationDate;
         private string cvv;
 
-        public User User { get; private set; }
+        public UserExtraInfo UserExtraInfo { get; private set; }
 
         public string CardNumber
         {
@@ -67,9 +67,9 @@ namespace District_3_App.ExtraInfo
             }
         }
 
-        public Account(User user, string cardNumber, string holderName, string expirationDate, string cvv)
+        public Account(UserExtraInfo user, string cardNumber, string holderName, string expirationDate, string cvv)
         {
-            User = user;
+            UserExtraInfo = user;
             CardNumber = cardNumber;
             HolderName = holderName;
             ExpirationDate = expirationDate;

@@ -24,7 +24,7 @@ namespace District_3_App.ExtraInfo
         public PaymentForm()
         {
             InitializeComponent();
-            Account = new Account(new User("john_doe", "securepassword"), "", "", "", "");
+            Account = new Account(new UserExtraInfo("john_doe", "securepassword"), "", "", "", "");
             DataContext = this;
         }
 
@@ -65,6 +65,7 @@ namespace District_3_App.ExtraInfo
                 var newContent = new PaymentConfirmed();
 
                 CompleteGrid.Children.Clear();
+                Grid.SetColumn(newContent, 1);
                 CompleteGrid.Children.Add(newContent);
             }
         }
