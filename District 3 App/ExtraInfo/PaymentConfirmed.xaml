@@ -11,7 +11,7 @@
         <StackPanel Height="30" Width="200" Orientation="Horizontal" Margin="10 150 10 200" HorizontalAlignment="Center">
             <TextBlock Text="Payment successful" TextAlignment="Center" FontSize="20" Foreground="#47525E" FontWeight="Bold" Width="199"/>
         </StackPanel>
-        <Line X1="-1000" Y1="60" X2="2000" Y2="60" Stroke="#969FAA" StrokeThickness="2" Margin="0 160 0 200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Line X1="-700" Y1="60" X2="2000" Y2="60" Stroke="#969FAA" StrokeThickness="2" Margin="0,174,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="909"/>
         <StackPanel Height="30" Width="200" Orientation="Horizontal" Margin="10 260 0 130" HorizontalAlignment="Center">
             <TextBlock Text="Amount paid: 200$" TextAlignment="Center" FontSize="15" Foreground="#47525E" FontWeight="Bold" Width="199"/>
         </StackPanel>
