@@ -1,4 +1,5 @@
-﻿using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+﻿using District_3_App.CloseFriends_GUI;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
 using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Service;
 using District_3_App.Settings_Privacy_GUI;
@@ -105,6 +106,7 @@ namespace District_3_App.ExtraInfo
 
 
             profileNetworkInfoService.AddBlockedProfileToCurrentUser(profileUser1, blockedProfile2);
+            profileNetworkInfoService.AddBlockedProfileToCurrentUser(profileUser1, blockedProfile4);
             profileNetworkInfoService.AddCloseFriendToCurrentUser(profileUser1, closeFriendProfile2);
 
             profileNetworkInfoService.AddGroupToCurrentUser(profileUser1, group1);
@@ -169,7 +171,12 @@ namespace District_3_App.ExtraInfo
 
         private void CloseFriendsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var closeFriendsUserControl = new CloseFriendsSection_UserControl(currentConnectedUser, profileNetworkInfoService);
+            Grid.SetColumn(closeFriendsUserControl, 1);
+            Grid.SetRow(closeFriendsUserControl, 1);
+            Grid.SetRowSpan(closeFriendsUserControl, 4);
+            //.Children.Clear();
+            extraInfoGrid.Children.Add(closeFriendsUserControl);
         }
 
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)

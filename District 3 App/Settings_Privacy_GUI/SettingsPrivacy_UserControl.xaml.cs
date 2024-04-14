@@ -38,7 +38,7 @@ namespace District_3_App.Settings_Privacy_GUI
             PopulateBlockedAccountsForCurrentUser();
 
 
-            this.profileNetworkInfoService = profileNetworkInfoService;
+            //this.profileNetworkInfoService = profileNetworkInfoService;
         }
 
 
@@ -137,6 +137,95 @@ namespace District_3_App.Settings_Privacy_GUI
 
             settingsPrivacyGrid.Children.Clear();
             settingsPrivacyGrid.Children.Add(mantainGroupsUserControl);
+        }
+
+        
+
+        private void removeBlockedAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            string selectedBlockedUsername = blockedProfilesListView.SelectedItem.ToString();
+            UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
+
+
+
+            profileNetworkInfoService.RemoveBlockedProfileFromCurrentUser(profile, profileNetworkInfoService.GetBlockedProfileByName(profile, selectedBlockedUsername));
+
+
+
+            blockedProfilesListView.Items.Clear(); //reset the list view
+
+
+
+            foreach (var blockedProfile in profile.blockedProfiles)
+            {
+
+                blockedProfilesListView.Items.Add(blockedProfile.user.username);
+                //foreach (var groupMember in group.groupMembers)
+                //{
+                //    groupMembersListView.Items.Add(groupMember.username);
+                //}
+
+            }
+        }
+
+        private void addBlockedAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (usernameToBlockTextBox.Text != "")
+            {
+
+                UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(currentConnectedUser);
+
+
+                bool usernameExists = false;
+
+                foreach (var user in profileNetworkInfoService.GetAllUsers())
+                    if (user.username == usernameToBlockTextBox.Text)
+                        usernameExists = true;
+
+                if (!usernameExists)
+                {
+                    MessageBox.Show("Error: user with such username does not exist");
+
+                }
+                else
+                {
+
+
+
+
+
+                    bool alreadyExists = false;
+
+                    foreach (var blockedProfile in profile.blockedProfiles)
+                    {
+                        if (blockedProfile.user.username == usernameToBlockTextBox.Text)
+                            alreadyExists = true;
+                    }
+
+                    if (alreadyExists)
+                    {
+                        MessageBox.Show("User is already blocked by you", "Error");
+                    }
+                    else
+                    {
+                        DateTime newDate = DateTime.Now;
+                        BlockedProfile profileToBlock = new BlockedProfile(profileNetworkInfoService.GetUserByName(usernameToBlockTextBox.Text), newDate);
+                        profile.blockedProfiles.Add(profileToBlock);
+                    }
+
+
+
+
+                    blockedProfilesListView.Items.Clear();
+
+
+                    foreach (var blockedProfile in profile.blockedProfiles)
+                    {
+                        blockedProfilesListView.Items.Add(blockedProfile.user.username);
+                    }
+                }
+
+            }
         }
     }
 }

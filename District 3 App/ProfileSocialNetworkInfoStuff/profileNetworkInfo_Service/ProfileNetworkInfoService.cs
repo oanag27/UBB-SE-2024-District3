@@ -226,7 +226,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
         {
             foreach (var profile in this.GetAllUserProfileSocialNetworks())
             {
-                if (profile.user.id == currentUser.id)
+                if (profile.user.username == currentUser.username)
                     return profile;
             }
             return null;
@@ -343,7 +343,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
         {
             if (this.CheckIfProfileExists(currentUser))
             {
-                foreach (var blockedProfile in currentUser.blockedProfiles) //if group is in the groups list for the current user
+                foreach (var blockedProfile in currentUser.blockedProfiles)
                 {
                     if (blockedProfile.user.id == blockedProfileToRemove.user.id)
                     {
@@ -515,6 +515,29 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         if (profile.user.username == username)
                             return profile;
                     }
+            }
+            return null;
+        }
+
+
+        public BlockedProfile GetBlockedProfileByName(UserProfileSocialNetworkInfo profile, string username)
+        {
+
+            foreach (var blockedProfile in profile.blockedProfiles)
+            {
+                if (blockedProfile.user.username == username) return blockedProfile;
+            }
+
+            return null;
+        }
+
+
+        public CloseFriendProfile GetCloseFriendByName(UserProfileSocialNetworkInfo profile, string username)
+        {
+            foreach(var closeFriend in profile.closeFriendsProfiles)
+            {
+                if (closeFriend.user.username == username) return closeFriend;
+
             }
             return null;
         }
