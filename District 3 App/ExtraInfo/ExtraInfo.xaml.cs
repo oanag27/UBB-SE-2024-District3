@@ -181,7 +181,7 @@ namespace District_3_App.ExtraInfo
 
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new TestSth();
+            var newContent = new VerifiedAccount();
             //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(newContent);
             Grid.SetColumn(newContent, 1);
