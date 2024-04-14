@@ -1,4 +1,5 @@
 ﻿using District_3_App.Enitities.Mocks;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.Repository;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace District_3_App.HighlightsFE
         public SelectPostsPage()
         {
             InitializeComponent();
-            List<MockPhotoPost> posts = highlightsRepo.getConnectedUserPosts(new object());
+            List<MockPhotoPost> posts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111"));
 
             foreach (MockPhotoPost post in posts)
             {
@@ -89,6 +90,19 @@ namespace District_3_App.HighlightsFE
             SelectHighlight selectHighlight = new SelectHighlight(selectedPostsGuids);
             selectHighlight.ShowDialog();
 
+        }
+
+        private void DoneButton_Click(object sender, RoutedEventArgs e)
+        {
+            Panel parentContainer = Parent as Panel;
+            if (parentContainer != null)
+            {
+
+                parentContainer.Children.Remove(this);
+
+            }
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }

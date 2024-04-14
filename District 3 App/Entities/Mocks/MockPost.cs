@@ -23,6 +23,7 @@ namespace District_3_App.Enitities.Mocks
             this.title = title;
         }
         public Guid getPostId() { return postId; }
+        public void setPostId(Guid postId) {  this.postId = postId; }
 
     }
 }

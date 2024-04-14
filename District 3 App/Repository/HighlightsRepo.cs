@@ -2,174 +2,279 @@
 using District_3_App.Enitities.Mocks;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Reflection;
 using System.IO;
-using System.Threading.Tasks;
-using System.IO.Packaging;
-using District_3_App.ExtraInfo;
+using System.Linq;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace District_3_App.Repository
 {
     internal class HighlightsRepo
     {
-        private List<Highlight> highlights;
-        private string GetImagesDirectoryPath()
-        {
-            string assemblyLocation = Assembly.GetExecutingAssembly().Location;
-            string directoryToExclude = Path.GetDirectoryName(assemblyLocation);
-            directoryToExclude = directoryToExclude.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
-            if (assemblyLocation.Contains(directoryToExclude))
-            {
-                assemblyLocation = assemblyLocation.Replace(directoryToExclude, "");
-            }
-            assemblyLocation = Path.Combine(assemblyLocation, "images");
-            return assemblyLocation;
-        }
+        private Dictionary<Guid, Dictionary<Guid, Highlight>> userHighlights = new Dictionary<Guid, Dictionary<Guid, Highlight>>();
+        private string filePath;
 
-        public List<MockPhotoPost> getConnectedUserPosts(Object user)
-        {
-            List<MockPhotoPost> posts = new List<MockPhotoPost>();
-            string imagesDirectory = GetImagesDirectoryPath();
-            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
-            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
-            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
-            MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
-            MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
-            MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
-
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-
-            return posts;
-
-        }
         public HighlightsRepo()
         {
-            this.highlights = new List<Highlight>();
-            string imagesDirectory = GetImagesDirectoryPath();
-            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
-            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
-            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
-            MockPhotoPost post1 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
-            MockPhotoPost post2 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
-            MockPhotoPost post3 = new MockPhotoPost(null, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
-
-            var highlight1 = new Highlight("Highlight 1", bee1Path);
-            var highlight2 = new Highlight("Highlight 2", bee2Path);
-            var highlight3 = new Highlight("Highlight 1", bee3Path);
-            var highlight4 = new Highlight("Highlight 2", bee2Path);
-
-            highlight1.addPostToHighlight(post1.getPostId());
-            highlight1.addPostToHighlight(post2.getPostId());
-            highlight2.addPostToHighlight(post3.getPostId());
-            highlight3.addPostToHighlight(post2.getPostId());
-            highlight4.addPostToHighlight(post3.getPostId());
-
-
-            highlights.Add(highlight1);
-            highlights.Add(highlight2);
-            highlights.Add(highlight3);
-            highlights.Add(highlight4);
-            highlights.Add(highlight3);
-            highlights.Add(highlight4);
-            highlights.Add(highlight3);
-            highlights.Add(highlight4);
-        }
-        public bool addHighlight(Highlight highlight)
-        {
-            this.highlights.Add(highlight);
-            return true;
-        }
-        public bool removeHighlight(Highlight highlight)
-        {
-            this.highlights.Remove(highlight);
-            return true;
-        }
-        public bool addPostToHighlight(Guid postId, Guid highlightId)
-        {
-            foreach (var highlight in this.highlights)
+            filePath = generateDefaultFilePath();
+            Console.WriteLine(filePath);
+            if (!File.Exists(filePath))
             {
-                if (highlight.getHighlightId().Equals(highlightId))
+                createXml(filePath);
+            }
+            loadHighlights(filePath);
+        }
+
+        private string generateDefaultFilePath()
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Highlights.xml");
+        }
+
+        private void createXml(string filePath)
+        {
+            XDocument xDocument = new XDocument(new XElement("Highlights"));
+            xDocument.Save(filePath);
+        }
+
+        private void loadHighlights(string filePath)
+        {
+            Console.WriteLine("Reading highlights from file: " + filePath);
+
+            XDocument xDocument = XDocument.Load(filePath);
+            XElement root = xDocument.Element("Highlights");
+            if (root != null && root.HasElements)
+            {
+                foreach (var userElem in root.Elements("User"))
                 {
-                    highlight.addPostToHighlight(postId);
+                    Guid userId;
+                    if (!Guid.TryParse((string)userElem.Attribute("userId"), out userId))
+                    {
+                        // Skip this user element if userId attribute is not valid
+                        continue;
+                    }
+
+                    foreach (var highlightElem in userElem.Elements("Highlight"))
+                    {
+                        Highlight highlight = new Highlight();
+                        highlight.setUserId(userId);
+
+                        // Wrap the parsing in a try-catch block
+                        try
+                        {
+                            Guid guid;
+                            if (Guid.TryParse((string)highlightElem.Attribute("guid"), out guid))
+                            {
+                                highlight.setGuid(guid);
+                            }
+
+                            highlight.setName((string)highlightElem.Attribute("name"));
+
+                            var postsElem = highlightElem.Element("posts");
+                            if (postsElem != null)
+                            {
+                                // Parse post elements
+                                var posts = postsElem.Elements("post").Select(e =>
+                                {
+                                    Guid postGuid;
+                                    if (Guid.TryParse(e.Value, out postGuid))
+                                    {
+                                        return postGuid;
+                                    }
+                                    else
+                                    {
+                                        return Guid.Empty; // or any other default value
+                                    }
+                                }).Where(e => e != Guid.Empty).ToList();
+
+                                highlight.setListPosts(posts);
+                            }
+
+                            highlight.setCover((string)highlightElem.Attribute("cover"));
+
+                            if (!userHighlights.ContainsKey(userId))
+                            {
+                                userHighlights[userId] = new Dictionary<Guid, Highlight>();
+                            }
+
+                            userHighlights[userId].Add(highlight.getHighlightId(), highlight);
+                        }
+                        catch (Exception ex)
+                        {
+                            // Log the error or handle it as needed
+                            Console.WriteLine($"Error parsing highlight: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+        public void SaveHighlightsToXml()
+        {
+            try
+            {
+                XDocument xDocument;
+
+                if (File.Exists(filePath))
+                {
+                    xDocument = XDocument.Load(filePath);
+                }
+                else
+                {
+                    xDocument = new XDocument(new XElement("Highlights"));
+                }
+
+                XElement root = xDocument.Element("Highlights");
+                root?.RemoveAll();
+
+                foreach (var userHighlight in userHighlights)
+                {
+                    XElement userElement = new XElement("User", new XAttribute("userId", userHighlight.Key));
+
+                    foreach (var highlight in userHighlight.Value)
+                    {
+                        Highlight highlight1 = highlight.Value;
+                        XElement highlightElement = new XElement("Highlight",
+                            new XAttribute("userId", userHighlight.Key),
+                            new XAttribute("guid", highlight1.getHighlightId()), // Use the highlight's guid
+                            new XAttribute("name", highlight1.getName()), // Use the highlight's name
+                            new XElement("posts", highlight1.getPosts().Select(p => new XElement("post", p))),
+                            new XAttribute("cover", highlight1.getCover()));
+
+                        userElement.Add(highlightElement);
+                    }
+
+                    root.Add(userElement);
+                }
+
+                xDocument.Save(filePath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving highlights to XML: " + ex.Message);
+            }
+        }
+
+        public List<MockPhotoPost> GetConnectedUserPosts(object user)
+        {
+            List<MockPhotoPost> posts = new List<MockPhotoPost>();
+            string path1 = "/Images/snow.jpg";
+            string path2 = "/Images/peeta.jpeg";
+            string path3 = "/Images/katniss.jpg";
+            string path4 = "/Images/poster.jpeg";
+
+            MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", path1);
+            post1.setPostId(new Guid("11111111-1111-1111-1111-111111111111"));
+            MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", path2);
+            post2.setPostId(new Guid("22222222-2222-2222-2222-222222222222"));
+            MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", path3);
+            post3.setPostId(new Guid("33333333-3333-3333-3333-333333333333"));
+            MockPhotoPost post4 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 4", "Description 4", path4);
+            post4.setPostId(new Guid("44444444-4444-4444-4444-444444444444"));
+
+            posts.Add(post1);
+            posts.Add(post2);
+            posts.Add(post3);
+            posts.Add(post4);
+
+            return posts;
+        }
+
+        public bool AddHighlight(Guid userId, Highlight highlight)
+        {
+            if (!userHighlights.ContainsKey(userId))
+            {
+                userHighlights[userId] = new Dictionary<Guid, Highlight>();
+            }
+            userHighlights[userId].Add(highlight.getHighlightId(), highlight);
+            SaveHighlightsToXml();
+            return true;
+        }
+
+        public bool RemoveHighlight(Guid userId, Guid highlightId)
+        {
+            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            {
+                userHighlights[userId].Remove(highlightId);
+                SaveHighlightsToXml();
+                return true;
+            }
+            return false;
+        }
+
+        public bool AddPostToHighlight(Guid userId, Guid postId, Guid highlightId)
+        {
+            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            {
+                List<Guid> listPosts = userHighlights[userId][highlightId].getPosts();
+                if (!listPosts.Contains(postId))
+                {
+                    listPosts.Add(postId);
+                    userHighlights[userId][highlightId].setListPosts(listPosts);
+                    SaveHighlightsToXml();
                     return true;
                 }
             }
             return false;
         }
-        public bool removePostFromHighlight(Guid postId, Guid highlightId)
+
+        public bool RemovePostFromHighlight(Guid userId, Guid postId, Guid highlightId)
         {
-            foreach (var highlight in this.highlights)
+            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
             {
-                if (highlight.getHighlightId().Equals(highlightId))
+                List<Guid> listPosts = userHighlights[userId][highlightId].getPosts();
+                if (listPosts.Contains(postId))
                 {
-                    highlight.removePostFromHighlight(postId);
+                    listPosts.Remove(postId);
+                    userHighlights[userId][highlightId].setListPosts(listPosts);
+                    SaveHighlightsToXml();
                     return true;
                 }
             }
             return false;
         }
-        public List<Highlight> getHighlights() { return this.highlights; }
-        public Highlight getHighlight(Guid highlightId)
+
+        private List<Highlight> GetHighlights()
         {
-            foreach (var highlight in this.highlights)
+            return userHighlights.Values.SelectMany(dict => dict.Values).ToList();
+        }
+
+        public List<Highlight> GetHighlightsOfUser(Guid userId)
+        {
+            if (userHighlights.ContainsKey(userId))
             {
-                if (highlight.getHighlightId().Equals(highlightId))
-                {
-                    return highlight;
-                }
+                return userHighlights[userId].Values.ToList();
+            }
+            else
+            {
+                return new List<Highlight>();
+            }
+        }
+
+        public Highlight GetHighlight(Guid userId, Guid highlightId)
+        {
+            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            {
+                return userHighlights[userId][highlightId];
             }
             return null;
         }
 
-        public List<MockPhotoPost> getPostsOfHighlight(Guid highlightId)
+        public List<MockPhotoPost> GetPostsOfHighlight(Guid userId, Guid highlightId)
         {
-            //List<Guid> posts = new List<Guid>();
-            //foreach (var highlight in this.highlights)
-            //{
-            //    if (highlight.getHighlightId().Equals(highlightId))
-            //    {
-            //        posts = highlight.getPosts();
-            //        continue;
-            //    }
-            //}
-            //List<MockPhotoPost> mockPhotoPosts = new List<MockPhotoPost>();
-            //foreach(Guid guid in posts)
-            //{
-            //    mockPhotoPosts.Add(GetUserPosts(guid));
-            //}
-            string imagesDirectory = GetImagesDirectoryPath();
-            string bee1Path = Path.Combine(imagesDirectory, "bee1.jpg");
-            string bee2Path = Path.Combine(imagesDirectory, "bee2.jpg");
-            string bee3Path = Path.Combine(imagesDirectory, "bee3.jpg");
-            List<MockPhotoPost> posts = new List<MockPhotoPost>();
-            MockPhotoPost post1 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", bee1Path);
-            MockPhotoPost post2 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", bee2Path);
-            MockPhotoPost post3 = new MockPhotoPost(new Object(), new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", bee3Path);
-
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            return posts;
+            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            {
+                List<MockPhotoPost> postsOfHighlight = new List<MockPhotoPost>();
+                Highlight highlight = userHighlights[userId][highlightId];
+                foreach (var post in GetConnectedUserPosts(userId))
+                {
+                    if (highlight.getPosts().Contains(post.getPostId()))
+                    {
+                        postsOfHighlight.Add(post);
+                    }
+                }
+                return postsOfHighlight;
+            }
+            return new List<MockPhotoPost>();
         }
     }
 }

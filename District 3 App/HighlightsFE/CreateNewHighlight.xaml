@@ -12,7 +12,7 @@
                 <StackPanel>
                     <TextBlock Text="Which post do you want to be the cover?" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" Foreground="#FF47525E" Margin="0,0,0,5"/>
                     <TextBlock Text="Enter a number between 1 and" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Foreground="#FF47525E"/>
-                    <TextBlock Text="{Binding ElementName=CoverButton, Path=DataContext.guids.Count}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Foreground="#FF47525E" Margin="0,0,0,5"/>
+                    <TextBlock Text="{Binding nrPosts }" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Foreground="#FF47525E" Margin="0,0,0,5"/>
                     <TextBox x:Name="coverInput" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="70" Height="26" FontSize="8" SelectionTextBrush="#FF8492A6" SelectionBrush="#FF8492A6" BorderBrush="#8492A6" TextChanged="coverInput_TextChanged" Grid.IsSharedSizeScope="True" Background="#FF8492A6">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">

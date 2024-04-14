@@ -22,15 +22,21 @@ namespace District_3_App.HighlightsFE
 {
     public partial class CreateNewHighlight : Window
     {
-        private List<Guid> guids = new List<Guid>();
+        private List<Guid> guids = new();
         private string newHighlightName;
         private string newHighlightCover;
-
+        private SnapshotsService snapshotsService;
         public CreateNewHighlight(List<Guid> selectedPostsGuids)
         {
+            HighlightsRepo highlightsRepo = new HighlightsRepo();
+            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
+            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+            snapshotsService = casualProfileService.getSnapshotsService();
             InitializeComponent();
             guids = selectedPostsGuids;
-            DataContext = guids;
+            int nrPosts=guids.Count;
+            DataContext = nrPosts;
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -52,12 +58,7 @@ namespace District_3_App.HighlightsFE
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
         {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
-            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
-
-            SnapshotsService snapshotsService = casualProfileService.getSnapshotsService();
+            
             try
             {
                 snapshotsService.addHighlight(newHighlightName, newHighlightCover, guids);
@@ -67,8 +68,12 @@ namespace District_3_App.HighlightsFE
             {
                 MessageBox.Show(ex.ToString());
             }
-
+            finally
+            {
+                ChooseCoverPopUp.IsOpen = false;
+            }
         }
+
 
         private void coverInput_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -77,12 +82,12 @@ namespace District_3_App.HighlightsFE
             {
                 int numberOfPost = int.Parse(highlightCover);
                 if (numberOfPost < 0 || numberOfPost> guids.Count) {
-                    throw new Exception();
+                    MessageBox.Show("Please enter a number between 1 and " + guids.Count.ToString());
                 }
                 newHighlightCover = guids[numberOfPost].ToString();
             }
             catch (Exception) { 
-                MessageBox.Show("Please enter a number between 1 and " + guids.Count.ToString());
+                MessageBox.Show("Something went wrong :(" + guids.Count.ToString());
             }
         }
     }

@@ -37,7 +37,7 @@ namespace District_3_App.Service
             }
             while (newHighlightCover == null)
             {
-                foreach (MockPhotoPost photoPost in repo.getConnectedUserPosts(new Object()))
+                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")))
                 {
                     if (photoPost != null)
                     {
@@ -53,7 +53,7 @@ namespace District_3_App.Service
 
             foreach (Guid postId in guids)
             {
-                repo.addPostToHighlight(postId, h.getHighlightId());
+                repo.AddPostToHighlight(new Guid("11111111-1111-1111-1111-111111111111"), postId, h.getHighlightId());
             }
             return true;
         }
@@ -69,8 +69,13 @@ namespace District_3_App.Service
         {
             return snapshotsRepo.removePostFromHighlight(postId, highlightId);
         }
-        public List<Highlight> getHighlightsOfUser(){
+        public List<Highlight> getHighlightsOfUser(Guid guid)
+        {
             return snapshotsRepo.GetHighlightsOfUser();
+        }
+        public Highlight GetHighlight(Guid highlightId)
+        {
+            return snapshotsRepo.GetHighlight(highlightId);
         }
     }
 }

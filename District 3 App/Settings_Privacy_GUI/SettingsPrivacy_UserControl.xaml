@@ -6,11 +6,11 @@
              xmlns:local="clr-namespace:District_3_App.Settings_Privacy_GUI"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
-    <Grid x:Name="settingsPrivacyGrid" >
+    <Grid x:Name="settingsPrivacyGrid" VerticalAlignment="Top" HorizontalAlignment="Left">
         <ListView x:Name="groupsListView" 
               d:ItemsSource="{d:SampleData ItemCount=5}" 
               Width="200" 
-              Margin="19,328,581,65" 
+              Margin="36,353,564,40" 
               BorderThickness="0">
             <!-- Define a style for ListViewItem to change the selected item color -->
             <ListView.ItemContainerStyle>
@@ -39,7 +39,7 @@
         <ListView x:Name="restrictedPostsAudienceListView" 
       HorizontalAlignment="Left" 
       Height="50" 
-      Margin="19,169,0,0" 
+      Margin="36,181,0,0" 
       VerticalAlignment="Top" 
       Width="200" 
       d:ItemsSource="{d:SampleData ItemCount=5}" 
@@ -82,9 +82,9 @@
             </ListView.Template>
         </ListView>
 
-        <Label Content="Restricted Posts Audience:" FontSize="10" HorizontalAlignment="Left" Margin="20,146,0,0" VerticalAlignment="Top"/>
-        <Label Content="Groups:" FontSize="10" HorizontalAlignment="Left" Margin="19,300,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
-        <Label Content="Restricted Stories Audience:" FontSize="10" HorizontalAlignment="Left" Margin="22,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="23" Width="133">
+        <Label Content="Restricted Posts Audience:" FontSize="10" HorizontalAlignment="Left" Margin="36,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Groups:" FontSize="10" HorizontalAlignment="Left" Margin="36,318,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
+        <Label Content="Restricted Stories Audience:" FontSize="10" HorizontalAlignment="Left" Margin="28,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="23" Width="133">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -98,7 +98,7 @@
       d:ItemsSource="{d:SampleData ItemCount=5}" 
       Height="50" 
       Width="200" 
-      Margin="22,100,578,300"
+      Margin="36,91,564,309"
       ScrollViewer.VerticalScrollBarVisibility="Auto">
             <!-- Define a style for ListViewItem to change the selected item color -->
             <ListView.ItemContainerStyle>
@@ -139,14 +139,14 @@
         </ListView>
 
 
-        <Label Content="Settings &amp; Privacy" FontSize="17" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Height="38" Width="148"/>
-        <Label Content="Password:" FontSize="10" HorizontalAlignment="Left" Margin="22,53,0,0" VerticalAlignment="Top" Width="63" Height="26"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="85,53,0,0" TextWrapping="Wrap" Text="*********" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Blocked Accounts:" FontSize="10" HorizontalAlignment="Left" Margin="20,225,0,0" VerticalAlignment="Top" Height="22" Width="109"/>
+        <Label Content="Settings &amp; Privacy" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="148" Margin="10,10,0,0"/>
+        <Label Content="Password:" FontSize="10" HorizontalAlignment="Left" Margin="180,16,0,0" VerticalAlignment="Top" Width="63" Height="26"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="243,20,0,0" TextWrapping="Wrap" Text="*********" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Blocked Accounts:" FontSize="10" HorizontalAlignment="Left" Margin="36,233,0,0" VerticalAlignment="Top" Height="22" Width="109"/>
         <ListView Width="200" 
       x:Name="blockedProfilesListView" 
       d:ItemsSource="{d:SampleData ItemCount=5}" 
-      Margin="19,247,581,161">
+      Margin="36,264,564,144">
             <ListView.Resources>
                 <!-- Define a style for ListViewItem to remove border -->
                 <Style TargetType="ListViewItem">
@@ -178,23 +178,23 @@
             </ListView.Template>
         </ListView>
 
-        <Border CornerRadius="10" Height="30" Width="168" Padding="5" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,0,0,30">
+        <Border CornerRadius="10" Height="30" Width="168" Padding="5" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="52,0,0,5">
             <CheckBox x:Name="isProfilePrivateCheckBox" Content="Public / Private Account"/>
         </Border>
 
-        <Button Content="Add" FontSize="11" x:Name="addRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="220,76,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Content="Add" FontSize="11" x:Name="addRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="219,151,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="219,62,0,0" VerticalAlignment="Top" Background="White"/>
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="220,145,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
 
-        <Button Content="Add" FontSize="11" x:Name="addBlockedAccountButton" HorizontalAlignment="Left" Margin="219,225,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Click="mantainGroupsButton_Click" Content="Edit" FontSize="11" x:Name="mantainGroupsButton" HorizontalAlignment="Left" Margin="220,306,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Add" FontSize="11" x:Name="addBlockedAccountButton" HorizontalAlignment="Left" Margin="219,234,0,0" VerticalAlignment="Top" Background="White"/>
+        <Button Click="mantainGroupsButton_Click" Content="Edit" FontSize="11" x:Name="mantainGroupsButton" HorizontalAlignment="Left" Margin="222,318,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.392,1.181"/>
 
 
 
-        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="257,76,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="257,150,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="257,62,0,0" VerticalAlignment="Top" Background="White"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="257,145,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
 
-        <Button Content="Remove" FontSize="11" x:Name="removeBlockedAccountButton" HorizontalAlignment="Left" Margin="257,225,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Click="leaveGroupButton_Click" Content="Leave" FontSize="11" x:Name="leaveGroupButton" HorizontalAlignment="Left" Margin="257,306,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeBlockedAccountButton" HorizontalAlignment="Left" Margin="257,233,0,0" VerticalAlignment="Top" Background="White"/>
+        <Button Click="leaveGroupButton_Click" Content="Leave" FontSize="11" x:Name="leaveGroupButton" HorizontalAlignment="Left" Margin="263,315,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
 
 
     </Grid>
