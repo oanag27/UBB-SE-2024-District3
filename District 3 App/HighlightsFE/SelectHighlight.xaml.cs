@@ -1,4 +1,5 @@
 ﻿using District_3_App.Enitities;
+using District_3_App.Enitities.Mocks;
 using District_3_App.Repository;
 using District_3_App.Service;
 using System;
@@ -48,17 +49,34 @@ namespace District_3_App.HighlightsFE
             LoadHighlights();
         }
         private void LoadHighlights()
-        {
-            List<Highlight> highlights=snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
+        { 
+
+            List<Highlight> highlights = snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
+
             if (highlights == null || highlights.Count == 0)
             {
                 MessageBox.Show("No highlights found.");
+                CreateNewHighlight createNewHighlight = new CreateNewHighlight(selectedPostsGuid);
+                //navigationFrame.Navigate(createNewHighlight);
+                createNewHighlight.Show();
+                this.Close();
             }
 
             Highlights = new List<HighlightInfo>();
             foreach (Highlight highlight in highlights)
             {
-                Highlights.Add(new HighlightInfo(highlight.getName(), highlight.getCover(), highlight.getHighlightId()));
+                HighlightsRepo highlightsRepo = new HighlightsRepo();
+                List<MockPhotoPost> userPosts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111"));
+                MockPhotoPost coverPost = userPosts.FirstOrDefault(post => post.getPostId().ToString() == highlight.getCover());
+
+                if (coverPost != null)
+                {
+                    Highlights.Add(new HighlightInfo(highlight.getName(), coverPost.getPhoto(), highlight.getHighlightId()));
+                }
+                else
+                {
+                    Highlights.Add(new HighlightInfo(highlight.getName(), "/images/black.png", highlight.getHighlightId()));
+                }
             }
 
             DataContext = Highlights;

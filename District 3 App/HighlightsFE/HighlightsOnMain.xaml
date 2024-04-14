@@ -20,11 +20,13 @@
 
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Button x:Name="SelectHighlight" Click="SelectHighlight_Click" Margin="20" Background="White">
-                                <StackPanel>
-                                    <Image Source="{Binding Cover}" Width="50" Height="50" />
-                                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="0"/>
-                                </StackPanel>
+                            <Button x:Name="SelectHighlight" Click="SelectHighlight_Click" Margin="20" Background="White" >
+                                <Border Width="70" Height="70" CornerRadius="7" BorderBrush="Black" BorderThickness="1">
+                                    <StackPanel>
+                                        <Image Source="{Binding Cover}" Width="50" Height="50" />
+                                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="0"/>
+                                    </StackPanel>
+                                </Border>
                             </Button>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
