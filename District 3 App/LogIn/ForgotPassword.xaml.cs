@@ -29,7 +29,7 @@ namespace District_3_App.LogIn
             var newContent = new SignInPage();
             Grid.SetColumn(newContent, 2);
             Grid.SetRow(newContent, 0);
-            Grid.SetRowSpan(newContent, 4);
+            Grid.SetRowSpan(newContent, 6);
             ResetPasswordGrid.Children.Add(newContent);
         }
     }

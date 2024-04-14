@@ -87,15 +87,6 @@
     <Page Update="LogIn\SignUp.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="LogIn\SignUpPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="LogIn\ForgotPasswordPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="LogIn\SignIn.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="LogIn\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
