@@ -350,3 +350,5 @@ C:\Users\40723\source\repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App
 C:\Users\40723\source\repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\LogIn\Window1.baml
 C:\Users\40723\source\repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\Settings_Privacy_GUI\MantainGroups.baml
 C:\Users\40723\source\repos\913-Herta-Diana\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\Settings_Privacy_GUI\SettingsPrivacy_UserControl.baml
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\TestSth.g.cs
+E:\facultate\Sem4\software engineering\app\UBB-SE-2024-District3\District 3 App\obj\Debug\net8.0-windows\ExtraInfo\TestSth.baml

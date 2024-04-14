@@ -27,25 +27,27 @@ namespace District_3_App.ExtraInfo
             InitializeComponent();
         }
 
-        private void ChooseFreeButton_Click(object sender, RoutedEventArgs e)
-        {
-            //FreeAccountControl.Content = new VerifiedAccount();
-            var newContent = new VerifiedAccount();
-            Grid.SetColumn(newContent, 2);
-            Grid.SetRow(newContent, 0);
-            Grid.SetRowSpan(newContent, 4);
-            VerifiedAccountGrid.Children.Clear();
-            VerifiedAccountGrid.Children.Add(newContent);
-        }
-
         private void ChooseBusinessButton_Click(object sender, RoutedEventArgs e)
         {
             var paymentForm = new PaymentForm();
-            Grid.SetColumn(paymentForm, 2);
-            Grid.SetRow(paymentForm, 0);
-            Grid.SetRowSpan(paymentForm, 4);
-            VerifiedAccountGrid.Children.Clear();
+            //VerifiedAccountGrid.Children.Clear();
+            /*Grid.SetColumn(paymentForm, 0);
+            Grid.SetRow(paymentForm, 1);
+            Grid.SetRowSpan(paymentForm, 4);*/
+            
             VerifiedAccountGrid.Children.Add(paymentForm);
         }
+
+        private void ChooseFreeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var newContent = new VerifiedAccount();
+            VerifiedAccountGrid.Children.Clear(); 
+            Grid.SetColumn(newContent, 0);
+            Grid.SetRow(newContent, 1);
+            Grid.SetRowSpan(newContent, 4);
+            
+            VerifiedAccountGrid.Children.Add(newContent);
+        }
+
     }
 }
