@@ -7,24 +7,28 @@
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\fancierprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:fancierprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|c:\\users\\groza\\ubb-se-2024-district3\\district 3 app\\login\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:login\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,29 +42,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FancierProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "FancierProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
-              "RelativeToolTip": "FancierProfilePage.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T12:37:02.606Z",
-              "IsPinned": true
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T18:37:08.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignUpPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUpPage.xaml.cs",
-              "RelativeDocumentMoniker": "LogIn\\SignUpPage.xaml.cs",
-              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUpPage.xaml.cs",
-              "RelativeToolTip": "LogIn\\SignUpPage.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAjAAAA",
+              "DocumentIndex": 2,
+              "Title": "SignIn.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignIn.xaml.cs",
+              "RelativeDocumentMoniker": "LogIn\\SignIn.xaml.cs",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignIn.xaml.cs",
+              "RelativeToolTip": "LogIn\\SignIn.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T13:33:54.467Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-14T18:09:07.149Z",
               "EditorCaption": ""
             },
             {
@@ -71,46 +73,55 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAADwv04AAAAZAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAwwEQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T13:41:45.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T13:37:46.107Z",
+              "WhenOpened": "2024-04-14T18:05:23.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SignUp.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUp.xaml.cs",
+              "RelativeDocumentMoniker": "LogIn\\SignUp.xaml.cs",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUp.xaml.cs",
+              "RelativeToolTip": "LogIn\\SignUp.xaml.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAkwEsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T13:37:27.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T17:53:12.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SignInPage.xaml",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignInPage.xaml",
+              "RelativeDocumentMoniker": "LogIn\\SignInPage.xaml",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignInPage.xaml",
+              "RelativeToolTip": "LogIn\\SignInPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T17:50:41.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ForgotPassword.xaml",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\ForgotPassword.xaml",
+              "RelativeDocumentMoniker": "LogIn\\ForgotPassword.xaml",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\ForgotPassword.xaml",
+              "RelativeToolTip": "LogIn\\ForgotPassword.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T17:50:11.311Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\App.xaml",
-              "RelativeToolTip": "App.xaml",
+              "Title": "SignUp.xaml",
+              "DocumentMoniker": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUp.xaml",
+              "RelativeDocumentMoniker": "LogIn\\SignUp.xaml",
+              "ToolTip": "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\LogIn\\SignUp.xaml",
+              "RelativeToolTip": "LogIn\\SignUp.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-13T13:37:11.52Z",
+              "WhenOpened": "2024-04-14T17:00:56.927Z",
               "EditorCaption": ""
             }
           ]

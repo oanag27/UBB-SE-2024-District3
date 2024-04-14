@@ -25,6 +25,15 @@
     <Compile Update="HighlightsFE\SelectPostsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="LogIn\ForgotPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogIn\SignInPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogIn\SignUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControl1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -61,6 +70,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HighlightsFE\SelectPostsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LogIn\ForgotPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LogIn\SignInPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LogIn\SignUp.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LogIn\SignUpPage.xaml">
