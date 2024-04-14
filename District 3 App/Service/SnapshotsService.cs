@@ -53,7 +53,7 @@ namespace District_3_App.Service
 
             foreach (Guid postId in guids)
             {
-                repo.AddPostToHighlight(postId, h.getHighlightId());
+                repo.AddPostToHighlight(new Guid("11111111-1111-1111-1111-111111111111"), postId, h.getHighlightId());
             }
             return true;
         }

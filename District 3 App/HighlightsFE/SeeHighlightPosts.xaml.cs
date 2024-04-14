@@ -35,7 +35,7 @@ namespace District_3_App.HighlightsFE
 
             InitializeComponent();
             Highlight h = snapshotsService.GetHighlight(highlightId);
-            List<MockPhotoPost> postsToShow = highlightsRepo.GetPostsOfHighlight(highlightId);
+            List<MockPhotoPost> postsToShow = highlightsRepo.GetPostsOfHighlight(new Guid("11111111-1111-1111-1111-111111111111"), highlightId);
 
             foreach (MockPhotoPost post in postsToShow)
             {
