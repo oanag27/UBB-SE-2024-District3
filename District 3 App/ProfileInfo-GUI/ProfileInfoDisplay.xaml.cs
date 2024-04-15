@@ -32,5 +32,10 @@ namespace District_3_App.ProfileInfo_GUI
             ProfileInfoGrid.Children.Clear();
             ProfileInfoGrid.Children.Add(newContent);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

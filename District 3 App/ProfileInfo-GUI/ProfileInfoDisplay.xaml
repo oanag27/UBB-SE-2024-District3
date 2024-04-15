@@ -363,7 +363,7 @@
                         </TextBox.Style>
                     </TextBox>
 
-                    <Button Click="SaveDescription_Button" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
+                    <Button Click="Button_Click" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
                         <TextBlock Text="Save" FontSize="9" FontWeight="Bold"/>
                     </Button>
                 </StackPanel>
@@ -378,7 +378,7 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </StackPanel.RenderTransform>
-                <Button Click="SaveDescription-Button" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
+                <Button Click="Button_Click_1" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
                     <TextBlock Text="Save" FontSize="9" FontWeight="Bold"/>
                 </Button>
             </StackPanel>
