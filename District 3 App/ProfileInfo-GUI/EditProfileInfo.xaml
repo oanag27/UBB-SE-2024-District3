@@ -8,16 +8,17 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid x:Name="EditProfileGrid" Background="DarkGray">
         <Grid.ColumnDefinitions>
+            
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Black">
-            <StackPanel Orientation="Vertical" Margin="20,15,0,0" Width="740" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical" Margin="0,15,-290,0" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
                         Text="Email"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
@@ -27,14 +28,14 @@
                         Width="157" 
                         Height="25"
                         Margin="5,0,0,0"
-                        FontSize="13"
+                        FontSize="9"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <TextBlock
                         Text="Phone number"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
@@ -44,19 +45,19 @@
                         Width="157" 
                         Height="25"
                         Margin="5,0,0,0"
-                        FontSize="13"
+                        FontSize="9"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <TextBlock
                         Text="Date of Birth"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
                     />
-                    <DatePicker Width="200" Height="25" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
+                    <DatePicker Width="159" Height="27" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
                         <DatePicker.Resources>
                             <Style TargetType="DatePickerTextBox">
                                 <Setter Property="FontSize" Value="12"/>
@@ -68,7 +69,7 @@
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <TextBlock
                         Text="Username"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
@@ -78,14 +79,14 @@
                         Width="157" 
                         Height="25"
                         Margin="5,0,0,0"
-                        FontSize="13"
+                        FontSize="9"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <TextBlock
                         Text="Name"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
@@ -95,14 +96,14 @@
                         Width="157" 
                         Height="25"
                         Margin="5,0,0,0"
-                        FontSize="13"
+                        FontSize="9"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                     <TextBlock
                         Text="Work"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         Margin="5"
                         VerticalAlignment="Center"
@@ -112,14 +113,14 @@
                         Width="157" 
                         Height="25"
                         Margin="5,0,0,0"
-                        FontSize="13"
+                        FontSize="9"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                     <TextBlock
                         Text="Position"
-                        FontSize="12"
+                        FontSize="10"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                     />
@@ -135,7 +136,7 @@
                 <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                     <TextBlock
                         Text="Start date"
-                        FontSize="12"
+                        FontSize="10"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                     />
@@ -151,7 +152,7 @@
                 <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                     <TextBlock
                         Text="End date"
-                        FontSize="12"
+                        FontSize="10"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                     />
@@ -167,7 +168,7 @@
                 <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                     <TextBlock
                         Text="Location"
-                        FontSize="12"
+                        FontSize="10"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                     />
@@ -182,16 +183,16 @@
                 <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                     <TextBlock
                         Text="Description"
-                        FontSize="12"
+                        FontSize="10"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                     />
                     <TextBox 
                         Text="" 
-                        Width="245" 
+                        Width="183" 
                         Height="28"
                         Margin="8,0,0,0"
-                        FontSize="13"
+                        FontSize="10"
                     />
                 </StackPanel>
 
@@ -202,11 +203,11 @@
             <StackPanel Orientation="Horizontal">
                 <TextBlock
                     Text="Education"
-                    FontSize="14"
+                    FontSize="12"
                     FontWeight="Bold"
                     VerticalAlignment="Center"
                 />
-                <ComboBox Width="200" Height="27" Margin="7,0,0,0" SelectedIndex="0">
+                <ComboBox Width="185" Height="27" Margin="7,0,0,0" SelectedIndex="0">
                     <ComboBoxItem IsSelected="True">Choose Education</ComboBoxItem>
                     <ComboBoxItem Content="Option 1"/>
                     <ComboBoxItem Content="Option 2"/>
@@ -217,28 +218,28 @@
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
                 <TextBlock
                     Text="Education level"
-                    FontSize="14"
+                    FontSize="12"
                     FontWeight="Bold"
                     Margin="0"
                     VerticalAlignment="Center"
                 />
                 <TextBox 
                     Text="" 
-                    Width="230" 
+                    Width="154" 
                     Height="30"
                     Margin="5,0,0,0"
-                    FontSize="13"
+                    FontSize="8"
                 />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                 <TextBlock
                     Text="Start date"
-                    FontSize="12"
+                    FontSize="10"
                     FontWeight="Bold"
                     VerticalAlignment="Center"
                 />
-                <DatePicker Width="200" Height="25" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
+                <DatePicker Width="181" Height="27" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
                     <DatePicker.Resources>
                         <Style TargetType="DatePickerTextBox">
                             <Setter Property="FontSize" Value="12"/>
@@ -250,11 +251,11 @@
             <StackPanel Orientation="Horizontal" Margin="15,13,0,0">
                 <TextBlock
                     Text="End date"
-                    FontSize="12"
+                    FontSize="10"
                     FontWeight="Bold"
                     VerticalAlignment="Center"
                 />
-                <DatePicker Width="200" Height="25" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
+                <DatePicker Width="184" Height="25" SelectedDateChanged="DateOfBirth" Margin="5,0,0,0">
                     <DatePicker.Resources>
                         <Style TargetType="DatePickerTextBox">
                             <Setter Property="FontSize" Value="12"/>
@@ -267,7 +268,7 @@
                 <StackPanel Orientation="Vertical" Margin="15,13,0,0" HorizontalAlignment="Left">
                     <TextBlock
                         Text="Hobbies"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
@@ -275,16 +276,16 @@
                     <TextBox 
                         Text="" 
                         Margin="0,10,0,0"
-                        Width="159" 
+                        Width="108" 
                         Height="114"
-                        FontSize="13" RenderTransformOrigin="0.315,0.891"
+                        FontSize="10" RenderTransformOrigin="0.315,0.891"
                     />
                 </StackPanel>
 
                 <StackPanel Orientation="Vertical" Margin="15,13,0,0" HorizontalAlignment="Left">
                     <TextBlock
                         Text="Music"
-                        FontSize="14"
+                        FontSize="12"
                         FontWeight="Bold"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
@@ -292,9 +293,9 @@
                     <TextBox 
                         Text="" 
                         Margin="0,10,0,0"
-                        Width="159" 
+                        Width="114" 
                         Height="114"
-                        FontSize="13" RenderTransformOrigin="0.315,0.891"
+                        FontSize="9" RenderTransformOrigin="0.315,0.891"
                     />
                 </StackPanel>
             </StackPanel>
@@ -302,7 +303,7 @@
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
                 <TextBlock
                     Text="Places"
-                    FontSize="14"
+                    FontSize="12"
                     FontWeight="Bold"
                     VerticalAlignment="Center"
                 />
@@ -313,8 +314,8 @@
                     <ComboBoxItem Content="Option 3"/>
                 </ComboBox>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Width="376" Margin="75,25,0,0">
-                <Button Content="Save changes" Width="100" Height="25" Margin="5" Background="Gray" Click="SaveChanges_Button"/>
+            <StackPanel Orientation="Horizontal" Width="376" Margin="27,25,0,0">
+                <Button Content="Save changes" Width="100" Height="25" Background="Gray" Click="SaveChanges_Button"/>
                 <Button Content="Cancel" Width="100" Height="25" Margin="5" Background="Gray" Click="Cancel_Button"/>
             </StackPanel>
         </StackPanel>

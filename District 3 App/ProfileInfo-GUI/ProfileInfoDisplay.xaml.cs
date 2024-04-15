@@ -38,5 +38,10 @@ namespace District_3_App.ProfileInfo_GUI
             var editedDescription = ((TextBox)sender).Text;
         }
 
+        private void Save_Button(object sender, RoutedEventArgs e)
+        {
+            // do something
+        }
+
     }
 }
