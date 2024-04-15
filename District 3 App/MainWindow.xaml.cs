@@ -1,6 +1,7 @@
 ﻿using District_3_App.ExtraInfo;
 using District_3_App.HighlightsFE;
 using District_3_App.LogIn;
+using District_3_App.Service;
 using Log_In;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,8 @@ namespace District_3_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static ProfileInfoSettings ProfileInfoSettings = new ProfileInfoSettings(new Guid());
+        private CasualProfileService casualProfileService = new CasualProfileService(null, ProfileInfoSettings);
         public MainWindow()
         {
             InitializeComponent();
@@ -138,6 +141,33 @@ namespace District_3_App
                 AdditionalDescription.Visibility = Visibility.Visible;
                 isDescriptionVisible = true;
             }
+
+            var links = ProfileInfoSettings.GetLinks();
+            if (links != null && links.Count >= 1)
+            {
+                link1Text.Text = links[0];
+            }
+            else
+            {
+                link1Text.Text = string.Empty; 
+            }
+
+            if (links != null && links.Count >= 2)
+            {
+                link2Text.Text = links[1];
+            }
+            else
+            {
+                link2Text.Text = string.Empty; 
+            }
+
+            var dailyMotto = ProfileInfoSettings.GetDailyMotto();
+            mottoText.Text = dailyMotto != null ? dailyMotto : string.Empty; 
+
+            var hashtag = ProfileInfoSettings.GetHashtag();
+            hashtagText.Text = hashtag != null ? hashtag : string.Empty; 
+
+
         }
     }
 }

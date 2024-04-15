@@ -124,8 +124,12 @@
                         <Image Source="/images/threedots.png" Width="20" Height="20"/>
                     </Button>
                 </Grid>
-                <StackPanel x:Name="AdditionalDescription" Grid.Row="1" Margin="30,0,0,80" Visibility="Collapsed">
-                    <TextBlock Text="DESCRIPTION" FontSize="20px" VerticalAlignment="Center"/>
+                <StackPanel x:Name="AdditionalDescription" Grid.Row="1" Margin="20,0,0,120" Visibility="Collapsed">
+                    <TextBlock Text="DESCRIPTION" FontSize="20px" VerticalAlignment="Center" />
+                    <TextBlock x:Name="hashtagText"  FontSize="18px" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="mottoText"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="link1Text"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="link2Text"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
                 </StackPanel>
                 <Image Source="\images\avatar.png" Width="150" Height="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,30,0"/>
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,5,0,0" HorizontalAlignment="Center">
