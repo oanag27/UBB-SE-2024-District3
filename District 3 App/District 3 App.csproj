@@ -25,6 +25,7 @@
     <None Remove="images\katniss.jpg" />
     <None Remove="images\likedPosts.png" />
     <None Remove="images\menu.png" />
+    <None Remove="images\more2.png" />
     <None Remove="images\peeta.jpeg" />
     <None Remove="images\plus.png" />
     <None Remove="images\poster.jpeg" />
@@ -60,6 +61,7 @@
     <Resource Include="images\katniss.jpg" />
     <Resource Include="images\likedPosts.png" />
     <Resource Include="images\menu.png" />
+    <Resource Include="images\more2.png" />
     <Resource Include="images\peeta.jpeg" />
     <Resource Include="images\plus.png" />
     <Resource Include="images\poster.jpeg" />
