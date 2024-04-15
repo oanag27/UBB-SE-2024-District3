@@ -24,6 +24,8 @@ namespace District_3_App.Settings_Privacy_GUI
     {
         private User currentConnectedUser;
         private ProfileNetworkInfoService profileNetworkInfoService;
+        public bool isProfilePrivate { get; set; } 
+
         public SettingsPrivacy_UserControl(User currentConnectedUser, ProfileNetworkInfoService profileNetworkInfoService)
         {
             InitializeComponent();
@@ -36,6 +38,8 @@ namespace District_3_App.Settings_Privacy_GUI
             PopulateRestrictedPostsAudienceForCurrentUser();
             PopulateRestrictedStoriesAudienceForCurrentUser();
             PopulateBlockedAccountsForCurrentUser();
+
+            this.passwordChangeTextBox.Password = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser).user.password;
 
 
             //this.profileNetworkInfoService = profileNetworkInfoService;
@@ -226,6 +230,211 @@ namespace District_3_App.Settings_Privacy_GUI
                 }
 
             }
+        }
+
+        private void addRestrictedStoriesUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (usernameRestrictTextBox.Text != "") {
+
+                UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(currentConnectedUser);
+
+
+                bool usernameExists = false;
+
+                foreach (var user in profileNetworkInfoService.GetAllUsers())
+                    if (user.username == usernameRestrictTextBox.Text)
+                        usernameExists = true;
+
+                if (!usernameExists)
+                {
+                    MessageBox.Show("Error: user with such username does not exist");
+
+                }
+                else {
+
+
+
+                    bool alreadyExists = false;
+
+                    foreach (var user in profile.restrictedStoriesAudience)
+                    {
+                        if (user.username == usernameRestrictTextBox.Text)
+                            alreadyExists = true;
+                    }
+
+                    if (alreadyExists)
+                    {
+                        MessageBox.Show("User is already restricted from seeing your stories", "Error");
+                    }
+                    else
+                    {
+                        profile.restrictedStoriesAudience.Add(profileNetworkInfoService.GetUserByName(usernameRestrictTextBox.Text));
+                    }
+
+
+                    restrictedStoriesAudienceListView.Items.Clear();
+
+
+                    foreach (var restrictedUser in profile.restrictedStoriesAudience)
+                        restrictedStoriesAudienceListView.Items.Add(restrictedUser.username);
+
+                }
+            }
+        }
+
+        private void addRestrictedPostsUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (usernameRestrictTextBox.Text != "")
+            {
+
+                UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(currentConnectedUser);
+
+
+                bool usernameExists = false;
+
+                foreach (var user in profileNetworkInfoService.GetAllUsers())
+                    if (user.username == usernameRestrictTextBox.Text)
+                        usernameExists = true;
+
+                if (!usernameExists)
+                {
+                    MessageBox.Show("Error: user with such username does not exist");
+
+                }
+                else
+                {
+
+
+
+                    bool alreadyExists = false;
+
+                    foreach (var user in profile.restrictedPostsAudience)
+                    {
+                        if (user.username == usernameRestrictTextBox.Text)
+                            alreadyExists = true;
+                    }
+
+                    if (alreadyExists)
+                    {
+                        MessageBox.Show("User is already restricted from seeing your stories", "Error");
+                    }
+                    else
+                    {
+                        profile.restrictedPostsAudience.Add(profileNetworkInfoService.GetUserByName(usernameRestrictTextBox.Text));
+                    }
+
+
+                    restrictedPostsAudienceListView.Items.Clear();
+
+
+                    foreach (var restrictedUser in profile.restrictedPostsAudience)
+                        restrictedPostsAudienceListView.Items.Add(restrictedUser.username);
+
+                }
+            }
+        }
+
+        private void removeRestrictedStoriesUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            string selectedUsername = restrictedStoriesAudienceListView.SelectedItem.ToString();
+            UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
+
+
+
+            profileNetworkInfoService.RemoveRestrictedStoriesAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
+
+
+
+            restrictedStoriesAudienceListView.Items.Clear(); //reset the list view
+
+
+
+            foreach (var restrictedUser in profile.restrictedStoriesAudience)
+            {
+
+                restrictedStoriesAudienceListView.Items.Add(restrictedUser.username);
+                //foreach (var groupMember in group.groupMembers)
+                //{
+                //    groupMembersListView.Items.Add(groupMember.username);
+                //}
+
+            }
+        }
+
+        private void removeRestrictedPostsUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            string selectedUsername = restrictedPostsAudienceListView.SelectedItem.ToString();
+            UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
+
+
+
+            profileNetworkInfoService.RemoveRestrictedPostsAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
+
+
+
+            restrictedPostsAudienceListView.Items.Clear(); //reset the list view
+
+
+
+            foreach (var restrictedUser in profile.restrictedPostsAudience)
+            {
+
+                restrictedPostsAudienceListView.Items.Add(restrictedUser.username);
+                //foreach (var groupMember in group.groupMembers)
+                //{
+                //    groupMembersListView.Items.Add(groupMember.username);
+                //}
+
+            }
+        }
+
+
+        private void changePasswordButton_Click(object sender, RoutedEventArgs e)
+        {
+            string newPassword = passwordChangeTextBox.Password;
+
+
+            if (newPassword.Length < 15)
+            {
+                MessageBox.Show("The new password should contian at least 15 digits", "Error");
+                return;
+            }
+
+            
+            bool containsSpecialCharacter = false;
+            bool containsDigit = false;
+
+            foreach (char c in newPassword)
+            {
+                if (char.IsDigit(c))
+                {
+                    containsDigit = true;
+                }
+                else if (char.IsSymbol(c) || char.IsPunctuation(c))
+                {
+                    containsSpecialCharacter = true;
+                }
+            }
+
+            if (!containsSpecialCharacter || !containsDigit)
+            {
+                MessageBox.Show("The new password must contain at least one digit and one special character", "Error");
+                return;
+            }
+
+
+            //set new password for the current connected user
+            this.currentConnectedUser.password = newPassword;
+        }
+
+        private void isProfilePrivateCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            profileNetworkInfoService.SwitchAccountPrivacyPublicPrivate(currentConnectedUser);
+        }
+
+        private void isProfilePrivateCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            profileNetworkInfoService.SwitchAccountPrivacyPublicPrivate(currentConnectedUser);
         }
     }
 }

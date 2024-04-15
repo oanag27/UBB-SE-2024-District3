@@ -122,8 +122,6 @@ namespace District_3_App.ExtraInfo
             profileNetworkInfoService.AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user2);
             profileNetworkInfoService.AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user4);
             profileNetworkInfoService.AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user4);
-            profileNetworkInfoService.AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user5);
-            profileNetworkInfoService.AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user5);
 
 
             profileNetworkInfoService.AddBlockedProfileToCurrentUser(profileUser2, blockedProfile3);
