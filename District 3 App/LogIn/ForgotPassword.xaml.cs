@@ -70,7 +70,6 @@ namespace District_3_App.LogIn
 
             if (isValid)
             {
-
                 var newContent = new SignInPage();
                 ResetPasswordGrid.Children.Clear();
                 ResetPasswordGrid.Children.Add(newContent);

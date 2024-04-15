@@ -20,12 +20,9 @@ namespace District_3_App.LogIn
 {
     public partial class SignInPage : UserControl
     {
-        public UserInfo UserInfo { get; set; }
         public SignInPage()
         {
             InitializeComponent();
-            UserInfo = new UserInfo("", "", "", "");
-            DataContext = this;
         }
 
         private void ForgotPasswordLink_Click(object sender, RoutedEventArgs e)
