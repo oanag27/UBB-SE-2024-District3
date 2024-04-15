@@ -10,11 +10,11 @@ namespace District_3_App.Service
     class ProfileInfoSettings
     {
         private FancierProfileRepo fancierRepo = new FancierProfileRepo();
-        private Guid profileId;
+        private Guid profileId = new Guid("11111111-1111-1111-1111-111111111111");
 
         public ProfileInfoSettings(Guid profileId)
         {
-            this.profileId = profileId;
+            //this.profileId = profileId;
         }
 
         public bool AddDailyMotto(string newMotto)

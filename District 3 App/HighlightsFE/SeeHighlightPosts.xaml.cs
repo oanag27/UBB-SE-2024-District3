@@ -30,7 +30,7 @@ namespace District_3_App.HighlightsFE
             HighlightsRepo highlightsRepo = new HighlightsRepo();
             SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
             SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1, null);
             snapshotsService = casualProfileService.getSnapshotsService();
 
             InitializeComponent();

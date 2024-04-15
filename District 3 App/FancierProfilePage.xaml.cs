@@ -76,29 +76,50 @@ namespace District_3_App
             string link1 = link1Text.Text;
             string link2 = link2Text.Text;
             List<string> links = profileInfoSettings.GetLinks();
-            if (link1 != links[0])
+            if (links != null && links.Count > 0)
             {
-                profileInfoSettings.DeleteLink(links[0]);
-                profileInfoSettings.AddLink(link1);
+                if (links.Count >= 1)
+                {
+                    if (link1 != links[0])
+                    {
+                        profileInfoSettings.DeleteLink(links[0]);
+                        profileInfoSettings.AddLink(link1);
+                    }
+                }
+                if (links.Count >= 2)
+                {
+                    if (link2 != links[1])
+                    {
+                        profileInfoSettings.DeleteLink(links[1]);
+                        profileInfoSettings.AddLink(link2);
+                    }
+                }
             }
-            if(link2!= links[1])
+            else
             {
-                profileInfoSettings.DeleteLink(links[1]);
-                profileInfoSettings.AddLink(link2);
+                if (link1!=null)
+                    profileInfoSettings.AddLink(link1);
+                if(link2!=null)
+                    profileInfoSettings.AddLink(link2);
             }
+            
+           
             LinksPopUp.IsOpen = false;
         }
 
         private void LinksPopUp_Opened(object sender, EventArgs e)
         {
             List<string> links = profileInfoSettings.GetLinks();
-            if (links.Count >= 1)
+            if (links != null && links.Count > 0)
             {
-                link1Text.Text = links[0];
-            }
-            if (links.Count >= 2)
-            {
-                link2Text.Text = links[1];
+                if (links.Count >= 1)
+                {
+                    link1Text.Text = links[0];
+                }
+                if (links.Count >= 2)
+                {
+                    link2Text.Text = links[1];
+                }
             }
         }
 

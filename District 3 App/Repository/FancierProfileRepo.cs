@@ -14,7 +14,7 @@ namespace District_3_App.Repository
         public Guid ProfileId { get; set; }
         public List<string> Links { get; set; }
         public string DailyMotto { get; set; }
-        public DateTime RemoveMottoDate { get; set; }
+        public DateTime? RemoveMottoDate { get; set; }
         public int FrameNumber { get; set; }
         public string Hashtag { get; set; }
     }
@@ -59,40 +59,42 @@ namespace District_3_App.Repository
                     Guid userId;
                     if (!Guid.TryParse((string)userElem.Attribute("ProfileId"), out userId))
                     {
-                        continue;
+                        userId = Guid.NewGuid();
                     }
-
-                    foreach (var elem in userElem.Elements("FancierProfile")) 
+                    FancierProfile profile = new FancierProfile();
+                    try
                     {
-                        FancierProfile profile = new FancierProfile();
-                        try
+                        profile.ProfileId = userId;
+                        profile.DailyMotto = (string)userElem.Attribute("DailyMotto");
+                        profile.RemoveMottoDate = (DateTime)userElem.Attribute("RemoveMottoDate");
+                        if (profile.RemoveMottoDate < DateTime.Now)
                         {
-                            profile.ProfileId = userId;
-                            profile.DailyMotto = (string)elem.Attribute("DailyMotto"); 
-                            profile.RemoveMottoDate = (DateTime)elem.Attribute("RemoveMottoDate");
-
-                            var linksElem = elem.Element("Links");
-                            if (linksElem != null)
-                            {
-                                profile.Links = linksElem.Elements("Link")
-                                    .Select(e => e.Value)
-                                    .Where(e => !string.IsNullOrEmpty(e))
-                                    .ToList();
-                            }
-
-                            profile.FrameNumber = (int)elem.Attribute("FrameNumber");
-                            profile.Hashtag = (string)elem.Attribute("Hashtag");
-
-                            profileRepo.Add(userId, profile);
+                            profile.DailyMotto = null;
+                            profile.RemoveMottoDate = null;
                         }
-                        catch (Exception ex)
+
+                        var linksElem = userElem.Element("Links");
+                        if (linksElem != null)
                         {
-                            Console.WriteLine($"Error parsing profile: {ex.Message}");
+                            profile.Links = linksElem.Elements("Link")
+                                .Select(e => e.Value)
+                                .Where(e => !string.IsNullOrEmpty(e))
+                                .ToList();
                         }
+
+                        profile.FrameNumber = (int)userElem.Attribute("FrameNumber");
+                        profile.Hashtag = (string)userElem.Attribute("Hashtag");
+
+                        profileRepo.Add(userId, profile);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error parsing profile: {ex.Message}");
                     }
                 }
             }
         }
+
 
         public void SaveToXml()
         {
@@ -118,7 +120,7 @@ namespace District_3_App.Repository
 
                     XElement profileElement = new XElement("FancierProfile",
                         new XAttribute("ProfileId", profile.ProfileId),
-                        new XAttribute("DailyMotto", profile.DailyMotto), 
+                        new XAttribute("DailyMotto", profile.DailyMotto),
                         new XAttribute("RemoveMottoDate", profile.RemoveMottoDate),
                         new XAttribute("FrameNumber", profile.FrameNumber),
                         new XAttribute("Hashtag", profile.Hashtag));
@@ -144,19 +146,175 @@ namespace District_3_App.Repository
             }
         }
 
+        public bool AddLink(Guid userId, string newLink)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    if (profileRepo[userId].Links == null)
+                    {
+                        profileRepo[userId].Links = new List<string>();
+                    }
+                    profileRepo[userId].Links.Add(newLink);
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        Links = new List<string> { newLink }
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error adding link: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteLink(Guid userId, string linkToDelete)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    if (profileRepo[userId].Links != null)
+                    {
+                        profileRepo[userId].Links.Remove(linkToDelete);
+                        SaveToXml();
+                    }
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting link: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool SetFrameNumber(Guid userId, int newFrameNumber)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].FrameNumber = newFrameNumber;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error setting frame number: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteFrameNumber(Guid userId)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].FrameNumber = 0;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting frame number: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool SetHashtag(Guid userId, string newHashtag)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].Hashtag = newHashtag;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error setting hashtag: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteHashtag(Guid userId)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].Hashtag = "";
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting hashtag: " + ex.Message);
+                return false;
+            }
+        }
 
         public bool AddDailyMotto(Guid userId, string newMotto, DateTime dateToRemove)
         {
             if (profileRepo.ContainsKey(userId))
             {
                 profileRepo[userId].DailyMotto = newMotto;
-                profileRepo[userId].RemoveMottoDate= dateToRemove;
+                profileRepo[userId].RemoveMottoDate = dateToRemove;
+                SaveToXml();
                 return true;
             }
             else
             {
-                return false;
+                FancierProfile profile = new FancierProfile();
+                profile.DailyMotto = newMotto;
+                profile.RemoveMottoDate = dateToRemove;
+                profileRepo.Add(userId, profile);
+                return true;
             }
+            return false;
         }
 
         public bool DeleteDailyMotto(Guid userId)
@@ -164,6 +322,7 @@ namespace District_3_App.Repository
             if (profileRepo.ContainsKey(userId))
             {
                 profileRepo[userId].DailyMotto = null;
+                SaveToXml();
                 return true;
             }
             else
@@ -183,30 +342,7 @@ namespace District_3_App.Repository
                 return null;
             }
         }
-        public bool AddLink(Guid userId, string newLink)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                profileRepo[userId].Links.Add(newLink);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public bool DeleteLink(Guid userId, string linkToDelete)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                return profileRepo[userId].Links.Remove(linkToDelete);
-            }
-            else
-            {
-                return false;
-            }
-        }
+    
 
         public List<string> GetLinks(Guid userId)
         {
@@ -217,32 +353,6 @@ namespace District_3_App.Repository
             else
             {
                 return null;
-            }
-        }
-
-        public bool SetFrameNumber(Guid userId, int newFrameNumber)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                profileRepo[userId].FrameNumber = newFrameNumber;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public bool DeleteFrameNumber(Guid userId)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                profileRepo[userId].FrameNumber = 0;
-                return true;
-            }
-            else
-            {
-                return false;
             }
         }
 
@@ -258,32 +368,7 @@ namespace District_3_App.Repository
             }
         }
 
-        public bool SetHashtag(Guid userId, string newHashtag)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                profileRepo[userId].Hashtag = newHashtag;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public bool DeleteHashtag(Guid userId)
-        {
-            if (profileRepo.ContainsKey(userId))
-            {
-                profileRepo[userId].Hashtag = null;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
+        
         public string GetHashtag(Guid userId)
         {
             if (profileRepo.ContainsKey(userId))
