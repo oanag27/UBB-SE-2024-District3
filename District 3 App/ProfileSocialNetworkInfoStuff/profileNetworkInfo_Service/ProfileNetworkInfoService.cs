@@ -542,5 +542,16 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
             return null;
         }
 
+
+
+
+        public void SwitchAccountPrivacyPublicPrivate(User currentConnectedUser)
+        {
+            UserProfileSocialNetworkInfo profile = GetProfileSocialNetworkInfoByUser(currentConnectedUser.username);
+
+
+            profile.isProfilePrivate = !profile.isProfilePrivate;
+        }
+
     }
 }

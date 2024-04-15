@@ -55,7 +55,7 @@
         </ListView>
 
 
-        <Label Content="Restricted Posts Audience:" FontSize="10" HorizontalAlignment="Left" Margin="223,202,0,0" VerticalAlignment="Top"/>
+        <Label Content="Restricted Posts Audience:" FontSize="10" HorizontalAlignment="Left" Margin="218,202,0,0" VerticalAlignment="Top"/>
         <Label Content="Groups:" FontSize="10" HorizontalAlignment="Left" Margin="223,353,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
         <Label Content="Restricted Stories Audience:" FontSize="10" HorizontalAlignment="Left" Margin="220,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="23" Width="133">
             <Label.RenderTransform>
@@ -164,21 +164,20 @@ BorderThickness="0">
 
         <Label Content="Settings &amp; Privacy" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="152" Margin="218,48,0,0"/>
         <Label Content="Password:" FontSize="10" HorizontalAlignment="Left" Margin="223,90,0,0" VerticalAlignment="Top" Width="63" Height="26"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="299,94,0,0" TextWrapping="Wrap" Text="*********" VerticalAlignment="Top" Width="120"/>
         <Label Content="Blocked Accounts:" FontSize="10" HorizontalAlignment="Left" Margin="223,282,0,0" VerticalAlignment="Top" Height="22" Width="109"/>
 
-        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" x:Name="isProfilePrivateCheckBox" Content="Public / Private Account" Margin="286,425,0,0"/>
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" x:Name="isProfilePrivateCheckBox" Content="Private Account" Margin="286,425,0,0" Unchecked="isProfilePrivateCheckBox_Unchecked" Checked="isProfilePrivateCheckBox_Checked"/>
 
-        <Button Content="Add" FontSize="11" x:Name="addRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="348,134,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Content="Add" FontSize="11" x:Name="addRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="348,204,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="348,134,0,0" VerticalAlignment="Top" Background="White" Click="addRestrictedStoriesUserButton_Click"/>
+        <Button Content="Add" FontSize="11" x:Name="addRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="348,204,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537" Click="addRestrictedPostsUserButton_Click"/>
 
         <Button Content="Add" FontSize="11" x:Name="addBlockedAccountButton" HorizontalAlignment="Left" Margin="348,284,0,0" VerticalAlignment="Top" Background="White" Click="addBlockedAccountButton_Click"/>
         <Button Click="mantainGroupsButton_Click" Content="Edit" FontSize="11" x:Name="mantainGroupsButton" HorizontalAlignment="Left" Margin="348,355,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.392,1.181"/>
 
 
 
-        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="391,134,0,0" VerticalAlignment="Top" Background="White"/>
-        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="391,202,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedStoriesUserButton" HorizontalAlignment="Left" Margin="391,134,0,0" VerticalAlignment="Top" Background="White" Click="removeRestrictedStoriesUserButton_Click"/>
+        <Button Content="Remove" FontSize="11" x:Name="removeRestrictedPostsUserButton" HorizontalAlignment="Left" Margin="391,204,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537" Click="removeRestrictedPostsUserButton_Click"/>
 
         <Button Content="Remove" FontSize="11" x:Name="removeBlockedAccountButton" HorizontalAlignment="Left" Margin="391,284,0,0" VerticalAlignment="Top" Background="White" Click="removeBlockedAccountButton_Click"/>
         <Button Click="leaveGroupButton_Click" Content="Leave" FontSize="11" x:Name="leaveGroupButton" HorizontalAlignment="Left" Margin="391,355,0,0" VerticalAlignment="Top" Background="White" RenderTransformOrigin="0.565,0.537"/>
@@ -227,6 +226,10 @@ BorderThickness="0">
             </ListView.Template>
         </ListView>
         <TextBox x:Name="usernameToBlockTextBox" HorizontalAlignment="Left" Margin="449,284,0,0" TextWrapping="Wrap" Text="Block some user..." VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="usernameRestrictTextBox" HorizontalAlignment="Left" Margin="449,158,0,0" TextWrapping="Wrap" Text="give username..." VerticalAlignment="Top" Width="120"/>
+        <Label Content="Username to restrict:" HorizontalAlignment="Left" Margin="449,125,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="passwordChangeTextBox" HorizontalAlignment="Left" Margin="286,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Change password" Background="White" HorizontalAlignment="Left" Margin="423,94,0,0" VerticalAlignment="Top" Height="18" Width="102" Click="changePasswordButton_Click"/>
 
 
     </Grid>
