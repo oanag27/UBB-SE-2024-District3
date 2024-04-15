@@ -1,10 +1,11 @@
 ﻿<UserControl x:Class="District_3_App.ProfileInfo_GUI.ProfileInfoDisplay"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-comc:\users\patricia\source\repos\ubb-se-2024-district3-solveerror1\district 3 app\profileinfo-gui\profileinfodisplay.xaml.cs
+c:\users\patricia\source\repos\ubb-se-2024-district3-solveerror1\district 3 app\profileinfo-gui\profileinfodisplay.xaml
+patibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:District_3_App.ProfileInfo_GUI"
-             mc:Ignorable="d" 
+             xmlns:local="clr-namespace:District_3_App.ProfileInfo_GUI" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid x:Name="ProfileInfoGrid" Background="White" HorizontalAlignment="Left" Width="800">
         <Grid.ColumnDefinitions>
@@ -342,7 +343,7 @@
 
                 <StackPanel Orientation="Horizontal" Margin="20,4,0,0" Width="740" Height="47">
                     <TextBox Text="{Binding Description, UpdateSourceTrigger=LostFocus}" 
-                         LostFocus="TextBox_LostFocus"
+                         LostFocus="TextBox_LostFocus_ChangeDescription"
                          AcceptsReturn="True" 
                          TextWrapping="Wrap"
                          VerticalScrollBarVisibility="Auto" 
@@ -378,7 +379,7 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </StackPanel.RenderTransform>
-                <Button Click="Button_Click_1" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
+                <Button Click="SaveDescriptionButton" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
                     <TextBlock Text="Save" FontSize="9" FontWeight="Bold"/>
                 </Button>
             </StackPanel>
