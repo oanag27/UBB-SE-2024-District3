@@ -89,7 +89,7 @@ BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
 
     </UserControl.Resources>
 
-    <Grid x:Name="SignInGrid" Background="White" Width="1000" Height="1001">
+    <Grid x:Name="SignInGrid" Background="White" Width="1000" Height="1001" Margin="120,45,0,0" VerticalAlignment="Top">
         <Border BorderBrush="#5A6978" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="184,33,0,0" Height="576">
             <Grid Margin="60,90">
                 <Grid.RowDefinitions>
@@ -110,7 +110,7 @@ BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
                         <Image x:Name="PasswordVisibilityIcon" Width="30" Height="30" Source="\images\hidePasswordIcon.png" RenderTransformOrigin="1.786,0.428" />
                     </ToggleButton>
                 </StackPanel>
-                <Button Grid.Row="4" x:Name="SignInButton" Content="Sign In" Background="#FF46525E" Foreground="White" Margin="0,35,0,45" Width="220" Height="38" HorizontalAlignment="Center" FontSize="16" BorderBrush="#FF47525E" Grid.RowSpan="2">
+                <Button Grid.Row="4" x:Name="SignInButton" Content="Sign In" Background="#FF46525E" Foreground="White" Margin="0,35,0,45" Width="220" Height="38" HorizontalAlignment="Center" FontSize="16" BorderBrush="#FF47525E" Grid.RowSpan="2" Click="SignInButton_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>
