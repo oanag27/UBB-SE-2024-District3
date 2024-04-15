@@ -10,9 +10,12 @@ namespace District_3_App.Service
     internal class CasualProfileService
     {
         private SnapshotsService snapshotsService { get; set; }
+        private ProfileInfoSettings profileInfoSettings { get; set; }
 
-        public CasualProfileService(SnapshotsService snapshotsService) {
+        public CasualProfileService(SnapshotsService snapshotsService, ProfileInfoSettings profileInfoSettings)
+        {
             this.snapshotsService = snapshotsService;
+            this.profileInfoSettings = profileInfoSettings;
         }
         public List<MockPost> getConnectedUserPosts() {
             return null;
@@ -21,6 +24,10 @@ namespace District_3_App.Service
         public SnapshotsService getSnapshotsService()
         {
             return snapshotsService;
+        }
+        public ProfileInfoSettings getProfileInfoSettings()
+        {
+            return profileInfoSettings;
         }
     }
 }

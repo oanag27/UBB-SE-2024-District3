@@ -19,7 +19,7 @@ namespace District_3_App.Repository
         public string Hashtag { get; set; }
     }
 
-    class FancierProfileRepo
+    public class FancierProfileRepo
     {
         private Dictionary<Guid, FancierProfile> profileRepo = new Dictionary<Guid, FancierProfile>();
         private string filePath;
@@ -62,13 +62,13 @@ namespace District_3_App.Repository
                         continue;
                     }
 
-                    foreach (var elem in userElem.Elements("Settings"))
+                    foreach (var elem in userElem.Elements("FancierProfile")) 
                     {
                         FancierProfile profile = new FancierProfile();
                         try
                         {
                             profile.ProfileId = userId;
-                            profile.DailyMotto = (string)elem.Attribute("DailyMotto");
+                            profile.DailyMotto = (string)elem.Attribute("DailyMotto"); 
                             profile.RemoveMottoDate = (DateTime)elem.Attribute("RemoveMottoDate");
 
                             var linksElem = elem.Element("Links");
@@ -118,7 +118,7 @@ namespace District_3_App.Repository
 
                     XElement profileElement = new XElement("FancierProfile",
                         new XAttribute("ProfileId", profile.ProfileId),
-                        new XAttribute("DailyMotto", profile.DailyMotto),
+                        new XAttribute("DailyMotto", profile.DailyMotto), 
                         new XAttribute("RemoveMottoDate", profile.RemoveMottoDate),
                         new XAttribute("FrameNumber", profile.FrameNumber),
                         new XAttribute("Hashtag", profile.Hashtag));
@@ -144,11 +144,13 @@ namespace District_3_App.Repository
             }
         }
 
-        public bool AddDailyMotto(Guid userId, string newMotto)
+
+        public bool AddDailyMotto(Guid userId, string newMotto, DateTime dateToRemove)
         {
             if (profileRepo.ContainsKey(userId))
             {
                 profileRepo[userId].DailyMotto = newMotto;
+                profileRepo[userId].RemoveMottoDate= dateToRemove;
                 return true;
             }
             else

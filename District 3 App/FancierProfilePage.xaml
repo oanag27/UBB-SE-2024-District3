@@ -62,7 +62,7 @@
                                 <ComboBoxItem Content="This is for everybody going through tough times: been there, done that"></ComboBoxItem>
                             </ComboBox>
                             <Label Content="Or make your own:" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                            <TextBox x:Name="textInputBox" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5"/>
+                            <TextBox x:Name="textInputBox" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5" TextChanged="textInputBox_TextChanged"/>
 
                             <Button Grid.Row="4" Grid.Column="0" x:Name="SaveMottoButton" Content="Save" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="SaveMottoButton_Click" Width="100">
                                 <Button.Resources>
@@ -115,7 +115,7 @@
                             <Label Content="Write the links " Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" FontSize="14" />
                             <Button x:Name="closeLinksPopUpButton" Grid.Row="0" Grid.Column="1" Content="X" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="closeLinksPopUpButton_Click" Margin="5"/>
                             <TextBox x:Name="link1Text"  Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10" Width="200" Height="25" BorderThickness="1" BorderBrush="#FF47525E"/>
-                            <TextBox x:Name="link2Text"  Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10" Width="200" Height="25" BorderThickness="1" BorderBrush="#FF47525E"/>
+                            <TextBox x:Name="link2Text"  Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10" Width="200" Height="25" BorderThickness="1" BorderBrush="#FF47525E" />
                             <Button Grid.Row="4" Grid.Column="0" x:Name="SaveLinksButton" Content="Save" Background="#FF47525E" Foreground="White" BorderBrush="#FF8492A6" Click="SaveLinksButton_Click" Margin="5" Width="100">
                                 <Button.Resources>
                                     <Style TargetType="{x:Type Border}">
@@ -144,7 +144,7 @@
                 </Grid.ColumnDefinitions>
                 <Label Content="Frames" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold" Margin="3,-29,0,0"/>
                 <UniformGrid Rows="1" Columns="7" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" >
-                    <Button x:Name="firstFrame" Background="White" BorderThickness="0" Height="52" Width="52" Margin="5">
+                    <Button x:Name="firstFrame" Background="White" BorderThickness="0" Height="52" Width="52" Margin="5" Click="firstFrame_Click">
                         <Rectangle Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -155,7 +155,7 @@
                         </Rectangle>
                     </Button>
 
-                    <Button x:Name="secondFrame" Background="White" BorderThickness="0" Height="52" Width="52">
+                    <Button x:Name="secondFrame" Background="White" BorderThickness="0" Height="52" Width="52" Click="secondFrame_Click">
                         <Rectangle Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -167,7 +167,7 @@
                             </Rectangle.Stroke>
                         </Rectangle>
                     </Button>
-                    <Button x:Name="thirdFrame"  Background="White" BorderThickness="0" Height="52" Width="52" >
+                    <Button x:Name="thirdFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="thirdFrame_Click">
                         <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -182,7 +182,7 @@
                             </Rectangle.Stroke>
                         </Rectangle>
                     </Button>
-                    <Button x:Name="forthFrame"  Background="White" BorderThickness="0" Height="52" Width="52">
+                    <Button x:Name="forthFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="forthFrame_Click">
                         <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -196,7 +196,7 @@
                             </Rectangle.Stroke>
                         </Rectangle>
                     </Button>
-                    <Button x:Name="fifthFrame"  Background="White" BorderThickness="0" Height="52" Width="52" >
+                    <Button x:Name="fifthFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="fifthFrame_Click" >
                         <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6" >
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -209,7 +209,7 @@
                             </Rectangle.Stroke>
                         </Rectangle>
                     </Button>
-                    <Button x:Name="romanianFlagFrame"  Background="White" BorderThickness="0" Height="52" Width="52" >
+                    <Button x:Name="romanianFlagFrame"  Background="White" BorderThickness="0" Height="52" Width="52" Click="romanianFlagFrame_Click">
                         <Rectangle HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" StrokeThickness="6">
                             <Rectangle.Stroke>
                                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
@@ -223,7 +223,7 @@
                             </Rectangle.Stroke>
                         </Rectangle>
                     </Button>
-                    <Button x:Name="NoneFrame" Background="White" BorderThickness="0" Height="52" Width="52" >
+                    <Button x:Name="NoneFrame" Background="White" BorderThickness="0" Height="52" Width="52" Click="NoneFrame_Click" >
                         <Grid>
                             <Rectangle HorizontalAlignment="Left" Height="50" Stroke="#FF8492A6" VerticalAlignment="Center" Width="50"  />
                             <Label Content="None" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="398" Canvas.Top="264" Foreground="#FF8190A5" RenderTransformOrigin="0.742,1.183"/>
@@ -237,7 +237,7 @@
 
             <Grid x:Name="HashtagsGrid" Grid.Row="3" Margin="6,84,51,-132">
                 <Label Content="Hashtags" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Foreground="#FF47525E" FontWeight="Bold"/>
-                <Button Content="#Fun" HorizontalAlignment="Left" Margin="3,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" >
+                <Button Content="#Fun" HorizontalAlignment="Left" Margin="3,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" Click="Fun_Button_Click">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -250,7 +250,7 @@
                     </Button.Style>
                 </Button>
 
-                <Button Content="#Sad" HorizontalAlignment="Left" Margin="47,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" Background="White">
+                <Button Content="#Sad" HorizontalAlignment="Left" Margin="47,25,0,0" VerticalAlignment="Top" Width="39" Foreground="#FF8190A5" Background="White" Click="Sad_Button_Click_1">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -262,7 +262,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="#OpenToWork" HorizontalAlignment="Left" Margin="90,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White">
+                <Button Content="#OpenToWork" HorizontalAlignment="Left" Margin="90,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White" Click="Button_Click_Open_to_Work">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -274,7 +274,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="#JustMarried" HorizontalAlignment="Left" Margin="181,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White">
+                <Button Content="#JustMarried" HorizontalAlignment="Left" Margin="181,25,0,0" VerticalAlignment="Top" Width="87" Foreground="#FF8190A5" Background="White" Click="Button_Click_Married">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -286,7 +286,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="#Engaged" HorizontalAlignment="Left" Margin="273,25,0,0" VerticalAlignment="Top" Width="70" Foreground="#FF8190A5" Background="White" >
+                <Button Content="#Engaged" HorizontalAlignment="Left" Margin="273,25,0,0" VerticalAlignment="Top" Width="70" Foreground="#FF8190A5" Background="White" Click="Button_Click_Engaged">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -298,7 +298,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="#BigPromotion" HorizontalAlignment="Left" Margin="348,25,0,0" VerticalAlignment="Top" Width="95" Foreground="#FF8190A5" Background="White">
+                <Button Content="#BigPromotion" HorizontalAlignment="Left" Margin="348,25,0,0" VerticalAlignment="Top" Width="95" Foreground="#FF8190A5" Background="White" Click="Button_Click_Promotion">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Background" Value="White"/>
@@ -310,6 +310,19 @@
                         </Style>
                     </Button.Style>
                 </Button>
+                <Button Content="Remove Hashtag" HorizontalAlignment="Left" Margin="448,25,0,0" VerticalAlignment="Top" Width="95" Foreground="#FF8190A5" Background="White" Click="Button_Click_Remove">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Gray"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
             </Grid>
         </Grid>
     </Grid>

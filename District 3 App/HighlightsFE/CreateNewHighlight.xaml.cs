@@ -29,9 +29,10 @@ namespace District_3_App.HighlightsFE
         public CreateNewHighlight(List<Guid> selectedPostsGuids)
         {
             HighlightsRepo highlightsRepo = new HighlightsRepo();
+            FancierProfileRepo fancierProfileRepo = new FancierProfileRepo();
             SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
             SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1);
+            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1, null);
             snapshotsService = casualProfileService.getSnapshotsService();
             InitializeComponent();
             guids = selectedPostsGuids;
