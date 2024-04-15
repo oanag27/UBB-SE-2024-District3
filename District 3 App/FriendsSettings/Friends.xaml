@@ -33,7 +33,7 @@
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
-    <Grid>
+    <Grid Background="White">
         <Label Content="Friends Settings" HorizontalAlignment="Left" Margin="68,51,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <Label Content="Sync Contacts" HorizontalAlignment="Left" Margin="68,107,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="See who viewed your profile" HorizontalAlignment="Left" Margin="68,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.175,0.579" FontSize="16"/>
