@@ -33,9 +33,10 @@ namespace District_3_App.ProfileInfo_GUI
             ProfileInfoGrid.Children.Add(newContent);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_LostFocus_ChangeDescription(object sender, RoutedEventArgs e)
         {
-
+            var editedDescription = ((TextBox)sender).Text;
         }
+
     }
 }
