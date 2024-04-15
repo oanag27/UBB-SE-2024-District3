@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="button.png" />
+    <None Remove="buttonEye.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="button.png" />
+    <Resource Include="buttonEye.png" />
+  </ItemGroup>
+
+</Project>
