@@ -6,16 +6,18 @@ c:\users\patricia\source\repos\ubb-se-2024-district3-solveerror1\district 3 app\
 patibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:District_3_App.ProfileInfo_GUI" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid x:Name="ProfileInfoGrid" Background="White" HorizontalAlignment="Left" Width="800">
+             >
+
+    <Grid x:Name="ProfileInfoGrid" Background="White" HorizontalAlignment="Center" Width="709" Height="454">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="Auto" MinWidth="177" />
+            <ColumnDefinition Width="220.573"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="228.427" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="0,0,3,0">
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,0,5,0">
 
-            <StackPanel Margin="371,10,141,0" Width="251">
+            <StackPanel Margin="0,10,141,0" Width="251">
                 <TextBlock Text="Profile Info"
                    FontWeight="Bold"
                    FontSize="18"
@@ -364,29 +366,15 @@ patibility/2006"
                         </TextBox.Style>
                     </TextBox>
 
-                    <Button Click="Button_Click" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
+                    <Button Click="Save_Button" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
                         <TextBlock Text="Save" FontSize="9" FontWeight="Bold"/>
                     </Button>
                 </StackPanel>
             </StackPanel>
-
-            <StackPanel RenderTransformOrigin="-1.708,0.508" Width="71">
-                <StackPanel.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleX="1"/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </StackPanel.RenderTransform>
-                <Button Click="SaveDescriptionButton" Margin="5,2,0,0" Background="Transparent" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Left">
-                    <TextBlock Text="Save" FontSize="9" FontWeight="Bold"/>
-                </Button>
-            </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" Width="156">
-            <Image Source="/images/avatar.png" Width="65" Height="66" Margin="0,40,0,0"/>
+        <StackPanel Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="0,0,0,0" Height="160">
+            <Image Source="/images/avatar.png" Width="50" Height="50" Margin="0,40,0,0"/>
             <TextBlock FontSize="8" FontWeight="bold" HorizontalAlignment="Center">Edit profile picture</TextBlock>
         </StackPanel>
     </Grid>
