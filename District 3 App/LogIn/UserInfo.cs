@@ -42,6 +42,11 @@ namespace District_3_App.LogIn
             ConfirmationPassword = confirmationPassword;
         }
 
+        public UserInfo(string email, string password) 
+        {
+            Email = email;
+            Password = password;
+        }
         
     }
 }
