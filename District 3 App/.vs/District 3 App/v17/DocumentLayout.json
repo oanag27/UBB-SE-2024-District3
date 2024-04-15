@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentconfirmed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentconfirmed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|e:\\facultate\\sem4\\app\\ubb-se-2024-district3\\district 3 app\\extrainfo\\paymentconfirmed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{355E9333-12C6-4227-BB49-B41AE5EB5DE6}|District 3 App.csproj|solutionrelative:extrainfo\\paymentconfirmed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -183,6 +187,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaymentConfirmed.xaml.cs",
+              "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml.cs",
+              "RelativeDocumentMoniker": "ExtraInfo\\PaymentConfirmed.xaml.cs",
+              "ToolTip": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml.cs",
+              "RelativeToolTip": "ExtraInfo\\PaymentConfirmed.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:29:33.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PaymentConfirmed.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentConfirmed.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\PaymentConfirmed.xaml",
@@ -194,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PaymentForm.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\PaymentForm.xaml.cs",
               "RelativeDocumentMoniker": "ExtraInfo\\PaymentForm.xaml.cs",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VerifiedAccount.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\VerifiedAccount.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\VerifiedAccount.xaml",
@@ -219,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CloseFriendsSection_UserControl.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\CloseFriends_GUI\\CloseFriendsSection_UserControl.xaml.cs",
               "RelativeDocumentMoniker": "CloseFriends_GUI\\CloseFriendsSection_UserControl.xaml.cs",
@@ -231,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CloseFriendsSection_UserControl.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\CloseFriends_GUI\\CloseFriendsSection_UserControl.xaml",
               "RelativeDocumentMoniker": "CloseFriends_GUI\\CloseFriendsSection_UserControl.xaml",
@@ -242,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SettingsPrivacy_UserControl.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
               "RelativeDocumentMoniker": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml.cs",
@@ -254,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProfileNetworkInfoService.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
               "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\profileNetworkInfo_Service\\ProfileNetworkInfoService.cs",
@@ -266,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MantainGroups.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\MantainGroups.xaml.cs",
               "RelativeDocumentMoniker": "Settings_Privacy_GUI\\MantainGroups.xaml.cs",
@@ -278,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ExtraInfo.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml.cs",
               "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml.cs",
@@ -290,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SettingsPrivacy_UserControl.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
               "RelativeDocumentMoniker": "Settings_Privacy_GUI\\SettingsPrivacy_UserControl.xaml",
@@ -301,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ExtraInfo.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ExtraInfo\\ExtraInfo.xaml",
               "RelativeDocumentMoniker": "ExtraInfo\\ExtraInfo.xaml",
@@ -312,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CreateNewHighlight.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml",
               "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml",
@@ -323,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "SeeHighlightPosts.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SeeHighlightPosts.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\SeeHighlightPosts.xaml.cs",
@@ -335,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CreateNewHighlight.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\CreateNewHighlight.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\CreateNewHighlight.xaml.cs",
@@ -347,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "HighlightsRepo.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Repository\\HighlightsRepo.cs",
               "RelativeDocumentMoniker": "Repository\\HighlightsRepo.cs",
@@ -359,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Highlight.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Entities\\Highlight.cs",
               "RelativeDocumentMoniker": "Entities\\Highlight.cs",
@@ -371,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HighlightsOnMain.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml",
               "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml",
@@ -382,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SelectHighlight.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectHighlight.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\SelectHighlight.xaml.cs",
@@ -394,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "SnapshotsService.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Service\\SnapshotsService.cs",
               "RelativeDocumentMoniker": "Service\\SnapshotsService.cs",
@@ -406,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\entities\\User.cs",
               "RelativeDocumentMoniker": "ProfileSocialNetworkInfoStuff\\entities\\User.cs",
@@ -418,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SelectPostsPage.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\SelectPostsPage.xaml.cs",
@@ -430,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "HighlightsOnMain.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\HighlightsOnMain.xaml.cs",
               "RelativeDocumentMoniker": "HighlightsFE\\HighlightsOnMain.xaml.cs",
@@ -442,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "SelectPostsPage.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\HighlightsFE\\SelectPostsPage.xaml",
               "RelativeDocumentMoniker": "HighlightsFE\\SelectPostsPage.xaml",
@@ -453,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SnapshotsRepo.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Repository\\SnapshotsRepo.cs",
               "RelativeDocumentMoniker": "Repository\\SnapshotsRepo.cs",
@@ -465,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "FancierProfilePage.xaml",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml",
               "RelativeDocumentMoniker": "FancierProfilePage.xaml",
@@ -476,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "FancierProfilePage.xaml.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\FancierProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "FancierProfilePage.xaml.cs",
@@ -488,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "CasualProfileService.cs",
               "DocumentMoniker": "E:\\facultate\\Sem4\\app\\UBB-SE-2024-District3\\District 3 App\\Service\\CasualProfileService.cs",
               "RelativeDocumentMoniker": "Service\\CasualProfileService.cs",
