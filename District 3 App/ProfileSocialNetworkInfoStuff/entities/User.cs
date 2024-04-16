@@ -12,6 +12,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
         public string username { get; set; }
         public string password { get; set; }
         public string email { get; set; }
+        public string confirmationPassword { get; set; }
         public DateTime registrationDate { get; set; }
 
         public User() { }
@@ -22,6 +23,15 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
             this.password = password;
             this.email = email;
             this.registrationDate = registrationDate;
+        }
+
+        public User(Guid id, string username, string password, string email, string confirmationPassword)
+        {
+            this.id = id;
+            this.username = username;
+            this.password = password;
+            this.email = email;
+            this.confirmationPassword = confirmationPassword;
         }
 
         public string registrationDateToString()
