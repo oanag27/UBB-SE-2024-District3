@@ -64,7 +64,7 @@ namespace District_3_App.LogIn
 
             if (!ValidateNewPassword(txtNewPassword.Password))
             {
-                MessageBox.Show("Invalid password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
