@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace District_3_App.ExtraInfo
 {
@@ -21,13 +22,48 @@ namespace District_3_App.ExtraInfo
     public partial class PaymentForm : UserControl
     {
         public Account Account { get; set; }
+        private string xmlFilePath = "Users.xml";
+        private XDocument xmlDoc;
         public PaymentForm()
         {
             InitializeComponent();
-            Account = new Account(new UserExtraInfo("john_doe", "securepassword"), "", "", "", "");
-            DataContext = this;
-        }
+            try
+            {
+                xmlDoc = XDocument.Load(xmlFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to load XML file: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            string username = "john_doe"; // Example username
+            string password = "securepassword"; // Example password
 
+            // Find user in XML
+            /*var user = FindUserByUsernameAndPassword(username, password);
+
+            if (user != null)
+            {
+                // Initialize Account instance with user's information
+                Account = new Account(new UserExtraInfo(username, password), "", "", "", "");
+                DataContext = this;
+            }
+            else
+            {
+                MessageBox.Show("User not found in XML.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }*/
+            /*Account = new Account(new UserExtraInfo("john_doe", "securepassword"), "", "", "", "");
+            DataContext = this;*/
+        }
+        private XElement FindUserByUsernameAndPassword(string username, string password)
+        {
+            // Search for a user in the XML document with the specified username and password
+            var user = xmlDoc.Descendants("User")
+                             .FirstOrDefault(u => (string)u.Element("Username") == username &&
+                                                  (string)u.Element("Password") == password);
+
+            return user;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             bool isValid = true;
