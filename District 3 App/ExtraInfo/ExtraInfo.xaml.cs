@@ -83,7 +83,7 @@ namespace District_3_App.ExtraInfo
 
             //init repos with profiles list and groups list
             GroupsRepository groupsRepository = new GroupsRepository();
-            ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo> userProfileNetowrkRepository = new ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo>(userProfileSocialNetworkInfos);
+            ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo> userProfileNetowrkRepository = new ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo>();
             //init profile info service with profile list
             ProfileNetworkInfoService profileNetworkInfoService = new ProfileNetworkInfoService(groupsRepository, userProfileNetowrkRepository, usersRepo);
 

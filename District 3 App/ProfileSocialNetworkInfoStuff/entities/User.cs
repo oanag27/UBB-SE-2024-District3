@@ -19,13 +19,13 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
         public TimeSpan Usersession { get; set; }
 
         public User() { }
-        public User(Guid id, string username, string password, string email, DateTime registrationDate)
+        public User(Guid id, string username, string password, string email, string confirmationPassword)
         {
             this.id = id;
             this.username = username;
             this.password = password;
             this.email = email;
-            this.registrationDate = registrationDate;
+            this.confirmationPassword = confirmationPassword;
         }
 
         public User(Guid id, string username, string password, string email, string confirmationPassword, int followingCount, int followersCount)

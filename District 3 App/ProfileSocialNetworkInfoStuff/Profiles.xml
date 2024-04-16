@@ -8,6 +8,9 @@
       <email>user1@yahoo.ro</email>
       <confirmationPassword>password1</confirmationPassword>
       <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
     </user>
     <blockedProfiles>
       <BlockedProfile>
@@ -18,6 +21,9 @@
           <email>username2@gmail.ro</email>
           <confirmationPassword>password2</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <blockDate>2023-12-02T17:50:10</blockDate>
       </BlockedProfile>
@@ -29,19 +35,11 @@
           <email>user3@yahoo.com</email>
           <confirmationPassword>password3</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <blockDate>2023-12-02T17:50:15</blockDate>
-      </BlockedProfile>
-      <BlockedProfile>
-        <user>
-          <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
-          <username>username4</username>
-          <password>password4</password>
-          <email>username4@stud.ubbcluj.ro</email>
-          <confirmationPassword>password4</confirmationPassword>
-          <registrationDate>0001-01-01T00:00:00</registrationDate>
-        </user>
-        <blockDate>2022-11-02T17:50:15</blockDate>
       </BlockedProfile>
     </blockedProfiles>
     <closeFriendsProfiles>
@@ -53,6 +51,9 @@
           <email>username2@gmail.ro</email>
           <confirmationPassword>password2</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
       </CloseFriendProfile>
@@ -64,6 +65,9 @@
           <email>username4@gmail.es</email>
           <confirmationPassword>password5</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
       </CloseFriendProfile>
@@ -75,6 +79,9 @@
           <email>username4@stud.ubbcluj.ro</email>
           <confirmationPassword>password4</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
       </CloseFriendProfile>
@@ -91,6 +98,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -99,6 +109,9 @@
             <email>user3@yahoo.com</email>
             <confirmationPassword>password3</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>664d9900-0739-4d92-bfbb-380bf0d53552</id>
@@ -107,6 +120,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -121,6 +137,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -129,6 +148,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
@@ -137,6 +159,9 @@
             <email>username4@stud.ubbcluj.ro</email>
             <confirmationPassword>password4</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -151,6 +176,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -159,6 +187,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>3b190fe3-d0fb-4e84-a5d1-93991e672ef7</id>
@@ -167,6 +198,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -179,6 +213,9 @@
         <email>username2@gmail.ro</email>
         <confirmationPassword>password2</confirmationPassword>
         <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
       </User>
       <User>
         <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -187,14 +224,9 @@
         <email>user3@yahoo.com</email>
         <confirmationPassword>password3</confirmationPassword>
         <registrationDate>0001-01-01T00:00:00</registrationDate>
-      </User>
-      <User>
-        <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
-        <username>username4</username>
-        <password>password4</password>
-        <email>username4@stud.ubbcluj.ro</email>
-        <confirmationPassword>password4</confirmationPassword>
-        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
       </User>
     </restrictedStoriesAudience>
     <restrictedPostsAudience>
@@ -205,6 +237,9 @@
         <email>username2@gmail.ro</email>
         <confirmationPassword>password2</confirmationPassword>
         <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
       </User>
       <User>
         <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -213,14 +248,9 @@
         <email>user3@yahoo.com</email>
         <confirmationPassword>password3</confirmationPassword>
         <registrationDate>0001-01-01T00:00:00</registrationDate>
-      </User>
-      <User>
-        <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
-        <username>username4</username>
-        <password>password4</password>
-        <email>username4@stud.ubbcluj.ro</email>
-        <confirmationPassword>password4</confirmationPassword>
-        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
       </User>
     </restrictedPostsAudience>
     <isProfilePrivate>false</isProfilePrivate>
@@ -233,6 +263,9 @@
       <email>username2@gmail.ro</email>
       <confirmationPassword>password2</confirmationPassword>
       <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
     </user>
     <blockedProfiles>
       <BlockedProfile>
@@ -243,6 +276,9 @@
           <email>username4@gmail.es</email>
           <confirmationPassword>password5</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <blockDate>2023-12-02T18:40:10</blockDate>
       </BlockedProfile>
@@ -254,6 +290,9 @@
           <email>user3@yahoo.com</email>
           <confirmationPassword>password3</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <blockDate>2023-12-02T17:50:15</blockDate>
       </BlockedProfile>
@@ -267,6 +306,9 @@
           <email>username2@gmail.ro</email>
           <confirmationPassword>password2</confirmationPassword>
           <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
         </user>
         <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
       </CloseFriendProfile>
@@ -283,6 +325,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -291,6 +336,9 @@
             <email>user3@yahoo.com</email>
             <confirmationPassword>password3</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>664d9900-0739-4d92-bfbb-380bf0d53552</id>
@@ -299,6 +347,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -313,6 +364,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -321,6 +375,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>3b190fe3-d0fb-4e84-a5d1-93991e672ef7</id>
@@ -329,6 +386,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -343,6 +403,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -351,6 +414,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
@@ -359,6 +425,9 @@
             <email>username4@stud.ubbcluj.ro</email>
             <confirmationPassword>password4</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -375,6 +444,9 @@
       <email>user3@yahoo.com</email>
       <confirmationPassword>password3</confirmationPassword>
       <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
     </user>
     <blockedProfiles />
     <closeFriendsProfiles />
@@ -390,6 +462,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -398,6 +473,9 @@
             <email>user3@yahoo.com</email>
             <confirmationPassword>password3</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>664d9900-0739-4d92-bfbb-380bf0d53552</id>
@@ -406,6 +484,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -420,6 +501,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -428,6 +512,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>3b190fe3-d0fb-4e84-a5d1-93991e672ef7</id>
@@ -436,6 +523,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -452,6 +542,9 @@
       <email>username4@gmail.es</email>
       <confirmationPassword>password5</confirmationPassword>
       <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
     </user>
     <blockedProfiles />
     <closeFriendsProfiles />
@@ -467,6 +560,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -475,6 +571,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>bbd894c0-8491-45fb-b4e2-21f04636d494</id>
@@ -483,6 +582,9 @@
             <email>username4@stud.ubbcluj.ro</email>
             <confirmationPassword>password4</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -497,6 +599,9 @@
             <email>user1@yahoo.ro</email>
             <confirmationPassword>password1</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>dbdc5ff2-2031-4100-8372-36bf611a641d</id>
@@ -505,6 +610,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>3b190fe3-d0fb-4e84-a5d1-93991e672ef7</id>
@@ -513,6 +621,9 @@
             <email>username2@gmail.ro</email>
             <confirmationPassword>password2</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
@@ -527,6 +638,9 @@
             <email>username4@gmail.es</email>
             <confirmationPassword>password5</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
           <User>
             <id>701cca8b-70df-4035-821e-1b1eda15e437</id>
@@ -535,6 +649,607 @@
             <email>user3@yahoo.com</email>
             <confirmationPassword>password3</confirmationPassword>
             <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+    </groups>
+    <restrictedStoriesAudience />
+    <restrictedPostsAudience />
+    <isProfilePrivate>false</isProfilePrivate>
+  </UserProfileSocialNetworkInfo>
+  <UserProfileSocialNetworkInfo>
+    <user>
+      <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+      <username>username1</username>
+      <password>password1</password>
+      <email>user1@yahoo.ro</email>
+      <confirmationPassword>password1</confirmationPassword>
+      <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
+    </user>
+    <blockedProfiles>
+      <BlockedProfile>
+        <user>
+          <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+          <username>username2</username>
+          <password>password2</password>
+          <email>username2@gmail.ro</email>
+          <confirmationPassword>password2</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <blockDate>2023-12-02T17:50:10</blockDate>
+      </BlockedProfile>
+      <BlockedProfile>
+        <user>
+          <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+          <username>username3</username>
+          <password>password3</password>
+          <email>user3@yahoo.com</email>
+          <confirmationPassword>password3</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <blockDate>2023-12-02T17:50:15</blockDate>
+      </BlockedProfile>
+      <BlockedProfile>
+        <user>
+          <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+          <username>username4</username>
+          <password>password4</password>
+          <email>username4@stud.ubbcluj.ro</email>
+          <confirmationPassword>password4</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <blockDate>2022-11-02T17:50:15</blockDate>
+      </BlockedProfile>
+    </blockedProfiles>
+    <closeFriendsProfiles>
+      <CloseFriendProfile>
+        <user>
+          <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+          <username>username2</username>
+          <password>password2</password>
+          <email>username2@gmail.ro</email>
+          <confirmationPassword>password2</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
+      </CloseFriendProfile>
+      <CloseFriendProfile>
+        <user>
+          <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+          <username>username5</username>
+          <password>password5</password>
+          <email>username4@gmail.es</email>
+          <confirmationPassword>password5</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
+      </CloseFriendProfile>
+      <CloseFriendProfile>
+        <user>
+          <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+          <username>username4</username>
+          <password>password4</password>
+          <email>username4@stud.ubbcluj.ro</email>
+          <confirmationPassword>password4</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
+      </CloseFriendProfile>
+    </closeFriendsProfiles>
+    <groups>
+      <Group>
+        <Id>b3af9dba-db26-4f5d-a8e1-56ed6ef0e7ba</Id>
+        <groupName>group 1</groupName>
+        <groupMembers>
+          <User>
+            <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+            <username>username2</username>
+            <password>password2</password>
+            <email>username2@gmail.ro</email>
+            <confirmationPassword>password2</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+            <username>username3</username>
+            <password>password3</password>
+            <email>user3@yahoo.com</email>
+            <confirmationPassword>password3</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>53319d77-1ffa-48a7-9762-4577cf78a92f</Id>
+        <groupName>group 3</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+            <username>username4</username>
+            <password>password4</password>
+            <email>username4@stud.ubbcluj.ro</email>
+            <confirmationPassword>password4</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>cdb87a94-4b5b-4ff7-9bcd-bd304836b0ca</Id>
+        <groupName>group 2</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+            <username>username2</username>
+            <password>password2</password>
+            <email>username2@gmail.ro</email>
+            <confirmationPassword>password2</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+    </groups>
+    <restrictedStoriesAudience>
+      <User>
+        <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+        <username>username2</username>
+        <password>password2</password>
+        <email>username2@gmail.ro</email>
+        <confirmationPassword>password2</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+      <User>
+        <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+        <username>username3</username>
+        <password>password3</password>
+        <email>user3@yahoo.com</email>
+        <confirmationPassword>password3</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+      <User>
+        <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+        <username>username4</username>
+        <password>password4</password>
+        <email>username4@stud.ubbcluj.ro</email>
+        <confirmationPassword>password4</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+    </restrictedStoriesAudience>
+    <restrictedPostsAudience>
+      <User>
+        <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+        <username>username2</username>
+        <password>password2</password>
+        <email>username2@gmail.ro</email>
+        <confirmationPassword>password2</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+      <User>
+        <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+        <username>username3</username>
+        <password>password3</password>
+        <email>user3@yahoo.com</email>
+        <confirmationPassword>password3</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+      <User>
+        <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+        <username>username4</username>
+        <password>password4</password>
+        <email>username4@stud.ubbcluj.ro</email>
+        <confirmationPassword>password4</confirmationPassword>
+        <registrationDate>0001-01-01T00:00:00</registrationDate>
+        <followingCount>0</followingCount>
+        <followersCount>0</followersCount>
+        <Usersession>PT0S</Usersession>
+      </User>
+    </restrictedPostsAudience>
+    <isProfilePrivate>false</isProfilePrivate>
+  </UserProfileSocialNetworkInfo>
+  <UserProfileSocialNetworkInfo>
+    <user>
+      <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+      <username>username2</username>
+      <password>password2</password>
+      <email>username2@gmail.ro</email>
+      <confirmationPassword>password2</confirmationPassword>
+      <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
+    </user>
+    <blockedProfiles>
+      <BlockedProfile>
+        <user>
+          <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+          <username>username5</username>
+          <password>password5</password>
+          <email>username4@gmail.es</email>
+          <confirmationPassword>password5</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <blockDate>2023-12-02T18:40:10</blockDate>
+      </BlockedProfile>
+      <BlockedProfile>
+        <user>
+          <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+          <username>username3</username>
+          <password>password3</password>
+          <email>user3@yahoo.com</email>
+          <confirmationPassword>password3</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <blockDate>2023-12-02T17:50:15</blockDate>
+      </BlockedProfile>
+    </blockedProfiles>
+    <closeFriendsProfiles>
+      <CloseFriendProfile>
+        <user>
+          <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+          <username>username2</username>
+          <password>password2</password>
+          <email>username2@gmail.ro</email>
+          <confirmationPassword>password2</confirmationPassword>
+          <registrationDate>0001-01-01T00:00:00</registrationDate>
+          <followingCount>0</followingCount>
+          <followersCount>0</followersCount>
+          <Usersession>PT0S</Usersession>
+        </user>
+        <closeFriendedDate>2023-12-02T18:40:10</closeFriendedDate>
+      </CloseFriendProfile>
+    </closeFriendsProfiles>
+    <groups>
+      <Group>
+        <Id>b3af9dba-db26-4f5d-a8e1-56ed6ef0e7ba</Id>
+        <groupName>group 1</groupName>
+        <groupMembers>
+          <User>
+            <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+            <username>username2</username>
+            <password>password2</password>
+            <email>username2@gmail.ro</email>
+            <confirmationPassword>password2</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+            <username>username3</username>
+            <password>password3</password>
+            <email>user3@yahoo.com</email>
+            <confirmationPassword>password3</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>cdb87a94-4b5b-4ff7-9bcd-bd304836b0ca</Id>
+        <groupName>group 2</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+            <username>username2</username>
+            <password>password2</password>
+            <email>username2@gmail.ro</email>
+            <confirmationPassword>password2</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>53319d77-1ffa-48a7-9762-4577cf78a92f</Id>
+        <groupName>group 3</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+            <username>username4</username>
+            <password>password4</password>
+            <email>username4@stud.ubbcluj.ro</email>
+            <confirmationPassword>password4</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+    </groups>
+    <restrictedStoriesAudience />
+    <restrictedPostsAudience />
+    <isProfilePrivate>false</isProfilePrivate>
+  </UserProfileSocialNetworkInfo>
+  <UserProfileSocialNetworkInfo>
+    <user>
+      <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+      <username>username5</username>
+      <password>password5</password>
+      <email>username4@gmail.es</email>
+      <confirmationPassword>password5</confirmationPassword>
+      <registrationDate>0001-01-01T00:00:00</registrationDate>
+      <followingCount>0</followingCount>
+      <followersCount>0</followersCount>
+      <Usersession>PT0S</Usersession>
+    </user>
+    <blockedProfiles />
+    <closeFriendsProfiles />
+    <groups>
+      <Group>
+        <Id>53319d77-1ffa-48a7-9762-4577cf78a92f</Id>
+        <groupName>group 3</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>56ef5e00-69c8-48e0-af16-0ebfd82b234a</id>
+            <username>username4</username>
+            <password>password4</password>
+            <email>username4@stud.ubbcluj.ro</email>
+            <confirmationPassword>password4</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>cdb87a94-4b5b-4ff7-9bcd-bd304836b0ca</Id>
+        <groupName>group 2</groupName>
+        <groupMembers>
+          <User>
+            <id>5291c9a1-909e-47c9-900c-dcddc7ac38b6</id>
+            <username>username1</username>
+            <password>password1</password>
+            <email>user1@yahoo.ro</email>
+            <confirmationPassword>password1</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>7654283b-eb53-4e02-b34c-ff1bd32fe279</id>
+            <username>username2</username>
+            <password>password2</password>
+            <email>username2@gmail.ro</email>
+            <confirmationPassword>password2</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+        </groupMembers>
+      </Group>
+      <Group>
+        <Id>d1ce3147-576d-4eb3-ad10-44410c4f8b1d</Id>
+        <groupName>another group</groupName>
+        <groupMembers>
+          <User>
+            <id>f7e17ad7-85f5-4964-bbca-14e35f83727f</id>
+            <username>username5</username>
+            <password>password5</password>
+            <email>username4@gmail.es</email>
+            <confirmationPassword>password5</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
+          </User>
+          <User>
+            <id>37eee9e4-23f0-4f57-b656-00aa5126a7dd</id>
+            <username>username3</username>
+            <password>password3</password>
+            <email>user3@yahoo.com</email>
+            <confirmationPassword>password3</confirmationPassword>
+            <registrationDate>0001-01-01T00:00:00</registrationDate>
+            <followingCount>0</followingCount>
+            <followersCount>0</followersCount>
+            <Usersession>PT0S</Usersession>
           </User>
         </groupMembers>
       </Group>
