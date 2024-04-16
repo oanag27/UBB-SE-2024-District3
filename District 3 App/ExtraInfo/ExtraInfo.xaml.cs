@@ -196,6 +196,7 @@ namespace District_3_App.ExtraInfo
         private void FriendsSettingsButton_Click(object sender, RoutedEventArgs e)
         {
             var friends = new FriendsSettings.Friends();
+            //extraInfoGrid.Children.Clear();
             Grid.SetColumn(friends, 1);
             Grid.SetRow(friends, 1);
             Grid.SetRowSpan(friends, 4);
