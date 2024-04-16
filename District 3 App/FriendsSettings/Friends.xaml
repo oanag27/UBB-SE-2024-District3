@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:District_3_App.FriendsSettings"
              mc:Ignorable="d"
-             Height="556" Width="542">
+             Height="450" Width="800" Background="White">
     <UserControl.Resources>
         <!-- Define the loading button template -->
         <ControlTemplate x:Key="LoadingButtonTemplate" TargetType="Button">

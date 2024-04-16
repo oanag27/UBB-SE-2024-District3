@@ -1,4 +1,6 @@
 ﻿using District_3_App.ExtraInfo;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
 using Log_In;
 using System;
 using System.Collections.Generic;
@@ -20,9 +22,13 @@ namespace District_3_App.LogIn
 {
     public partial class SignInPage : UserControl
     {
+        UsersRepository usersRepository;
+        User User { get; set; } 
         public SignInPage()
         {
             InitializeComponent();
+            string filePath = "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+            usersRepository = new UsersRepository(filePath);
         }
 
         private void ForgotPasswordLink_Click(object sender, RoutedEventArgs e)
@@ -65,6 +71,28 @@ namespace District_3_App.LogIn
 
         private void SignInButton_Click(object sender, RoutedEventArgs e)
         {
+            string usernameOrEmail = txtUsernameAndEmail.Text;
+            string password = txtPassword.Password;
+
+            if (!string.IsNullOrWhiteSpace(usernameOrEmail) && !string.IsNullOrWhiteSpace(password))
+            {
+                User user = usersRepository.GetUserByUsernameOrEmail(usernameOrEmail);
+
+                if (user != null && user.password == password)
+                {
+                    var newContent = new MainWindow();
+                    newContent.Show();
+                    Window.GetWindow(this).Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username/email or password. Please try again.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter both username/email and password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             //bool isValid = true;
 
             //if(!ValidateUsernameOrEmail(txtUsernameAndEmail.Text)) 
@@ -78,9 +106,9 @@ namespace District_3_App.LogIn
             //    MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             //    isValid = false;
             //}
-            var newContent = new MainWindow();
-            newContent.Show();
-            Window.GetWindow(this).Close();     
+            //var newContent = new MainWindow();
+            //newContent.Show();
+            //Window.GetWindow(this).Close();     
            
         }
 

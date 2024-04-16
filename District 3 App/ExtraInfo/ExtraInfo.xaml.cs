@@ -144,6 +144,22 @@ namespace District_3_App.ExtraInfo
 
         private void EditProfileButton_Click(object sender, RoutedEventArgs e)
         {
+            List<UIElement> elementsToRemove = new List<UIElement>();
+
+            foreach (UIElement child in extraInfoGrid.Children)
+            {
+                int columnIndex = Grid.GetColumn(child);
+
+                if (columnIndex == 1)
+                {
+                    elementsToRemove.Add(child);
+                }
+            }
+            foreach (UIElement element in elementsToRemove)
+            {
+                extraInfoGrid.Children.Remove(element);
+            }
+
             var profileInfo = new ProfileInfo_GUI.ProfileInfoDisplay();
             Grid.SetColumn(profileInfo, 1);
             Grid.SetRow(profileInfo, 1);
@@ -200,6 +216,37 @@ namespace District_3_App.ExtraInfo
 
         private void FriendsSettingsButton_Click(object sender, RoutedEventArgs e)
         {
+            /*var friends = new FriendsSettings.Friends();
+            //extraInfoGrid.Children.Clear();
+            Grid.SetColumn(friends, 1);
+            Grid.SetRow(friends, 1);
+            Grid.SetRowSpan(friends, 4);
+            extraInfoGrid.Children.Add(friends);*/
+
+            // Collect the controls that need to be removed from the specified column
+            List<UIElement> elementsToRemove = new List<UIElement>();
+
+            // Iterate through the children of the extraInfoGrid
+            foreach (UIElement child in extraInfoGrid.Children)
+            {
+                // Get the column index of the current child
+                int columnIndex = Grid.GetColumn(child);
+
+                // Check if the child is located in the target column (column 1 in this case)
+                if (columnIndex == 1)
+                {
+                    // Add the child to the list of elements to remove
+                    elementsToRemove.Add(child);
+                }
+            }
+
+            // Remove all elements collected in the elementsToRemove list from the grid
+            foreach (UIElement element in elementsToRemove)
+            {
+                extraInfoGrid.Children.Remove(element);
+            }
+
+            // Create and add the new FriendsSettings.Friends control to the specified column
             var friends = new FriendsSettings.Friends();
             Grid.SetColumn(friends, 1);
             Grid.SetRow(friends, 1);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using District_3_App.FriendsWindow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace District_3_App
         public UserControl6()
         {
             InitializeComponent();
+        }
+
+        private void Anita_Button_Click(object sender, RoutedEventArgs e)
+        {
+            CustomWindow newWindow = new CustomWindow();
+            newWindow.Show();
         }
     }
 }

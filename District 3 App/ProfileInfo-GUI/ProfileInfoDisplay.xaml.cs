@@ -30,6 +30,7 @@ namespace District_3_App.ProfileInfo_GUI
             var newContent = new EditProfileInfo();
 
             ProfileInfoGrid.Children.Clear();
+            Grid.SetColumn(newContent, 1);
             ProfileInfoGrid.Children.Add(newContent);
         }
 

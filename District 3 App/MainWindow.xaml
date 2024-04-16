@@ -204,11 +204,11 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,5,0,0" HorizontalAlignment="Center">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="100" Margin="20,0,10,0" FontWeight="Bold" FontSize="20px"/>
+                        <TextBlock x:Name="FollowerCountTextBlock" Margin="20,0,10,0" FontWeight="Bold" FontSize="20px"/>
                         <TextBlock Text="Followers" Margin="0,0,40,0" FontSize="20px"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="50" Margin="20,0,5,0" FontWeight="Bold" FontSize="20px"/>
+                        <TextBlock x:Name="FollowingTextBlock" Margin="20,0,5,0" FontWeight="Bold" FontSize="20px"/>
                         <TextBlock Text="Following" FontSize="20px"/>
                     </StackPanel>
                 </StackPanel>
@@ -217,7 +217,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Username" Grid.Column="1" Margin="10,2,60,0" FontSize="20px" FontWeight="Bold"/>
+                    <TextBlock x:Name="UsernameTextBlock" Text="Username" Grid.Column="1" Margin="10,2,60,0" FontSize="20px" FontWeight="Bold"/>
                     <Image Source="\images\verified.png" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1" Margin="0,4,30,0"/>
                     <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="30,0,5,0">
                         <Image Source="\images\right-arrow.png" Width="20" Height="20" Margin="0,0,5,0"/>
