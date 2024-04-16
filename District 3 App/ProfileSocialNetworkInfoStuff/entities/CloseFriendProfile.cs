@@ -10,9 +10,14 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
     {
         public User user { get; set; }
 
-        public CloseFriendProfile(User user)
+        public DateTime closeFriendedDate { get; set; } 
+
+        public CloseFriendProfile() { }
+
+        public CloseFriendProfile(User user, DateTime closeFriendedDate)
         {
             this.user = user;
+            this.closeFriendedDate = closeFriendedDate;
         }
 
         public int CompareTo(CloseFriendProfile other)

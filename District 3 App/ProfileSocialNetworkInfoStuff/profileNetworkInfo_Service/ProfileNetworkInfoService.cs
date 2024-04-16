@@ -22,80 +22,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
         {
             ////     HARDCODED STUFF
 
-            User user1 = new User(Guid.NewGuid(), "username1", "password1", "user1@yahoo.ro", new DateTime(2020, 4, 21, 19, 20, 29));
-            User user2 = new User(Guid.NewGuid(), "username2", "password2", "username2@gmail.ro", new DateTime(2012, 3, 22, 21, 10, 11));
-            User user3 = new User(Guid.NewGuid(), "username3", "password3", "user3@yahoo.com", new DateTime(2021, 4, 5, 23, 32, 58));
-            User user4 = new User(Guid.NewGuid(), "username4", "password4", "username4@stud.ubbcluj.ro", new DateTime(2022, 8, 30, 21, 28, 39));
-            User user5 = new User(Guid.NewGuid(), "username5", "password5", "username4@gmail.es", new DateTime(2023, 11, 22, 13, 44, 55));
-
-
-            BlockedProfile blockedProfile1 = new BlockedProfile(user5, new DateTime(2023, 12, 02, 18, 40, 10));
-            BlockedProfile blockedProfile2 = new BlockedProfile(user2, new DateTime(2023, 12, 02, 17, 50, 10));
-            BlockedProfile blockedProfile3 = new BlockedProfile(user3, new DateTime(2023, 12, 02, 17, 50, 15));
-            BlockedProfile blockedProfile4 = new BlockedProfile(user4, new DateTime(2022, 11, 02, 17, 50, 15));
-
-
-            CloseFriendProfile closeFriendProfile1 = new CloseFriendProfile(user3);
-            CloseFriendProfile closeFriendProfile2 = new CloseFriendProfile(user4);
-            CloseFriendProfile closeFriendProfile3 = new CloseFriendProfile(user5);
-            CloseFriendProfile closeFriendProfile4 = new CloseFriendProfile(user2);
-
-
-            List<User> group1Members = new List<User>(); group1Members.Add(user2); group1Members.Add(user3); group1Members.Add(user1);
-            List<User> group2Members = new List<User>(); group2Members.Add(user1); group2Members.Add(user5); group2Members.Add(user4);
-            List<User> group3Members = new List<User>(); group3Members.Add(user1); group3Members.Add(user5); group3Members.Add(user2);
-            List<User> anotherGroupMembers = new List<User>(); anotherGroupMembers.Add(user5); anotherGroupMembers.Add(user3);
-
-
-            Group group1 = new Group(Guid.NewGuid(), "group 1", group1Members);
-            Group group2 = new Group(Guid.NewGuid(), "group 3", group3Members);
-            Group group3 = new Group(Guid.NewGuid(), "group 2", group2Members);
-            Group group4 = new Group(Guid.NewGuid(), "another group", anotherGroupMembers);
-
-
-
-            //some hardocded profile perspective examples
-            UserProfileSocialNetworkInfo profileUser1 = new UserProfileSocialNetworkInfo(user1, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-            UserProfileSocialNetworkInfo profileUser2 = new UserProfileSocialNetworkInfo(user2, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-            UserProfileSocialNetworkInfo profileUser3 = new UserProfileSocialNetworkInfo(user3, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-
-
-
-            CreateGroupToRepository("group 1", group1Members);
-            CreateGroupToRepository("group 3", group3Members);
-            CreateGroupToRepository("group 2", group2Members);
-
-
-
-            this.groupsRepository = new GroupsRepository();
-            this.Repository = new ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo>(new List<UserProfileSocialNetworkInfo>());
-
-
-
-            // ADD DATA TO THE SERVICE
-            AddProfileSocialNetworkInfo(profileUser1);
-            AddProfileSocialNetworkInfo(profileUser2);
-
-
-
-            AddBlockedProfileToCurrentUser(profileUser1, blockedProfile2);
-            AddCloseFriendToCurrentUser(profileUser1, closeFriendProfile2);
-
-            AddGroupToCurrentUser(profileUser1, group1);
-            AddGroupToCurrentUser(profileUser1, group3);
-            AddGroupToCurrentUser(profileUser1, group2);
-
-
-
-
-            AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user3);
-            AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user3);
-            AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user2);
-            AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user2);
-            AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user4);
-            AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user4);
-            AddRestrictedPostsAudienceUserToCurrentUser(profileUser1, user5);
-            AddRestrictedStoriesAudienceUserToCurrentUser(profileUser1, user5);
+            
         }
         public ProfileNetworkInfoService(GroupsRepository groupsRepository, ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo> repository, UsersRepository usersRepository)
         {
@@ -256,6 +183,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         return false;
 
                 currentUser.groups.Add(groupToAdd);
+                SaveDataIntoXML();
                 return true;
             }
 
@@ -270,6 +198,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                     if (group.groupName == groupToRemove.groupName)
                     {
                         currentUser.groups.Remove(group);
+                        SaveDataIntoXML();
                         return true;
                     }
                 }
@@ -293,6 +222,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         return false;
 
                 currentUser.closeFriendsProfiles.Add(closeFriendToAdd);
+                SaveDataIntoXML();
                 return true;
             }
 
@@ -302,11 +232,12 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
         {
             if (this.CheckIfProfileExists(currentUser))
             {
-                foreach (var closeFriend in currentUser.closeFriendsProfiles) //if group is in the groups list for the current user
+                foreach (var closeFriend in currentUser.closeFriendsProfiles)
                 {
                     if (closeFriend.user.id == closeFriendToRemove.user.id)
                     {
                         currentUser.closeFriendsProfiles.Remove(closeFriend);
+                        SaveDataIntoXML();
                         return true;
                     }
                 }
@@ -334,6 +265,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         return false;
 
                 currentUser.blockedProfiles.Add(blockedProfileToAdd);
+                SaveDataIntoXML();
                 return true;
             }
 
@@ -348,6 +280,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                     if (blockedProfile.user.id == blockedProfileToRemove.user.id)
                     {
                         currentUser.blockedProfiles.Remove(blockedProfile);
+                        SaveDataIntoXML();
                         return true;
                     }
                 }
@@ -372,6 +305,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         return false;
 
                 currentUser.restrictedPostsAudience.Add(userToAdd);
+                SaveDataIntoXML();
                 return true;
             }
 
@@ -383,9 +317,12 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
             {
                 foreach (var restrictedUser in currentUser.restrictedPostsAudience) //if group is in the groups list for the current user
                 {
-                    if (restrictedUser.id == userToRemove.id)
+                    if (restrictedUser.username == userToRemove.username)
                     {
                         currentUser.restrictedPostsAudience.Remove(restrictedUser);
+                        SaveDataIntoXML();
+
+
                         return true;
                     }
                 }
@@ -411,6 +348,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
                         return false;
 
                 currentUser.restrictedStoriesAudience.Add(userToAdd);
+                SaveDataIntoXML();
                 return true;
             }
 
@@ -422,9 +360,10 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
             {
                 foreach (var restrictedUser in currentUser.restrictedStoriesAudience) //if group is in the groups list for the current user
                 {
-                    if (restrictedUser.id == userToRemove.id)
+                    if (restrictedUser.username == userToRemove.username)
                     {
                         currentUser.restrictedStoriesAudience.Remove(restrictedUser);
+                        SaveDataIntoXML();
                         return true;
                     }
                 }
@@ -486,7 +425,23 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
 
 
 
+        public void AddMemberToGroupProfile(UserProfileSocialNetworkInfo profile, string groupName, string username)
+        {
+            foreach(var gr in profile.groups)
+            {
+                if(gr.groupName == groupName)
+                {
 
+                    foreach (var user in GetAllUsers())
+                    {
+                        if(user.username == username)
+                        gr.groupMembers.Add(user);
+                    }
+
+                }
+
+            }
+        }
 
 
 
@@ -551,6 +506,14 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Servic
 
 
             profile.isProfilePrivate = !profile.isProfilePrivate;
+
+            SaveDataIntoXML();
+        }
+
+
+        public void SaveDataIntoXML()
+        {
+            this.Repository.SaveProfilesInXML();
         }
 
     }

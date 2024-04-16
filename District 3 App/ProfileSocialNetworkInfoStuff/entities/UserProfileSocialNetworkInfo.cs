@@ -22,6 +22,8 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
 
         //public List<LikedPost> likedPosts { get; set; }
 
+        public UserProfileSocialNetworkInfo() { }
+
         public UserProfileSocialNetworkInfo(User user, List<BlockedProfile> blockedProfiles, List<CloseFriendProfile> closeFriendsProfiles, List<Group> groups, List<User> restrictedStoriesAudience, List<User> restrictedPostsAudience)
         {
             this.user = user;

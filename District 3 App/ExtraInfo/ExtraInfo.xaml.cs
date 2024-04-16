@@ -35,11 +35,11 @@ namespace District_3_App.ExtraInfo
         {
             ////     HARDCODED STUFF
 
-            User user1 = new User(Guid.NewGuid(), "username1", "password1", "user1@yahoo.ro", new DateTime(2020, 4, 21, 19, 20, 29));
-            User user2 = new User(Guid.NewGuid(), "username2", "password2", "username2@gmail.ro", new DateTime(2012, 3, 22, 21, 10, 11));
-            User user3 = new User(Guid.NewGuid(), "username3", "password3", "user3@yahoo.com", new DateTime(2021, 4, 5, 23, 32, 58));
-            User user4 = new User(Guid.NewGuid(), "username4", "password4", "username4@stud.ubbcluj.ro", new DateTime(2022, 8, 30, 21, 28, 39));
-            User user5 = new User(Guid.NewGuid(), "username5", "password5", "username4@gmail.es", new DateTime(2023, 11, 22, 13, 44, 55));
+            User user1 = new User(Guid.NewGuid(), "username1", "password1", "user1@yahoo.ro", "password1");
+            User user2 = new User(Guid.NewGuid(), "username2", "password2", "username2@gmail.ro", "password2");
+            User user3 = new User(Guid.NewGuid(), "username3", "password3", "user3@yahoo.com", "password3");
+            User user4 = new User(Guid.NewGuid(), "username4", "password4", "username4@stud.ubbcluj.ro", "password4");
+            User user5 = new User(Guid.NewGuid(), "username5", "password5", "username4@gmail.es", "password5");
             List<User> usersList = new List<User>(); usersList.Add(user1); usersList.Add(user2); usersList.Add(user3); usersList.Add(user4); usersList.Add(user5);
             UsersRepository usersRepo = new UsersRepository(usersList);
 
@@ -50,10 +50,10 @@ namespace District_3_App.ExtraInfo
             BlockedProfile blockedProfile4 = new BlockedProfile(user4, new DateTime(2022, 11, 02, 17, 50, 15));
 
 
-            CloseFriendProfile closeFriendProfile1 = new CloseFriendProfile(user3);
-            CloseFriendProfile closeFriendProfile2 = new CloseFriendProfile(user4);
-            CloseFriendProfile closeFriendProfile3 = new CloseFriendProfile(user5);
-            CloseFriendProfile closeFriendProfile4 = new CloseFriendProfile(user2);
+            CloseFriendProfile closeFriendProfile1 = new CloseFriendProfile(user3, new DateTime(2023, 12, 02, 18, 40, 10));
+            CloseFriendProfile closeFriendProfile2 = new CloseFriendProfile(user4, new DateTime(2023, 12, 02, 18, 40, 10));
+            CloseFriendProfile closeFriendProfile3 = new CloseFriendProfile(user5, new DateTime(2023, 12, 02, 18, 40, 10));
+            CloseFriendProfile closeFriendProfile4 = new CloseFriendProfile(user2, new DateTime(2023, 12, 02, 18, 40, 10));
 
 
             List<User> group1Members = new List<User>(); group1Members.Add(user2); group1Members.Add(user3); group1Members.Add(user1);
@@ -63,32 +63,39 @@ namespace District_3_App.ExtraInfo
 
 
             Group group1 = new Group(Guid.NewGuid(), "group 1", group1Members);
-            Group group2 = new Group(Guid.NewGuid(), "group 3", group3Members);
-            Group group3 = new Group(Guid.NewGuid(), "group 2", group2Members);
+            Group group2 = new Group(Guid.NewGuid(), "group 3", group2Members);
+            Group group3 = new Group(Guid.NewGuid(), "group 2", group3Members);
             Group group4 = new Group(Guid.NewGuid(), "another group", anotherGroupMembers);
+            List<Group> groups = new List<Group>(); groups.Add(group1); groups.Add(group2); groups.Add(group3); groups.Add(group4);
 
 
 
             //some hardocded profile perspective examples
-            UserProfileSocialNetworkInfo profileUser1 = new UserProfileSocialNetworkInfo(user1, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-            UserProfileSocialNetworkInfo profileUser2 = new UserProfileSocialNetworkInfo(user2, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-            UserProfileSocialNetworkInfo profileUser3 = new UserProfileSocialNetworkInfo(user3, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
-            UserProfileSocialNetworkInfo profileUser5 = new UserProfileSocialNetworkInfo(user5, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group>(), new List<User>(), new List<User>());
+            UserProfileSocialNetworkInfo profileUser1 = new UserProfileSocialNetworkInfo(user1, new List<BlockedProfile> { blockedProfile2, blockedProfile3 }, new List<CloseFriendProfile> { closeFriendProfile4, closeFriendProfile3 }, new List<Group> { group1, group2, group3 }, new List<User> { user2, user3 }, new List<User> { user2, user3 });
+            UserProfileSocialNetworkInfo profileUser2 = new UserProfileSocialNetworkInfo(user2, new List<BlockedProfile> { blockedProfile1, blockedProfile3 }, new List<CloseFriendProfile> { closeFriendProfile4 }, new List<Group>{group1, group3}, new List<User>(), new List<User>());
+            UserProfileSocialNetworkInfo profileUser3 = new UserProfileSocialNetworkInfo(user3, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group> { group1, group3 }, new List<User>(), new List<User>());
+            UserProfileSocialNetworkInfo profileUser5 = new UserProfileSocialNetworkInfo(user5, new List<BlockedProfile>(), new List<CloseFriendProfile>(), new List<Group> { group2, group3, group4 }, new List<User>(), new List<User>());
 
+
+
+            List<UserProfileSocialNetworkInfo> userProfileSocialNetworkInfos = new List<UserProfileSocialNetworkInfo>();
+            userProfileSocialNetworkInfos.Add(profileUser1); userProfileSocialNetworkInfos.Add(profileUser2);  userProfileSocialNetworkInfos.Add(profileUser3); userProfileSocialNetworkInfos.Add(profileUser5);
 
             //init repos with profiles list and groups list
             GroupsRepository groupsRepository = new GroupsRepository();
-            ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo> userProfileNetowrkRepository = new ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo>(new List<UserProfileSocialNetworkInfo>());
+            ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo> userProfileNetowrkRepository = new ProfileNetworkInfoRepository<UserProfileSocialNetworkInfo>(userProfileSocialNetworkInfos);
             //init profile info service with profile list
             ProfileNetworkInfoService profileNetworkInfoService = new ProfileNetworkInfoService(groupsRepository, userProfileNetowrkRepository, usersRepo);
 
 
-            profileNetworkInfoService.CreateGroupToRepository("group 1", group1Members);
-            profileNetworkInfoService.CreateGroupToRepository("group 3", group3Members);
-            profileNetworkInfoService.CreateGroupToRepository("group 2", group2Members);
-            profileNetworkInfoService.CreateGroupToRepository("another group", anotherGroupMembers);
 
+            
+            //profileNetworkInfoService.CreateGroupToRepository("group 1", group1Members);
+            //profileNetworkInfoService.CreateGroupToRepository("group 3", group3Members);
+            //profileNetworkInfoService.CreateGroupToRepository("group 2", group2Members);
+            //profileNetworkInfoService.CreateGroupToRepository("another group", anotherGroupMembers);
 
+           
 
             this.currentConnectedUser = user1;
             this.profileNetworkInfoService = profileNetworkInfoService;
@@ -129,8 +136,6 @@ namespace District_3_App.ExtraInfo
             profileNetworkInfoService.AddCloseFriendToCurrentUser(profileUser2, closeFriendProfile4);
             profileNetworkInfoService.AddGroupToCurrentUser(profileUser2, group2);
             profileNetworkInfoService.AddGroupToCurrentUser(profileUser2, group3);
-
-
 
 
 

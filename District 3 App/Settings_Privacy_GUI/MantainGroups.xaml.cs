@@ -51,6 +51,13 @@ namespace District_3_App.Settings_Privacy_GUI
                     if (group.groupName.Contains(searchGroupNameTextBox.Text) || searchGroupNameTextBox.Text == "")
                         allGroupsListView.Items.Add(group.groupName);
                 }
+            } else if(searchGroupNameTextBox.Text == "")
+            {
+                allGroupsListView.Items.Clear();
+                foreach (var group in profileNetworkInfoService.GetAllGroupsService())
+                {
+                        allGroupsListView.Items.Add(group.groupName);
+                }
             }
         }
 
@@ -122,6 +129,7 @@ namespace District_3_App.Settings_Privacy_GUI
                 {
                     profileNetworkInfoService.AddGroupToCurrentUser(profile, profileNetworkInfoService.GetGroupByName(selectedGroupName));
                     profileNetworkInfoService.GetGroupByName(selectedGroupName).groupMembers.Add(profile.user);
+                    profileNetworkInfoService.SaveDataIntoXML();
 
 
                     PopulateGroupsForCurrentUser();
@@ -152,6 +160,8 @@ namespace District_3_App.Settings_Privacy_GUI
 
                     profileNetworkInfoService.CreateGroupToRepository(newGroupNameTextBox.Text, groupMembers);
                     profile.groups.Add(profileNetworkInfoService.GetGroupByName(newGroupNameTextBox.Text));
+                    profileNetworkInfoService.SaveDataIntoXML();
+
 
                     PopulateAllGroupsList();
                     PopulateGroupsForCurrentUser();
@@ -177,6 +187,9 @@ namespace District_3_App.Settings_Privacy_GUI
                         if (addedMemberProfile != null)
                         {
                             addedMemberProfile.groups.Add(profileNetworkInfoService.GetGroupByName(selectedGroup));
+                            profileNetworkInfoService.AddMemberToGroupProfile(profile, selectedGroup, addMemberToSelectedGroupTextBox.Text);
+                            
+                            profileNetworkInfoService.SaveDataIntoXML();
 
 
                             PopulateGroupMemberForSelectedGroup();

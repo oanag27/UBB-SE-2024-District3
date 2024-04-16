@@ -14,6 +14,9 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
 
         public List<User> groupMembers { get; set; }
 
+
+        public Group() { }
+
         public Group(Guid id, string groupName, List<User> groupMembers)
         {
             this.Id = id;

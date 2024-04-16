@@ -12,6 +12,8 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
         public User user { get; set; }
         public DateTime blockDate { get; set; }
 
+        public BlockedProfile() { }
+
         public BlockedProfile(User user, DateTime date)
         {
             this.user = user;

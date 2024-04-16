@@ -117,8 +117,10 @@ namespace District_3_App.CloseFriends_GUI
                     }
                     else
                     {
-                        CloseFriendProfile closeFriendToAdd = new CloseFriendProfile(profileNetworkInfoService.GetUserByName(searchCloseFriendsTextBox.Text));
+                        CloseFriendProfile closeFriendToAdd = new CloseFriendProfile(profileNetworkInfoService.GetUserByName(searchCloseFriendsTextBox.Text), DateTime.Now);
                         profile.closeFriendsProfiles.Add(closeFriendToAdd);
+                        profileNetworkInfoService.SaveDataIntoXML();
+
                         PopulateCloseFriends();
                     }
                 }
@@ -133,7 +135,7 @@ namespace District_3_App.CloseFriends_GUI
 
 
             profileNetworkInfoService.RemoveCloseFriendFromCurrentUser(profile, profileNetworkInfoService.GetCloseFriendByName(profile, selectedCloseFriendUsername));
-
+            profileNetworkInfoService.SaveDataIntoXML();
 
 
             closeFriendsListView.Items.Clear(); //reset the list view

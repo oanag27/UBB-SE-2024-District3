@@ -113,6 +113,7 @@ namespace District_3_App.Settings_Privacy_GUI
 
 
             profileNetworkInfoService.RemoveGroupFromCurrentUser(profile, profileNetworkInfoService.GetGroupByName(selectedGroupName));
+            profileNetworkInfoService.SaveDataIntoXML();
 
             groupsListView.Items.Clear(); //reset the list view
 
@@ -153,7 +154,7 @@ namespace District_3_App.Settings_Privacy_GUI
 
 
             profileNetworkInfoService.RemoveBlockedProfileFromCurrentUser(profile, profileNetworkInfoService.GetBlockedProfileByName(profile, selectedBlockedUsername));
-
+            profileNetworkInfoService.SaveDataIntoXML();
 
 
             blockedProfilesListView.Items.Clear(); //reset the list view
@@ -215,6 +216,7 @@ namespace District_3_App.Settings_Privacy_GUI
                         DateTime newDate = DateTime.Now;
                         BlockedProfile profileToBlock = new BlockedProfile(profileNetworkInfoService.GetUserByName(usernameToBlockTextBox.Text), newDate);
                         profile.blockedProfiles.Add(profileToBlock);
+                        profileNetworkInfoService.SaveDataIntoXML();
                     }
 
 
@@ -269,6 +271,7 @@ namespace District_3_App.Settings_Privacy_GUI
                     else
                     {
                         profile.restrictedStoriesAudience.Add(profileNetworkInfoService.GetUserByName(usernameRestrictTextBox.Text));
+                        profileNetworkInfoService.SaveDataIntoXML();
                     }
 
 
@@ -321,6 +324,7 @@ namespace District_3_App.Settings_Privacy_GUI
                     else
                     {
                         profile.restrictedPostsAudience.Add(profileNetworkInfoService.GetUserByName(usernameRestrictTextBox.Text));
+                        profileNetworkInfoService.SaveDataIntoXML();
                     }
 
 
@@ -336,55 +340,69 @@ namespace District_3_App.Settings_Privacy_GUI
 
         private void removeRestrictedStoriesUserButton_Click(object sender, RoutedEventArgs e)
         {
-            string selectedUsername = restrictedStoriesAudienceListView.SelectedItem.ToString();
-            UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
-
-
-
-            profileNetworkInfoService.RemoveRestrictedStoriesAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
-
-
-
-            restrictedStoriesAudienceListView.Items.Clear(); //reset the list view
-
-
-
-            foreach (var restrictedUser in profile.restrictedStoriesAudience)
+            try
             {
+                string selectedUsername = restrictedStoriesAudienceListView.SelectedItem.ToString();
+                UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
 
-                restrictedStoriesAudienceListView.Items.Add(restrictedUser.username);
-                //foreach (var groupMember in group.groupMembers)
-                //{
-                //    groupMembersListView.Items.Add(groupMember.username);
-                //}
 
+
+                profileNetworkInfoService.RemoveRestrictedStoriesAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
+                profileNetworkInfoService.SaveDataIntoXML();
+
+
+                restrictedStoriesAudienceListView.Items.Clear(); //reset the list view
+
+
+
+                foreach (var restrictedUser in profile.restrictedStoriesAudience)
+                {
+
+                    restrictedStoriesAudienceListView.Items.Add(restrictedUser.username);
+                    //foreach (var groupMember in group.groupMembers)
+                    //{
+                    //    groupMembersListView.Items.Add(groupMember.username);
+                    //}
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"[{ex.Message}]: No user selected to remove", "Error");
             }
         }
 
         private void removeRestrictedPostsUserButton_Click(object sender, RoutedEventArgs e)
         {
-            string selectedUsername = restrictedPostsAudienceListView.SelectedItem.ToString();
-            UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
-
-
-
-            profileNetworkInfoService.RemoveRestrictedPostsAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
-
-
-
-            restrictedPostsAudienceListView.Items.Clear(); //reset the list view
-
-
-
-            foreach (var restrictedUser in profile.restrictedPostsAudience)
+            try
             {
+                string selectedUsername = restrictedPostsAudienceListView.SelectedItem.ToString();
+                UserProfileSocialNetworkInfo profile = profileNetworkInfoService.GetProfileSocialNetworkInfoCurrentUser(this.currentConnectedUser);
 
-                restrictedPostsAudienceListView.Items.Add(restrictedUser.username);
-                //foreach (var groupMember in group.groupMembers)
-                //{
-                //    groupMembersListView.Items.Add(groupMember.username);
-                //}
 
+
+                profileNetworkInfoService.RemoveRestrictedPostsAudienceUserFromCurrentUser(profile, profileNetworkInfoService.GetUserByName(selectedUsername));
+                profileNetworkInfoService.SaveDataIntoXML();
+
+
+                restrictedPostsAudienceListView.Items.Clear(); //reset the list view
+
+
+
+                foreach (var restrictedUser in profile.restrictedPostsAudience)
+                {
+
+                    restrictedPostsAudienceListView.Items.Add(restrictedUser.username);
+                    //foreach (var groupMember in group.groupMembers)
+                    //{
+                    //    groupMembersListView.Items.Add(groupMember.username);
+                    //}
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"[{ex.Message}]: No user selected to remove", "Error");
             }
         }
 
@@ -425,6 +443,7 @@ namespace District_3_App.Settings_Privacy_GUI
 
             //set new password for the current connected user
             this.currentConnectedUser.password = newPassword;
+            profileNetworkInfoService.SaveDataIntoXML();
         }
 
         private void isProfilePrivateCheckBox_Checked(object sender, RoutedEventArgs e)
