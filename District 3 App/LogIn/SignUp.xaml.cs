@@ -23,10 +23,13 @@ namespace District_3_App.LogIn
     public partial class SignUp : UserControl
     {
        public User User { get; set; }
+
        private UsersRepository usersRepository;
         public SignUp()
         {
             InitializeComponent();
+            string filePath = "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+            usersRepository = new UsersRepository(filePath);
         }
         private Guid GenerateRandomUserId()
         {
@@ -183,36 +186,45 @@ namespace District_3_App.LogIn
 
         private bool ValidatePassword(string password) 
         {
-            var hasNumericChar = new Regex(@"[0-9]+");
-            var hasUpperChar = new Regex(@"[A-Z]+");
-            var hasLowerChar = new Regex(@"[a-z]+");
-            var hasSpecialChar = new Regex(@"[/-_.]+");
-            var hasMiniMaxChars = new Regex(@".{5,10}");
+            //var hasNumericChar = new Regex(@"[0-9]+");
+            //var hasUpperChar = new Regex(@"[A-Z]+");
+            //var hasLowerChar = new Regex(@"[a-z]+");
+            //var hasSpecialChar = new Regex(@"[/-_.]+");
+            //var hasMiniMaxChars = new Regex(@".{5,10}");
 
-            if(hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password))
-            {
-                return true;
-            }
-            return false;
+            string pattern = @"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\S+$).{8,20}$";
+
+            // Create a Regex object with the pattern
+            Regex regex = new Regex(pattern);
+
+            // Use the regex.IsMatch method to check if the password matches the pattern
+            bool isPasswordValid = regex.IsMatch(password);
+
+            return isPasswordValid;
+            //bool isPasswordValid = hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password);
+            //return isPasswordValid;
         }
 
         private bool ValidateConfirmPassword(string confirmPassword) 
         {
-            var hasNumericChar = new Regex(@"[0-9]+");
-            var hasUpperChar = new Regex(@"[A-Z]+");
-            var hasLowerChar = new Regex(@"[a-z]+");
-            var hasSpecialChar = new Regex(@"[/\-_.]+");
-            var hasMiniMaxChars = new Regex(@".{5,10}");
+            //var hasNumericChar = new Regex(@"[0-9]+");
+            //var hasUpperChar = new Regex(@"[A-Z]+");
+            //var hasLowerChar = new Regex(@"[a-z]+");
+            //var hasSpecialChar = new Regex(@"[/\-_.]+");
+            //var hasMiniMaxChars = new Regex(@".{5,10}");
 
-            if(hasNumericChar.IsMatch(confirmPassword) && hasUpperChar.IsMatch(confirmPassword) && hasLowerChar.IsMatch(confirmPassword) && hasSpecialChar.IsMatch(confirmPassword) && hasMiniMaxChars.IsMatch(confirmPassword))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-         
+            //bool isConfirmationPasswordValid = hasNumericChar.IsMatch(confirmPassword) && hasUpperChar.IsMatch(confirmPassword) && hasLowerChar.IsMatch(confirmPassword) && hasSpecialChar.IsMatch(confirmPassword) && hasMiniMaxChars.IsMatch(confirmPassword);
+            //return isConfirmationPasswordValid;
+
+            string pattern = @"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\S+$).{8,20}$";
+
+            // Create a Regex object with the pattern
+            Regex regex = new Regex(pattern);
+
+            // Use the regex.IsMatch method to check if the password matches the pattern
+            bool isConfirmationPasswordValid = regex.IsMatch(confirmPassword);
+
+            return isConfirmationPasswordValid;
         }
     }
 }
