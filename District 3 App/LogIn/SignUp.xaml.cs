@@ -98,17 +98,17 @@ namespace District_3_App.LogIn
                 isValid = false;
             }
 
-            if (!ValidatePassword(txtPassword.Password))
-            {
-                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                isValid = false;
-            }
+            //if (!ValidatePassword(txtPassword.Password))
+            //{
+            //    MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    isValid = false;
+            //}
 
-            if (!ValidateConfirmPassword(txtConfirmPassword.Password))
-            {
-                MessageBox.Show("Invalid confirmation password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                isValid = false;
-            }
+            //if (!ValidateConfirmPassword(txtConfirmPassword.Password))
+            //{
+            //    MessageBox.Show("Invalid confirmation password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    isValid = false;
+            //}
 
             if (!(txtPassword.Password.Equals(txtConfirmPassword.Password)))
             {
@@ -129,7 +129,8 @@ namespace District_3_App.LogIn
               try
               {
                    usersRepository.AddUser(newUser);
-              }
+                    ClearSignUpForm();
+                }
               catch(Exception ex) 
               {
                     MessageBox.Show($"Error adding user: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -139,6 +140,15 @@ namespace District_3_App.LogIn
               Window.GetWindow(this).Close();
             }
         }
+
+        private void ClearSignUpForm()
+        {
+            txtUsername.Clear();
+            txtEmail.Clear();
+            txtPassword.Clear();
+            txtConfirmPassword.Clear();
+        }
+
 
         private bool ValidateUsername(string username)
         {

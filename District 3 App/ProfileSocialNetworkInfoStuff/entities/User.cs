@@ -16,6 +16,8 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
         public DateTime registrationDate { get; set; }
         public int followingCount { get; set; }
         public int followersCount { get; set; }
+        public TimeSpan Usersession { get; set; }
+
         public User() { }
         public User(Guid id, string username, string password, string email, DateTime registrationDate)
         {
@@ -35,6 +37,16 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
             this.confirmationPassword = confirmationPassword;
             this.followersCount = followersCount;
             this.followingCount = followingCount;
+        }
+
+        public User(Guid id, string username, string password, string email, string confirmationPassword, TimeSpan Usersession)
+        {
+            this.id = id;
+            this.username = username;
+            this.password = password;
+            this.email = email;
+            this.confirmationPassword = confirmationPassword;
+            this.Usersession = Usersession;
         }
 
         public string registrationDateToString()

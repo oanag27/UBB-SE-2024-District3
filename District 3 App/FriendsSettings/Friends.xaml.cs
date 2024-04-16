@@ -27,9 +27,9 @@ namespace District_3_App.FriendsSettings
     public partial class Friends : UserControl
     {
         // Getting lists
-        private static Dictionary<string, User> getContacts()
+        private static Dictionary<string, UserInfo> getContacts()
         {
-            var contacts = new Dictionary<string, User>();
+            var contacts = new Dictionary<string, UserInfo>();
             string filePath;
 
             // Create User objects with usernames and add them to the dictionary
@@ -62,7 +62,7 @@ namespace District_3_App.FriendsSettings
                     {
                         userId = Guid.NewGuid();
                     }
-                    User user = new User();
+                    UserInfo user = new UserInfo();
                     try
                     {
                         user.Id = userId;
@@ -82,9 +82,9 @@ namespace District_3_App.FriendsSettings
             return contacts;
         }
 
-        private static Dictionary<string, User> getViewers()
+        private static Dictionary<string, UserInfo> getViewers()
         {
-            var contacts = new Dictionary<string, User>();
+            var contacts = new Dictionary<string, UserInfo>();
             string filePath;
 
             // Create User objects with usernames and add them to the dictionary
@@ -118,7 +118,7 @@ namespace District_3_App.FriendsSettings
                     {
                         userId = Guid.NewGuid();
                     }
-                    User user = new User();
+                    UserInfo user = new UserInfo();
                     try
                     {
                         user.Id = userId;
@@ -140,9 +140,9 @@ namespace District_3_App.FriendsSettings
 
         }
 
-        private static Dictionary<string, User> getFriends()
+        private static Dictionary<string, UserInfo> getFriends()
         {
-            var friends = new Dictionary<string, User>();
+            var friends = new Dictionary<string, UserInfo>();
             string filePath;
 
             // Load the XML document
@@ -171,7 +171,7 @@ namespace District_3_App.FriendsSettings
                     {
                         userId = Guid.NewGuid();
                     }
-                    User user = new User();
+                    UserInfo user = new UserInfo();
                     try
                     {
                         user.Id = userId;
@@ -228,11 +228,11 @@ namespace District_3_App.FriendsSettings
             }
         }
 
-        private Dictionary<string, User> syncContacts = getContacts();
+        private Dictionary<string, UserInfo> syncContacts = getContacts();
 
-        private Dictionary<string, User> usernames_viewers = getViewers();
+        private Dictionary<string, UserInfo> usernames_viewers = getViewers();
 
-        private Dictionary<string, User> friends = getFriends();
+        private Dictionary<string, UserInfo> friends = getFriends();
         public Friends()
         {
             InitializeComponent();
@@ -242,7 +242,7 @@ namespace District_3_App.FriendsSettings
         {
             usernamesContactsComboBox.Items.Clear();
 
-            foreach (User user in syncContacts.Values)
+            foreach (UserInfo user in syncContacts.Values)
             {
                 usernamesContactsComboBox.Items.Add(user.username);
             }
@@ -252,13 +252,13 @@ namespace District_3_App.FriendsSettings
         {
             usernamesViewersComboBox.Items.Clear();
 
-            foreach (User user in usernames_viewers.Values)
+            foreach (UserInfo user in usernames_viewers.Values)
             {
                 usernamesViewersComboBox.Items.Add(user.username);
             }
         }
 
-        private bool addSyncContact(User contactToAdd, string key)
+        private bool addSyncContact(UserInfo contactToAdd, string key)
         {
             if (friends.ContainsKey(key))
             {
@@ -287,7 +287,7 @@ namespace District_3_App.FriendsSettings
             TextBlock textBlock = (TextBlock)grid.Children[0];
             string username = textBlock.Text;
             bool added = false;
-            foreach (User user in syncContacts.Values)
+            foreach (UserInfo user in syncContacts.Values)
             {
                 if (user.username == username)
                 {
@@ -309,7 +309,7 @@ namespace District_3_App.FriendsSettings
 
 
             StringBuilder stringBuilder = new StringBuilder();
-            foreach (User friend in friends.Values)
+            foreach (UserInfo friend in friends.Values)
             {
                 stringBuilder.AppendLine(friend.username + ',' + friend.phoneNumber);
             }
