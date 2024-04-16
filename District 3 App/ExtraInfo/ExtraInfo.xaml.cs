@@ -139,6 +139,22 @@ namespace District_3_App.ExtraInfo
 
         private void EditProfileButton_Click(object sender, RoutedEventArgs e)
         {
+            List<UIElement> elementsToRemove = new List<UIElement>();
+
+            foreach (UIElement child in extraInfoGrid.Children)
+            {
+                int columnIndex = Grid.GetColumn(child);
+
+                if (columnIndex == 1)
+                {
+                    elementsToRemove.Add(child);
+                }
+            }
+            foreach (UIElement element in elementsToRemove)
+            {
+                extraInfoGrid.Children.Remove(element);
+            }
+
             var profileInfo = new ProfileInfo_GUI.ProfileInfoDisplay();
             Grid.SetColumn(profileInfo, 1);
             Grid.SetRow(profileInfo, 1);
