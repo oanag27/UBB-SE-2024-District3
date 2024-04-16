@@ -18,6 +18,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.entities
         public int followersCount { get; set; }
         public TimeSpan Usersession { get; set; }
 
+
         public User() { }
         public User(Guid id, string username, string password, string email, string confirmationPassword)
         {
