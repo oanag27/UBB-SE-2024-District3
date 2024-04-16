@@ -1,6 +1,8 @@
 ﻿using District_3_App.ExtraInfo;
 using District_3_App.HighlightsFE;
 using District_3_App.LogIn;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
 using District_3_App.Service;
 using Log_In;
 using System.Text;
@@ -23,10 +25,37 @@ namespace District_3_App
     {
         private static ProfileInfoSettings ProfileInfoSettings = new ProfileInfoSettings(new Guid());
         private CasualProfileService casualProfileService = new CasualProfileService(null, ProfileInfoSettings);
+        private UsersRepository userRepository;
         public MainWindow()
         {
             InitializeComponent();
             generateFrame();
+            userRepository = new UsersRepository("Users.xml");
+            LoadUserProfile();
+        }
+        private void LoadUserProfile()
+        {
+
+            string username = "test_0"; // Replace with the actual username
+
+            // Get the user from the repository
+            User user = userRepository.GetUserByName(username);
+            if (user != null)
+            {
+                // Display the username
+                UsernameTextBlock.Text = $"{user.username}";
+
+                // Display the followers count
+                FollowerCountTextBlock.Text = $"{userRepository.getFollowersCount(username)}";
+
+                // Display the following count
+                FollowingTextBlock.Text = $"{userRepository.getFollowingCount(username)}";
+            }
+            else
+            {
+                // User not found
+                MessageBox.Show("User not found.");
+            }
         }
         private void Button_Click_Home(object sender, RoutedEventArgs e)
         {

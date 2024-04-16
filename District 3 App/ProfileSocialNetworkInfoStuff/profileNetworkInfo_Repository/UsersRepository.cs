@@ -22,26 +22,64 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
             LoadUsersFromXml();
         }
 
-        private void LoadUsersFromXml() 
+        //private void LoadUsersFromXml() 
+        //{
+        //    usersRepositoryList = new List<User>();
+        //    XDocument xDocument = XDocument.Load(filePath);
+        //    var users = xDocument.Descendants("User");
+        //    foreach (var user in users)
+        //    {
+        //        User newUser = new User
+        //        {
+        //            id = (Guid)user.Attribute("id"),
+        //            username = (string)user.Attribute("username"),
+        //            email = (string)user.Attribute("email"),
+        //            password = (string)user.Attribute("password"),
+        //            confirmationPassword = (string)user.Attribute("confirmationPassword")
+        //        };
+        //        usersRepositoryList.Add(newUser);
+        //    }
+
+
+        //}
+        private void LoadUsersFromXml()
         {
-            usersRepositoryList = new List<User>();
-            XDocument xDocument = XDocument.Load(filePath);
-            var users = xDocument.Descendants("User");
-            foreach (var user in users)
+            if (string.IsNullOrEmpty(filePath))
             {
-                User newUser = new User
-                {
-                    id = (Guid)user.Attribute("id"),
-                    username = (string)user.Attribute("username"),
-                    email = (string)user.Attribute("email"),
-                    password = (string)user.Attribute("password"),
-                    confirmationPassword = (string)user.Attribute("confirmationPassword")
-                };
-                usersRepositoryList.Add(newUser);
+                // Handle null or empty file path
+                Console.WriteLine("File path is null or empty.");
+                return;
             }
 
+            try
+            {
+                usersRepositoryList = new List<User>();
 
+                XDocument xDocument = XDocument.Load(filePath);
+                var users = xDocument.Descendants("User");
+
+                foreach (var user in users)
+                {
+                    User newUser = new User
+                    {
+                        id = (Guid)user.Attribute("id"),
+                        username = (string)user.Attribute("Username"),
+                        email = (string)user.Attribute("Email"),
+                        password = (string)user.Attribute("Password"),
+                        confirmationPassword = (string)user.Attribute("ConfirmationPassword"),
+                        followingCount = (int)user.Attribute("Following"),
+                        followersCount = (int)user.Attribute("Followers")
+                    };
+
+                    usersRepositoryList.Add(newUser);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while loading users from XML: " + ex.Message);
+            }
         }
+
 
         private void saveUsersToXml()
         {
@@ -53,8 +91,10 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
                            new XAttribute("Username", user.username),
                            new XAttribute("Email", user.email),
                            new XAttribute("Password", user.password),
-                           new XAttribute("ConfirmationPassword", user.confirmationPassword)
-                       )
+                           new XAttribute("ConfirmationPassword", user.confirmationPassword),
+                            new XElement("Following", user.followingCount), 
+                            new XElement("Followers", user.followersCount)
+                           )
                    )
                )
            );
@@ -78,6 +118,32 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         {
             usersRepositoryList.Add(user);
             saveUsersToXml();
+        }
+        public int getFollowersCount(string username)
+        {
+            User user = GetUserByName(username);
+            if (user != null)
+            {
+                return user.followersCount;
+            }
+            else
+            {
+                // Handle user not found scenario
+                return -1; 
+            }
+        }
+        public int getFollowingCount(string username)
+        {
+            User user = GetUserByName(username);
+            if (user != null)
+            {
+                return user.followingCount;
+            }
+            else
+            {
+                // Handle user not found scenario
+                return -1; 
+            }
         }
     }
 }
