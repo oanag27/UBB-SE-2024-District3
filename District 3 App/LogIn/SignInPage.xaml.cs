@@ -75,7 +75,7 @@ namespace District_3_App.LogIn
 
             if (!ValidatePassword(txtPassword.Password))
             {
-                MessageBox.Show("Invalid password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
@@ -117,7 +117,7 @@ namespace District_3_App.LogIn
             var hasNumericChar = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
             var hasLowerChar = new Regex(@"[a-z]+");
-            var hasSpecialChar = new Regex(@"[/\-_.]+");
+            var hasSpecialChar = new Regex(@"[/-_.]+");
             var hasMiniMaxChars = new Regex(@".{5,10}");
 
             bool isPasswordValid = hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password);
