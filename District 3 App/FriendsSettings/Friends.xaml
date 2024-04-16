@@ -5,19 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:District_3_App.FriendsSettings"
              mc:Ignorable="d"
-             Height="450" Width="800">
+             Height="556" Width="542">
     <UserControl.Resources>
         <!-- Define the loading button template -->
         <ControlTemplate x:Key="LoadingButtonTemplate" TargetType="Button">
             <Grid>
                 <!-- Use an Image as the button content -->
-                <Image Source="button.png" Stretch="Uniform"/>
+                <Image Source="\images\button.png" Stretch="Uniform"/>
             </Grid>
         </ControlTemplate>
         <ControlTemplate x:Key="LoadingButtonEyeTemplate" TargetType="Button">
             <Grid>
                 <!-- Use an Image as the button content -->
-                <Image Source="buttonEye.png" Stretch="Uniform"/>
+                <Image Source="\images\buttonEye.png" Stretch="Uniform"/>
             </Grid>
         </ControlTemplate>
 
