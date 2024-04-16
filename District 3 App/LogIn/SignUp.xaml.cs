@@ -162,10 +162,7 @@ namespace District_3_App.LogIn
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         private bool ValidatePassword(string password) 
@@ -180,10 +177,7 @@ namespace District_3_App.LogIn
             {
                 return true;
             }
-            else 
-            {
-                return false;
-            }
+            return false;
         }
 
         private bool ValidateConfirmPassword(string confirmPassword) 
