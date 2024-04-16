@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -60,7 +61,62 @@ namespace District_3_App.LogIn
                 PasswordVisibilityIcon.Source = new BitmapImage(new Uri("pack://application:,,,/images/hidePasswordIcon.png"));
                 txtPassword.Password = txtVisiblePassword.Text;
             }
-
         }
+
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            //bool isValid = true;
+
+            //if(!ValidateUsernameOrEmail(txtUsernameAndEmail.Text)) 
+            //{
+            //    MessageBox.Show("Invalid usernsme or email.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    isValid = false;
+            //}
+
+            //if (!ValidatePassword(txtPassword.Password))
+            //{
+            //    MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    isValid = false;
+            //}
+            var newContent = new MainWindow();
+            newContent.Show();
+            Window.GetWindow(this).Close();     
+           
+        }
+
+        //private bool ValidateUsernameOrEmail(string usernameOrEmail)
+        //{
+        //    var hasMiniMaxCharsUsername = new Regex(@".{5,11}");
+        //    var hasNumericChar = new Regex(@"[0-9]+");
+        //    var hasAlphabeticChar = new Regex(@"[A-Za-z]");
+        //    var hasSpecialChar = new Regex(@"[_.]");
+
+        //    if(hasMiniMaxCharsUsername.IsMatch(usernameOrEmail) && hasNumericChar.IsMatch(usernameOrEmail) && hasAlphabeticChar.IsMatch(usernameOrEmail) && hasSpecialChar.IsMatch(usernameOrEmail))
+        //    {
+        //        return true;
+        //    }
+        //    else if (Regex.IsMatch(usernameOrEmail, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase))
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+
+        //}
+
+
+        //private bool ValidatePassword(string password)
+        //{
+        //    var hasNumericChar = new Regex(@"[0-9]+");
+        //    var hasUpperChar = new Regex(@"[A-Z]+");
+        //    var hasLowerChar = new Regex(@"[a-z]+");
+        //    var hasSpecialChar = new Regex(@"[/-_.]+");
+        //    var hasMiniMaxChars = new Regex(@".{5,10}");
+
+        //    bool isPasswordValid = hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password);
+        //    return isPasswordValid;
+        //}
     }
 }

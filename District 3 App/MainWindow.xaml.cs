@@ -67,10 +67,6 @@ namespace District_3_App
         }
         private void ExtraInfo_Click(object sender, RoutedEventArgs e)
         {
-            //Popup2.IsOpen = false;
-            //ExtraInfoControl.Content = new ExtraInfo.ExtraInfo();
-            //ines
-            //mainGrid.Children.Clear();
             var newContent = new ExtraInfo.ExtraInfo();
             Grid.SetColumn(newContent, 2);
             Grid.SetRow(newContent, 0);   
@@ -232,6 +228,11 @@ namespace District_3_App
                 romanianFrame.Visibility = Visibility.Collapsed;
             }
 
+        }
+        private void MoreImage_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // Perform your action here
+            MessageBox.Show("More2 image clicked!");
         }
     }
 }

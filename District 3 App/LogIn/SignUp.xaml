@@ -182,7 +182,7 @@ BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
     </UserControl.Resources>
 
 
-    <Grid x:Name="SignUpGrid" Background="White" Width="1300" Height="1000">
+    <Grid x:Name="SignUpGrid" Background="White" Width="1300" Height="1000" Margin="-450,-40,0,0">
         <Border BorderBrush="#5A6978" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="433,50,0,0">
             <Grid Margin="65">
                 <Grid.RowDefinitions>
@@ -222,7 +222,7 @@ BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
                     <TextBlock Text="Business Account" FontSize="14"  Foreground="#8190A5"/>
                     <ToggleButton x:Name="Toggle" Style="{StaticResource ToggleSwitchStyle}" Margin="20,0"/>
                 </StackPanel>
-                <Button Grid.Row="7" x:Name="SignUpButton" Content="Sign Up" Background="#FF47525E" Foreground="White" Margin="0,10,0,-3" Width="220" Height="38" HorizontalAlignment="Center" FontSize="16" BorderBrush="#FF47525E">
+                <Button Grid.Row="7" x:Name="SignUpButton" Content="Sign Up" Background="#FF47525E" Foreground="White" Margin="0,10,0,-3" Width="220" Height="38" HorizontalAlignment="Center" FontSize="16" BorderBrush="#FF47525E" Click="SignUpButton_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>
