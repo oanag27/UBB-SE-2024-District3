@@ -22,7 +22,8 @@ namespace District_3_App.ExtraInfo
     public partial class PaymentForm : UserControl
     {
         public Account Account { get; set; }
-        private string xmlFilePath = "Users.xml";
+        private string xmlFilePath = "E:\\facultate\\Sem4\\issok\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+        
         private XDocument xmlDoc;
         public PaymentForm()
         {
@@ -36,11 +37,10 @@ namespace District_3_App.ExtraInfo
                 MessageBox.Show($"Failed to load XML file: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            string username = "john_doe"; // Example username
-            string password = "securepassword"; // Example password
+            string username = "inesina"; // Example username
+            string password = "papa"; // Example password
 
-            // Find user in XML
-            /*var user = FindUserByUsernameAndPassword(username, password);
+            var user = FindUserByUsernameAndPassword(username, password);
 
             if (user != null)
             {
@@ -51,7 +51,7 @@ namespace District_3_App.ExtraInfo
             else
             {
                 MessageBox.Show("User not found in XML.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }*/
+            }
             /*Account = new Account(new UserExtraInfo("john_doe", "securepassword"), "", "", "", "");
             DataContext = this;*/
         }
