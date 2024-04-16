@@ -1,4 +1,5 @@
-﻿using Log_In;
+﻿using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
+using Log_In;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace District_3_App.LogIn
 {
     public partial class ForgotPassword : UserControl
     {
+        private string filePath = "C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+        private UsersRepository usersRepository;
+
         public ForgotPassword()
         {
             InitializeComponent();
+            usersRepository = new UsersRepository(filePath);
         }
 
         private void BackToSignIn_Click(object sender, RoutedEventArgs e)
@@ -52,23 +58,39 @@ namespace District_3_App.LogIn
             }
         }
 
+
+
         private void ResetPasswordButton_Click(object sender, RoutedEventArgs e)
         {
-            bool isValid = true;
-            if (!ValidateNewPassword(txtNewPassword.Password))
-            {
-                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                isValid = false;
-            }
+            string newEmail = txtEmail.Text;
+            string newPassword = txtNewPassword.Password;
 
-            if (isValid)
+            if (!string.IsNullOrWhiteSpace(newEmail) && !string.IsNullOrWhiteSpace(newPassword))
             {
-                var newContent = new SignInPage();
-                ResetPasswordGrid.Children.Clear();
-                ResetPasswordGrid.Children.Add(newContent);
+                //if (ValidateNewPassword(newPassword))
+                //{
+                    if (usersRepository.UpdatePassword(newEmail, newPassword))
+                    {
+                        MessageBox.Show("Password updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        var newContent = new SignInPage();
+                        ResetPasswordGrid.Children.Clear();
+                        ResetPasswordGrid.Children.Add(newContent);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Email address not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character (/_-.).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                //}
+            }
+            else
+            {
+                MessageBox.Show("Please enter both email and new password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
 
         private bool ValidateNewPassword(string newPassword)
         {

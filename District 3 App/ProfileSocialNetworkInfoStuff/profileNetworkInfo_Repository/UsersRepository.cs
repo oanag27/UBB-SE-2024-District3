@@ -1,10 +1,12 @@
 ﻿using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository
 {
@@ -25,41 +27,41 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         private void LoadUsersFromXml() 
         {
             usersRepositoryList = new List<User>();
-            XDocument xDocument = XDocument.Load(filePath);
-            var users = xDocument.Descendants("User");
-            foreach (var user in users)
+            if (File.Exists(filePath))
             {
-                User newUser = new User
+                XDocument doc = XDocument.Load(filePath);
+                foreach (var userElement in doc.Root.Elements("User"))
                 {
-                    id = (Guid)user.Attribute("id"),
-                    username = (string)user.Attribute("username"),
-                    email = (string)user.Attribute("email"),
-                    password = (string)user.Attribute("password"),
-                    confirmationPassword = (string)user.Attribute("confirmationPassword")
-                };
-                usersRepositoryList.Add(newUser);
+                    User user = new User
+                    {
+                        id = Guid.Parse(userElement.Attribute("id").Value),
+                        username = userElement.Attribute("Username").Value,
+                        email = userElement.Attribute("Email").Value,
+                        password = userElement.Attribute("Password").Value,
+                        confirmationPassword = userElement.Attribute("ConfirmationPassword").Value
+                    };
+                    usersRepositoryList.Add(user);
+                }
             }
-
-
         }
 
         private void saveUsersToXml()
         {
-            XDocument xDocument = new XDocument(
-               new XElement("UserAccounts",
-                   usersRepositoryList.Select(user =>
-                       new XElement("User",
-                           new XAttribute("id", user.id),
-                           new XAttribute("Username", user.username),
-                           new XAttribute("Email", user.email),
-                           new XAttribute("Password", user.password),
-                           new XAttribute("ConfirmationPassword", user.confirmationPassword)
-                       )
-                   )
-               )
-           );
 
-           xDocument.Save(filePath);
+            XDocument doc = new XDocument();
+            XElement root = new XElement("UsersAccounts");
+            foreach (var user in usersRepositoryList)
+            {
+                XElement userElement = new XElement("User",
+                    new XAttribute("id", user.id),
+                    new XAttribute("Username", user.username),
+                    new XAttribute("Email", user.email),
+                    new XAttribute("Password", user.password),
+                    new XAttribute("ConfirmationPassword", user.confirmationPassword));
+                root.Add(userElement);
+            }
+            doc.Add(root);
+            doc.Save(filePath);
         }
 
         public User GetUserByName(string username)
@@ -79,5 +81,42 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
             usersRepositoryList.Add(user);
             saveUsersToXml();
         }
+
+        public bool UpdatePassword(string email, string newPassword)
+        {
+            try
+            {
+                XElement root = XElement.Load(filePath);
+                IEnumerable<XElement> users = from user in root.Elements("User")
+                                              where (string)user.Attribute("Email") == email
+                                              select user;
+
+                if (users.Any())
+                {
+                    foreach (XElement user in users)
+                    {
+                        user.SetAttributeValue("Password", newPassword);
+                    }
+
+                    root.Save(filePath);
+                    return true; 
+                }
+                else
+                {
+                    return false; 
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error updating password: " + ex.Message);
+                return false;
+            }
+        }
+        public User GetUserByUsernameOrEmail(string usernameOrEmail)
+        {
+            return usersRepositoryList.FirstOrDefault(user => user.username == usernameOrEmail || user.email == usernameOrEmail);
+        }
+
+
     }
 }
