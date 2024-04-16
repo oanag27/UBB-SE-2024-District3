@@ -35,7 +35,10 @@ namespace District_3_App.Service
 
         public bool AddLink(string newLink)
         {
-            return fancierRepo.AddLink(profileId, newLink);
+            if  (newLink.StartsWith("http://") ||newLink.StartsWith("www.") ) {
+                return fancierRepo.AddLink(profileId, newLink);
+            }
+            return false;
         }
 
         public bool DeleteLink(string linkToDelete)
