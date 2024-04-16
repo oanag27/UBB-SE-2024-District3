@@ -229,11 +229,7 @@ namespace District_3_App
             }
 
         }
-        private void MoreImage_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            // Perform your action here
-            MessageBox.Show("More2 image clicked!");
-        }
+       
         private void MoreImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             // Perform your action here
