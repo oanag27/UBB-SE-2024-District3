@@ -124,10 +124,84 @@
                         <Image Source="/images/threedots.png" Width="20" Height="20"/>
                     </Button>
                 </Grid>
-                <StackPanel x:Name="AdditionalDescription" Grid.Row="1" Margin="30,0,0,80" Visibility="Collapsed">
-                    <TextBlock Text="DESCRIPTION" FontSize="20px" VerticalAlignment="Center"/>
+                <StackPanel x:Name="AdditionalDescription" Grid.Row="1" Margin="20,0, 0,200" Visibility="Collapsed" VerticalAlignment="Top">
+                    <TextBlock Text="DESCRIPTION" FontSize="20px" VerticalAlignment="Center" />
+                    <TextBlock x:Name="hashtagText"  FontSize="18px" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="mottoText"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="link1Text"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="link2Text"  FontSize="18px" VerticalAlignment="Center"  HorizontalAlignment="Left"/>
                 </StackPanel>
-                <Image Source="\images\avatar.png" Width="150" Height="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,30,0"/>
+                <StackPanel Width="180" Height="180" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,0,0">
+                    <Grid>
+                        <Rectangle x:Name="firstFrame" Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFF00BD"/>
+                                    <GradientStop Color="#FF0A2CB9" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Rectangle x:Name="secondFrame" Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="Black"/>
+                                    <GradientStop Color="#FF80006E" Offset="1"/>
+                                    <GradientStop Color="#FFEE47F2" Offset="0.798"/>
+                                    <GradientStop Color="White" Offset="0.616"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Rectangle x:Name="thirdFrame" Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFD52D00"/>
+                                    <GradientStop Color="#FFA30262" Offset="1"/>
+                                    <GradientStop Color="#FFB55690" Offset="0.858"/>
+                                    <GradientStop Color="#FFD162A4" Offset="0.629"/>
+                                    <GradientStop Color="White" Offset="0.497"/>
+                                    <GradientStop Color="#FFFF9A56" Offset="0.36"/>
+                                    <GradientStop Color="#FFEF7627" Offset="0.199"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Rectangle x:Name="fourthFrame" Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed" >
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFE40303"/>
+                                    <GradientStop Color="DarkOrange" Offset="0.21"/>
+                                    <GradientStop Color="#FFFFED00" Offset="0.401"/>
+                                    <GradientStop Color="#FF008026" Offset="0.57"/>
+                                    <GradientStop Color="#FF24408E" Offset="0.766"/>
+                                    <GradientStop Color="#FF732982" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Rectangle Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed" x:Name="fifthFrame" >
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF5BCEFA"/>
+                                    <GradientStop Color="#FFF5A9B8" Offset="0.272"/>
+                                    <GradientStop Color="White" Offset="0.519"/>
+                                    <GradientStop Color="#FFF5A9B8" Offset="0.734"/>
+                                    <GradientStop Color="#FF5BCEFA" Offset="0.981"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Rectangle Height="160" Width="160" StrokeThickness="10" Visibility="Collapsed" x:Name="romanianFrame">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                    <GradientStop Color="#0033A0" Offset="0"/>
+                                    <GradientStop Color="#0033A0" Offset="0.333"/>
+                                    <GradientStop Color="#FFCE1126" Offset="0.333"/>
+                                    <GradientStop Color="#FFCE1126" Offset="0.666"/>
+                                    <GradientStop Color="#FCD116" Offset="0.666"/>
+                                    <GradientStop Color="#FCD116" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Image Source="\images\avatar.png" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,5,0,0" HorizontalAlignment="Center">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="100" Margin="20,0,10,0" FontWeight="Bold" FontSize="20px"/>
@@ -216,7 +290,7 @@
                             <TextBlock Text="Reels" Margin="5,0,0,0" FontSize="22px" Foreground="#47525E"/>
                         </Button>
                         <Button x:Name="TagsButton" Background="Transparent" BorderBrush="Transparent"  Click="TagsButton_Click">
-                                <TextBlock Text="Tags" Margin="5,0,0,0" FontSize="22px" Foreground="#47525E"/>
+                            <TextBlock Text="Tags" Margin="5,0,0,0" FontSize="22px" Foreground="#47525E"/>
                         </Button>
                     </UniformGrid>
                     <Border BorderBrush="#47525E" BorderThickness="0,1,0,0" Margin="40,10,40,40"/>

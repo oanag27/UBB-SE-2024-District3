@@ -55,34 +55,20 @@ namespace District_3_App.LogIn
         private void ResetPasswordButton_Click(object sender, RoutedEventArgs e)
         {
             bool isValid = true;
-
-            if (!ValidateEmail(txtEmail.Text))
-            {
-                MessageBox.Show("Invalid email.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                isValid = false;
-            }
-
             if (!ValidateNewPassword(txtNewPassword.Password))
             {
-                MessageBox.Show("Invalid password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
             if (isValid)
             {
-
                 var newContent = new SignInPage();
                 ResetPasswordGrid.Children.Clear();
                 ResetPasswordGrid.Children.Add(newContent);
             }
         }
 
-        private bool ValidateEmail(string email)
-        {
-
-            bool isEmailValid = Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase);
-            return isEmailValid;
-        }
 
         private bool ValidateNewPassword(string newPassword)
         {
@@ -92,8 +78,12 @@ namespace District_3_App.LogIn
             var hasSpecialChar = new Regex(@"[/\-_.]+");
             var hasMiniMaxChars = new Regex(@".{5,10}");
 
-            bool isNewPasswordValid = hasNumericChar.IsMatch(newPassword) && hasUpperChar.IsMatch(newPassword) && hasLowerChar.IsMatch(newPassword) && hasSpecialChar.IsMatch(newPassword) && hasMiniMaxChars.IsMatch(newPassword);
-            return isNewPasswordValid;
+            if (hasNumericChar.IsMatch(newPassword) && hasUpperChar.IsMatch(newPassword) && hasLowerChar.IsMatch(newPassword) && hasSpecialChar.IsMatch(newPassword) && hasMiniMaxChars.IsMatch(newPassword))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
+

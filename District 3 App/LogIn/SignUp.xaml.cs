@@ -81,7 +81,6 @@ namespace District_3_App.LogIn
 
             if(!ValidateUsername(txtUsername.Text))
             {
-                MessageBox.Show("Invalid username. The username must contain alphabetic and numeric characters only.It must be between 7 and 15 characters.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
@@ -93,13 +92,13 @@ namespace District_3_App.LogIn
 
             if (!ValidatePassword(txtPassword.Password))
             {
-                MessageBox.Show("Invalid password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
             if (!ValidateConfirmPassword(txtConfirmPassword.Password))
             {
-                MessageBox.Show("Invalid confirm password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Invalid confirmation password. The password's length must be between 5 and 10 characters and must contain at least one uppercase letter, one lowercase letter, one number, and one special character(/_-.)", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
 
@@ -127,18 +126,43 @@ namespace District_3_App.LogIn
             var hasMiniMaxChars = new Regex(@".{5,11}");
             var hasNumericChar = new Regex(@"[0-9]+");
             var hasAlphabeticChar = new Regex(@"[A-Za-z]");
-            var hasSpecialChar = new Regex(@"[_.]");
+            var hasSpecialChar = new Regex(@"[_.-]");
 
             if (hasMiniMaxChars.IsMatch(username) && hasNumericChar.IsMatch(username) && hasAlphabeticChar.IsMatch(username) && hasSpecialChar.IsMatch(username))
                 return true;
-            else
+            else if(!(hasMiniMaxChars.IsMatch(username)))
+            {
+                MessageBox.Show("Invalid username. The username's length must be between 5 and 11 characters.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
+            }
+            else if (!(hasNumericChar.IsMatch(username)))
+            {
+                MessageBox.Show("Invalid username. The username must contain at least one number.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            else if (!(hasAlphabeticChar.IsMatch(username)))
+            {
+                MessageBox.Show("Invalid username. The username must contain at least one alphabetic character..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            else if (!(hasSpecialChar.IsMatch(username)))
+            {
+                MessageBox.Show("Invalid username. The username must contain at least one special character(_ . -).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private bool ValidateEmail(string email)
         {
-            bool isEmailValid = Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase);
-            return isEmailValid;
+            if(Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase))
+            {
+                return true;
+            }
+            return false;
         }
 
         private bool ValidatePassword(string password) 
@@ -146,11 +170,14 @@ namespace District_3_App.LogIn
             var hasNumericChar = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
             var hasLowerChar = new Regex(@"[a-z]+");
-            var hasSpecialChar = new Regex(@"[/\-_.]+");
+            var hasSpecialChar = new Regex(@"[/-_.]+");
             var hasMiniMaxChars = new Regex(@".{5,10}");
 
-            bool isPasswordValid = hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password);
-            return isPasswordValid;
+            if(hasNumericChar.IsMatch(password) && hasUpperChar.IsMatch(password) && hasLowerChar.IsMatch(password) && hasSpecialChar.IsMatch(password) && hasMiniMaxChars.IsMatch(password))
+            {
+                return true;
+            }
+            return false;
         }
 
         private bool ValidateConfirmPassword(string confirmPassword) 
@@ -161,8 +188,15 @@ namespace District_3_App.LogIn
             var hasSpecialChar = new Regex(@"[/\-_.]+");
             var hasMiniMaxChars = new Regex(@".{5,10}");
 
-            bool isConfirmPasswordValid = hasNumericChar.IsMatch(confirmPassword) && hasUpperChar.IsMatch(confirmPassword) && hasLowerChar.IsMatch(confirmPassword) && hasSpecialChar.IsMatch(confirmPassword) && hasMiniMaxChars.IsMatch(confirmPassword);
-            return isConfirmPasswordValid;
+            if(hasNumericChar.IsMatch(confirmPassword) && hasUpperChar.IsMatch(confirmPassword) && hasLowerChar.IsMatch(confirmPassword) && hasSpecialChar.IsMatch(confirmPassword) && hasMiniMaxChars.IsMatch(confirmPassword))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+         
         }
     }
 }

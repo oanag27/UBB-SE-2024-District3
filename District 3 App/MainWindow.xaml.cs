@@ -1,6 +1,7 @@
 ﻿using District_3_App.ExtraInfo;
 using District_3_App.HighlightsFE;
 using District_3_App.LogIn;
+using District_3_App.Service;
 using Log_In;
 using System.Text;
 using System.Windows;
@@ -20,9 +21,12 @@ namespace District_3_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static ProfileInfoSettings ProfileInfoSettings = new ProfileInfoSettings(new Guid());
+        private CasualProfileService casualProfileService = new CasualProfileService(null, ProfileInfoSettings);
         public MainWindow()
         {
             InitializeComponent();
+            generateFrame();
         }
         private void Button_Click_Home(object sender, RoutedEventArgs e)
         {
@@ -134,7 +138,98 @@ namespace District_3_App
                 AdditionalDescription.Visibility = Visibility.Visible;
                 isDescriptionVisible = true;
             }
+
+            var links = ProfileInfoSettings.GetLinks();
+            if (links != null && links.Count >= 1)
+            {
+                link1Text.Text = links[0];
+            }
+            else
+            {
+                link1Text.Text = string.Empty; 
+            }
+
+            if (links != null && links.Count >= 2)
+            {
+                link2Text.Text = links[1];
+            }
+            else
+            {
+                link2Text.Text = string.Empty; 
+            }
+
+            var dailyMotto = ProfileInfoSettings.GetDailyMotto();
+            mottoText.Text = dailyMotto != null ? dailyMotto : string.Empty; 
+
+            var hashtag = ProfileInfoSettings.GetHashtag();
+            hashtagText.Text = hashtag != null ? hashtag : string.Empty; 
+
+
         }
+        private void generateFrame()
+        {
+            int frameNumber=casualProfileService.getProfileInfoSettings().GetFrameNumber();
+            if(frameNumber==1)
+            {
+                firstFrame.Visibility = Visibility.Visible;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }else if (frameNumber == 2)
+            {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Visible;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }else if(frameNumber == 3)
+            {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Visible;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }else if(frameNumber == 4)
+            {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Visible;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }
+            else if (frameNumber == 5)
+            {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Visible;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }else if(frameNumber == 6)
+            {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Visible;
+            }
+            else {
+                firstFrame.Visibility = Visibility.Collapsed;
+                secondFrame.Visibility = Visibility.Collapsed;
+                thirdFrame.Visibility = Visibility.Collapsed;
+                fourthFrame.Visibility = Visibility.Collapsed;
+                fifthFrame.Visibility = Visibility.Collapsed;
+                romanianFrame.Visibility = Visibility.Collapsed;
+            }
+
+        }
+       
         private void MoreImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             // Perform your action here
