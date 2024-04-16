@@ -1,4 +1,6 @@
 ﻿using District_3_App.ExtraInfo;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
 using Log_In;
 using System;
 using System.Collections.Generic;
@@ -20,12 +22,15 @@ namespace District_3_App.LogIn
 {
     public partial class SignUp : UserControl
     {
-        public UserInfo UserInfo { get; set; }
+       public User User { get; set; }
+       private UsersRepository usersRepository;
         public SignUp()
         {
             InitializeComponent();
-            UserInfo = new UserInfo("", "", "", "");
-            DataContext = this;
+        }
+        private Guid GenerateRandomUserId()
+        {
+            return Guid.NewGuid();
         }
 
         private void SignInLink_Click(object sender, RoutedEventArgs e)
@@ -75,16 +80,16 @@ namespace District_3_App.LogIn
             }
         }
 
-       private void SignUpButton_Click(object sender, RoutedEventArgs e) 
-       {
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
             bool isValid = true;
 
-            if(!ValidateUsername(txtUsername.Text))
+            if (!ValidateUsername(txtUsername.Text))
             {
                 isValid = false;
             }
 
-            if(!ValidateEmail(txtEmail.Text)) 
+            if (!ValidateEmail(txtEmail.Text))
             {
                 MessageBox.Show("Invalid email.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
@@ -102,7 +107,7 @@ namespace District_3_App.LogIn
                 isValid = false;
             }
 
-            if(!(txtPassword.Password.Equals(txtConfirmPassword.Password)))
+            if (!(txtPassword.Password.Equals(txtConfirmPassword.Password)))
             {
                 MessageBox.Show("Please choose the same password!.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
@@ -110,16 +115,27 @@ namespace District_3_App.LogIn
 
             if (isValid)
             {
-                UserInfo.Username = txtUsername.Text;
-                UserInfo.Email = txtEmail.Text;
-                UserInfo.Password = txtPassword.Password;
-                UserInfo.ConfirmationPassword = txtConfirmPassword.Password;
-                var newContent = new MainWindow();
-                newContent.Show();
-                Window.GetWindow(this).Close();
-                
+              User newUser = new User
+              { 
+                  id = GenerateRandomUserId(),
+                  username = txtUsername.Text,
+                  email = txtEmail.Text,
+                  password = txtPassword.Password,
+                  confirmationPassword = txtConfirmPassword.Password
+              };
+              try
+              {
+                   usersRepository.AddUser(newUser);
+              }
+              catch(Exception ex) 
+              {
+                    MessageBox.Show($"Error adding user: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+              }
+              var newContent = new MainWindow();
+              newContent.Show();
+              Window.GetWindow(this).Close();
             }
-       }
+        }
 
         private bool ValidateUsername(string username)
         {

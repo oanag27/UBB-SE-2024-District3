@@ -20,14 +20,14 @@ namespace District_3_App.FriendsWindow
     public partial class CustomWindow : Window
     {
         // Mock friends list
-        private static Dictionary<string, User> getFriends()
+        private static Dictionary<string, UserInfo> getFriends()
         {
-            var contacts = new Dictionary<string, User>();
+            var contacts = new Dictionary<string, UserInfo>();
 
             // Create User objects with usernames and add them to the dictionary
-            contacts["0752111222"] = new User("@patri.stoica", "0752111222");
-            contacts["0743111222"] = new User("@delia.gherasim", "0743111222");
-            contacts["0755111222"] = new User("@anita.gorog", "0755111222");
+            contacts["0752111222"] = new UserInfo("@patri.stoica", "0752111222");
+            contacts["0743111222"] = new UserInfo("@delia.gherasim", "0743111222");
+            contacts["0755111222"] = new UserInfo("@anita.gorog", "0755111222");
 
             return contacts;
         }
@@ -40,12 +40,12 @@ namespace District_3_App.FriendsWindow
             posts.Add(post);
             return posts;
         }
-        private static Dictionary<Post, List<User>> makePostDictionary()
+        private static Dictionary<Post, List<UserInfo>> makePostDictionary()
         {
-            Dictionary<Post, List<User>> posts = new Dictionary<Post, List<User>>();
+            Dictionary<Post, List<UserInfo>> posts = new Dictionary<Post, List<UserInfo>>();
             foreach (Post post in getPosts())
             {
-                posts[post] = new List<User>();
+                posts[post] = new List<UserInfo>();
             }
             return posts;
         }
@@ -53,9 +53,9 @@ namespace District_3_App.FriendsWindow
         private Post getCurrentPost() { return allowedProfiles.Keys.First(); }
 
 
-        private Dictionary<string, User> friends = getFriends();
+        private Dictionary<string, UserInfo> friends = getFriends();
 
-        private Dictionary<Post, List<User>> allowedProfiles = makePostDictionary();
+        private Dictionary<Post, List<UserInfo>> allowedProfiles = makePostDictionary();
 
         private List<string> allowedNames = new List<string>();
 
@@ -65,7 +65,7 @@ namespace District_3_App.FriendsWindow
         {
             listBox.Items.Clear();
 
-            foreach (User user in friends.Values)
+            foreach (UserInfo user in friends.Values)
             {
                 listBox.Items.Add(user.username);
             }
@@ -105,7 +105,7 @@ namespace District_3_App.FriendsWindow
             textBox.Text = "";
         }
 
-        private bool addAllowedUserToSeePost(User user, Post key)
+        private bool addAllowedUserToSeePost(UserInfo user, Post key)
         {
             allowedProfiles[key].Add(user);
             return true;
@@ -113,7 +113,7 @@ namespace District_3_App.FriendsWindow
 
         private void SaveButton_Clicked(object sender, RoutedEventArgs e)
         {
-            foreach (User user in friends.Values)
+            foreach (UserInfo user in friends.Values)
             {
                 if (allowedNames.Contains(user.username))
                 {
