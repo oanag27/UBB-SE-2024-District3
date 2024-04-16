@@ -57,8 +57,7 @@ namespace District_3_App.ExtraInfo
         }
         private XElement FindUserByUsernameAndPassword(string username, string password)
         {
-            // Search for a user in the XML document with the specified username and password
-            var user = xmlDoc.Descendants("User")
+            var user = xmlDoc.Descendants("UserExtraInfo")
                              .FirstOrDefault(u => (string)u.Element("Username") == username &&
                                                   (string)u.Element("Password") == password);
 
