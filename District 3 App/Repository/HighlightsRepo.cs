@@ -1,114 +1,102 @@
 ﻿using District_3_App.Enitities;
-using District_3_App.Enitities.Mocks;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Xml;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace District_3_App.Repository
 {
-    internal class HighlightsRepo
+    public class FancierProfile
     {
-        private Dictionary<Guid, Dictionary<Guid, Highlight>> userHighlights = new Dictionary<Guid, Dictionary<Guid, Highlight>>();
+        public Guid ProfileId { get; set; }
+        public List<string> Links { get; set; }
+        public string DailyMotto { get; set; }
+        public DateTime? RemoveMottoDate { get; set; }
+        public int FrameNumber { get; set; }
+        public string Hashtag { get; set; }
+    }
+
+    public class FancierProfileRepo
+    {
+        private Dictionary<Guid, FancierProfile> profileRepo = new Dictionary<Guid, FancierProfile>();
         private string filePath;
 
-        public HighlightsRepo()
+        public FancierProfileRepo()
         {
-            filePath = generateDefaultFilePath();
+            filePath = GenerateDefaultFilePath();
             Console.WriteLine(filePath);
             if (!File.Exists(filePath))
             {
-                createXml(filePath);
+                CreateXml(filePath);
             }
-            loadHighlights(filePath);
+            Load(filePath);
         }
 
-        private string generateDefaultFilePath()
+        private string GenerateDefaultFilePath()
         {
-            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Highlights.xml");
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FancierProfile.xml");
         }
 
-        private void createXml(string filePath)
+        private void CreateXml(string filePath)
         {
-            XDocument xDocument = new XDocument(new XElement("Highlights"));
+            XDocument xDocument = new XDocument(new XElement("FancierProfiles"));
             xDocument.Save(filePath);
         }
 
-        private void loadHighlights(string filePath)
+        private void Load(string filePath)
         {
-            Console.WriteLine("Reading highlights from file: " + filePath);
+            Console.WriteLine("Reading profile info fancy settings from file: " + filePath);
 
             XDocument xDocument = XDocument.Load(filePath);
-            XElement root = xDocument.Element("Highlights");
+            XElement root = xDocument.Element("FancierProfiles");
             if (root != null && root.HasElements)
             {
-                foreach (var userElem in root.Elements("User"))
+                foreach (var userElem in root.Elements("FancierProfile"))
                 {
                     Guid userId;
-                    if (!Guid.TryParse((string)userElem.Attribute("userId"), out userId))
+                    if (!Guid.TryParse((string)userElem.Attribute("ProfileId"), out userId))
                     {
-                        // Skip this user element if userId attribute is not valid
-                        continue;
+                        userId = Guid.NewGuid();
                     }
-
-                    foreach (var highlightElem in userElem.Elements("Highlight"))
+                    FancierProfile profile = new FancierProfile();
+                    try
                     {
-                        Highlight highlight = new Highlight();
-                        highlight.setUserId(userId);
-
-                        // Wrap the parsing in a try-catch block
-                        try
+                        profile.ProfileId = userId;
+                        profile.DailyMotto = (string)userElem.Attribute("DailyMotto");
+                        profile.RemoveMottoDate = (DateTime)userElem.Attribute("RemoveMottoDate");
+                        if (profile.RemoveMottoDate < DateTime.Now)
                         {
-                            Guid guid;
-                            if (Guid.TryParse((string)highlightElem.Attribute("guid"), out guid))
-                            {
-                                highlight.setGuid(guid);
-                            }
-
-                            highlight.setName((string)highlightElem.Attribute("name"));
-
-                            var postsElem = highlightElem.Element("posts");
-                            if (postsElem != null)
-                            {
-                                // Parse post elements
-                                var posts = postsElem.Elements("post").Select(e =>
-                                {
-                                    Guid postGuid;
-                                    if (Guid.TryParse(e.Value, out postGuid))
-                                    {
-                                        return postGuid;
-                                    }
-                                    else
-                                    {
-                                        return Guid.Empty; // or any other default value
-                                    }
-                                }).Where(e => e != Guid.Empty).ToList();
-
-                                highlight.setListPosts(posts);
-                            }
-
-                            highlight.setCover((string)highlightElem.Attribute("cover"));
-
-                            if (!userHighlights.ContainsKey(userId))
-                            {
-                                userHighlights[userId] = new Dictionary<Guid, Highlight>();
-                            }
-
-                            userHighlights[userId].Add(highlight.getHighlightId(), highlight);
+                            profile.DailyMotto = null;
+                            profile.RemoveMottoDate = null;
                         }
-                        catch (Exception ex)
+
+                        var linksElem = userElem.Element("Links");
+                        if (linksElem != null)
                         {
-                            // Log the error or handle it as needed
-                            Console.WriteLine($"Error parsing highlight: {ex.Message}");
+                            profile.Links = linksElem.Elements("Link")
+                                .Select(e => e.Value)
+                                .Where(e => !string.IsNullOrEmpty(e))
+                                .ToList();
                         }
+
+                        profile.FrameNumber = (int)userElem.Attribute("FrameNumber");
+                        profile.Hashtag = (string)userElem.Attribute("Hashtag");
+
+                        profileRepo.Add(userId, profile);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error parsing profile: {ex.Message}");
                     }
                 }
             }
         }
 
-        public void SaveHighlightsToXml()
+
+        public void SaveToXml()
         {
             try
             {
@@ -120,161 +108,292 @@ namespace District_3_App.Repository
                 }
                 else
                 {
-                    xDocument = new XDocument(new XElement("Highlights"));
+                    xDocument = new XDocument(new XElement("FancierProfiles"));
                 }
 
-                XElement root = xDocument.Element("Highlights");
+                XElement root = xDocument.Element("FancierProfiles");
                 root?.RemoveAll();
 
-                foreach (var userHighlight in userHighlights)
+                foreach (var profileId in profileRepo.Keys)
                 {
-                    XElement userElement = new XElement("User", new XAttribute("userId", userHighlight.Key));
+                    FancierProfile profile = profileRepo[profileId];
 
-                    foreach (var highlight in userHighlight.Value)
+                    XElement profileElement = new XElement("FancierProfile",
+                        new XAttribute("ProfileId", profile.ProfileId),
+                        new XAttribute("DailyMotto", profile.DailyMotto),
+                        new XAttribute("RemoveMottoDate", profile.RemoveMottoDate),
+                        new XAttribute("FrameNumber", profile.FrameNumber),
+                        new XAttribute("Hashtag", profile.Hashtag));
+
+                    if (profile.Links != null && profile.Links.Any())
                     {
-                        Highlight highlight1 = highlight.Value;
-                        XElement highlightElement = new XElement("Highlight",
-                            new XAttribute("userId", userHighlight.Key),
-                            new XAttribute("guid", highlight1.getHighlightId()), // Use the highlight's guid
-                            new XAttribute("name", highlight1.getName()), // Use the highlight's name
-                            new XElement("posts", highlight1.getPosts().Select(p => new XElement("post", p))),
-                            new XAttribute("cover", highlight1.getCover()));
-
-                        userElement.Add(highlightElement);
+                        XElement linksElement = new XElement("Links");
+                        foreach (var link in profile.Links)
+                        {
+                            linksElement.Add(new XElement("Link", link));
+                        }
+                        profileElement.Add(linksElement);
                     }
 
-                    root.Add(userElement);
+                    root.Add(profileElement);
                 }
 
                 xDocument.Save(filePath);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error saving highlights to XML: " + ex.Message);
+                Console.WriteLine("Error saving profiles to XML: " + ex.Message);
             }
         }
 
-        public List<MockPhotoPost> GetConnectedUserPosts(object user)
+        public bool AddLink(Guid userId, string newLink)
         {
-            List<MockPhotoPost> posts = new List<MockPhotoPost>();
-            string path1 = "/Images/snow.jpg";
-            string path2 = "/Images/peeta.jpeg";
-            string path3 = "/Images/katniss.jpg";
-            string path4 = "/Images/poster.jpeg";
-
-            MockPhotoPost post1 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 1", "Description 1", path1);
-            post1.setPostId(new Guid("11111111-1111-1111-1111-111111111111"));
-            MockPhotoPost post2 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 2", "Description 2", path2);
-            post2.setPostId(new Guid("22222222-2222-2222-2222-222222222222"));
-            MockPhotoPost post3 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 3", "Description 3", path3);
-            post3.setPostId(new Guid("33333333-3333-3333-3333-333333333333"));
-            MockPhotoPost post4 = new MockPhotoPost(user, new Dictionary<int, List<object>>(), new List<object>(), "Title 4", "Description 4", path4);
-            post4.setPostId(new Guid("44444444-4444-4444-4444-444444444444"));
-
-            posts.Add(post1);
-            posts.Add(post2);
-            posts.Add(post3);
-            posts.Add(post4);
-
-            return posts;
-        }
-
-        public bool AddHighlight(Guid userId, Highlight highlight)
-        {
-            if (!userHighlights.ContainsKey(userId))
+            try
             {
-                userHighlights[userId] = new Dictionary<Guid, Highlight>();
+                if (profileRepo.ContainsKey(userId))
+                {
+                    if (profileRepo[userId].Links == null)
+                    {
+                        profileRepo[userId].Links = new List<string>();
+                    }
+                    profileRepo[userId].Links.Add(newLink);
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        Links = new List<string> { newLink }
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
+                }
             }
-            userHighlights[userId].Add(highlight.getHighlightId(), highlight);
-            SaveHighlightsToXml();
-            return true;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error adding link: " + ex.Message);
+                return false;
+            }
         }
 
-        public bool RemoveHighlight(Guid userId, Guid highlightId)
+        public bool DeleteLink(Guid userId, string linkToDelete)
         {
-            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            try
             {
-                userHighlights[userId].Remove(highlightId);
-                SaveHighlightsToXml();
+                if (profileRepo.ContainsKey(userId))
+                {
+                    if (profileRepo[userId].Links != null)
+                    {
+                        profileRepo[userId].Links.Remove(linkToDelete);
+                        SaveToXml();
+                    }
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting link: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool SetFrameNumber(Guid userId, int newFrameNumber)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].FrameNumber = newFrameNumber;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        FrameNumber = newFrameNumber,
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error setting frame number: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteFrameNumber(Guid userId)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].FrameNumber = 0;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting frame number: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool SetHashtag(Guid userId, string newHashtag)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].Hashtag = newHashtag;
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        Hashtag=newHashtag,
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error setting hashtag: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool DeleteHashtag(Guid userId)
+        {
+            try
+            {
+                if (profileRepo.ContainsKey(userId))
+                {
+                    profileRepo[userId].Hashtag = "";
+                    SaveToXml();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("User ID not found.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error deleting hashtag: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool AddDailyMotto(Guid userId, string newMotto, DateTime dateToRemove)
+        {
+            if (profileRepo.ContainsKey(userId))
+            {
+                profileRepo[userId].DailyMotto = newMotto;
+                profileRepo[userId].RemoveMottoDate = dateToRemove;
+                SaveToXml();
+                return true;
+            }
+            else
+            {
+                FancierProfile profile = new FancierProfile();
+                profile.DailyMotto = newMotto;
+                profile.RemoveMottoDate = dateToRemove;
+                profileRepo.Add(userId, profile);
                 return true;
             }
             return false;
         }
 
-        public bool AddPostToHighlight(Guid userId, Guid postId, Guid highlightId)
+        public bool DeleteDailyMotto(Guid userId)
         {
-            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            if (profileRepo.ContainsKey(userId))
             {
-                List<Guid> listPosts = userHighlights[userId][highlightId].getPosts();
-                if (!listPosts.Contains(postId))
-                {
-                    listPosts.Add(postId);
-                    userHighlights[userId][highlightId].setListPosts(listPosts);
-                    SaveHighlightsToXml();
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public bool RemovePostFromHighlight(Guid userId, Guid postId, Guid highlightId)
-        {
-            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
-            {
-                List<Guid> listPosts = userHighlights[userId][highlightId].getPosts();
-                if (listPosts.Contains(postId))
-                {
-                    listPosts.Remove(postId);
-                    userHighlights[userId][highlightId].setListPosts(listPosts);
-                    SaveHighlightsToXml();
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private List<Highlight> GetHighlights()
-        {
-            return userHighlights.Values.SelectMany(dict => dict.Values).ToList();
-        }
-
-        public List<Highlight> GetHighlightsOfUser(Guid userId)
-        {
-            if (userHighlights.ContainsKey(userId))
-            {
-                return userHighlights[userId].Values.ToList();
+                profileRepo[userId].DailyMotto = null;
+                SaveToXml();
+                return true;
             }
             else
             {
-                return new List<Highlight>();
+                return false;
             }
         }
 
-        public Highlight GetHighlight(Guid userId, Guid highlightId)
+        public string GetDailyMotto(Guid userId)
         {
-            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            if (profileRepo.ContainsKey(userId))
             {
-                return userHighlights[userId][highlightId];
+                return profileRepo[userId].DailyMotto;
             }
-            return null;
+            else
+            {
+
+                return null;
+            }
+        }
+    
+
+        public List<string> GetLinks(Guid userId)
+        {
+            if (profileRepo.ContainsKey(userId))
+            {
+                return profileRepo[userId].Links;
+            }
+            else
+            {
+                return null;
+            }
         }
 
-        public List<MockPhotoPost> GetPostsOfHighlight(Guid userId, Guid highlightId)
+        public int GetFrameNumber(Guid userId)
         {
-            if (userHighlights.ContainsKey(userId) && userHighlights[userId].ContainsKey(highlightId))
+            if (profileRepo.ContainsKey(userId))
             {
-                List<MockPhotoPost> postsOfHighlight = new List<MockPhotoPost>();
-                Highlight highlight = userHighlights[userId][highlightId];
-                foreach (var post in GetConnectedUserPosts(userId))
-                {
-                    if (highlight.getPosts().Contains(post.getPostId()))
-                    {
-                        postsOfHighlight.Add(post);
-                    }
-                }
-                return postsOfHighlight;
+                return profileRepo[userId].FrameNumber;
             }
-            return new List<MockPhotoPost>();
+            else
+            {
+                return -1;
+            }
+        }
+
+        
+        public string GetHashtag(Guid userId)
+        {
+            if (profileRepo.ContainsKey(userId))
+            {
+                return profileRepo[userId].Hashtag;
+            }
+            else
+            {
+                return null;
+            }
+
         }
     }
 }
+

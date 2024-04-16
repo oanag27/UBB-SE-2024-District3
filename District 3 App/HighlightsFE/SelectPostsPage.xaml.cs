@@ -85,11 +85,18 @@ namespace District_3_App.HighlightsFE
             }
         }
 
-        private void SubmitPostsButton_Click(object sender, RoutedEventArgs e)
+         private void SubmitPostsButton_Click(object sender, RoutedEventArgs e)
         {
-            SelectHighlight selectHighlight = new SelectHighlight(selectedPostsGuids);
-            selectHighlight.ShowDialog();
-
+            if (highlightsRepo.GetHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111")).Count() > 0)
+            {
+                SelectHighlight selectHighlight = new SelectHighlight(selectedPostsGuids);
+                selectHighlight.ShowDialog();
+            }
+            else
+            {
+                CreateNewHighlight createNewHighlight = new CreateNewHighlight(selectedPostsGuids);
+                createNewHighlight.ShowDialog();
+            }
         }
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
