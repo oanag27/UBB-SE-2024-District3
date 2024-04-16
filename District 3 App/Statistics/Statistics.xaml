@@ -24,31 +24,31 @@
             <StackPanel Margin="0,20,0,0">
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="1. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
-                    <TextBlock Text="@Username" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak1" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
                     <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="2. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
-                    <TextBlock Text="@LongerUsername" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak2" Text="@LongerUsername" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
                     <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="3. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock Text="@s" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak3" Text="@s" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
                     <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="4. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak4" Text="Username" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
                     <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="5. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak5" Text="Username" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
                     <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>

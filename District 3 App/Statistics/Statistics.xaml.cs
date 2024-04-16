@@ -20,9 +20,12 @@ namespace District_3_App.Statistics
     /// </summary>
     public partial class Statistics : UserControl
     {
+        StatisticsService srv=new StatisticsService();
         public Statistics()
         {
             InitializeComponent();
+            this.Streak1.Text =srv.getFriendName();
         }
+        
     }
 }
