@@ -217,8 +217,14 @@ namespace District_3_App.Repository
                 }
                 else
                 {
-                    Console.WriteLine("User ID not found.");
-                    return false;
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        FrameNumber = newFrameNumber,
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
                 }
             }
             catch (Exception ex)
@@ -263,8 +269,14 @@ namespace District_3_App.Repository
                 }
                 else
                 {
-                    Console.WriteLine("User ID not found.");
-                    return false;
+                    FancierProfile profile = new FancierProfile
+                    {
+                        ProfileId = userId,
+                        Hashtag=newHashtag,
+                    };
+                    profileRepo.Add(userId, profile);
+                    SaveToXml();
+                    return true;
                 }
             }
             catch (Exception ex)
@@ -339,6 +351,7 @@ namespace District_3_App.Repository
             }
             else
             {
+
                 return null;
             }
         }
