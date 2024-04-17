@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace District_3_App.Statistics
 {
@@ -20,10 +21,11 @@ namespace District_3_App.Statistics
     /// </summary>
     public partial class Statistics : UserControl
     {
-        StatisticsService srv = new StatisticsService();
+        StatisticsService srv = new StatisticsService("Stats.xml");
         public Statistics()
         {
             InitializeComponent();
+
             this.Bestie1.Text = srv.GetFriendNames()[0];
             this.Bestie2.Text = srv.GetFriendNames()[1];
             this.Bestie3.Text = srv.GetFriendNames()[2];
@@ -35,7 +37,10 @@ namespace District_3_App.Statistics
             this.Streak3.Text = srv.GetUserStreaks()[2].ToString();
             this.Streak4.Text = srv.GetUserStreaks()[3].ToString();
             this.Streak5.Text = srv.GetUserStreaks()[4].ToString();
+
+
         }
+
 
     }
 }

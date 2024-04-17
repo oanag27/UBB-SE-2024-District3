@@ -1,50 +1,82 @@
 ﻿using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using District_3_App.Repository;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Xml.Linq;
 
 namespace District_3_App.Statistics
 {
     class StatisticsService
     {
-        int timeSpentOnApp;
+        private int timeSpentOnApp = 0;
         Dictionary<User, int> friends = new Dictionary<User, int>();
+        private Window mainWindow;
+        private string filePath;
 
-        public StatisticsService()
+
+
+        public StatisticsService(string filePath)
         {
+            this.mainWindow = Application.Current.MainWindow;
 
-            User user1 = new User(Guid.NewGuid(), "username1", "password1", "user1@yahoo.ro", new DateTime(2020, 4, 21, 19, 20, 29));
-            User user2 = new User(Guid.NewGuid(), "username2", "password2", "username2@gmail.ro", new DateTime(2012, 3, 22, 21, 10, 11));
-            User user3 = new User(Guid.NewGuid(), "username3", "password3", "user3@yahoo.com", new DateTime(2021, 4, 5, 23, 32, 58));
-            User user4 = new User(Guid.NewGuid(), "username4", "password4", "username4@stud.ubbcluj.ro", new DateTime(2022, 8, 30, 21, 28, 39));
-            User user5 = new User(Guid.NewGuid(), "username5", "password5", "username4@gmail.es", new DateTime(2023, 11, 22, 13, 44, 55));
-            User user6 = new User(Guid.NewGuid(), "username6", "password6", "username6@stud.ubbcluj.ro", new DateTime(2022, 8, 30, 21, 28, 39));
-            User user7 = new User(Guid.NewGuid(), "username7", "password7", "username7@gmail.es", new DateTime(2023, 11, 22, 13, 44, 55));
-            friends.Add(user1, 45);
-            friends.Add(user2, 60);
-            friends.Add(user3, 12);
-            friends.Add(user4, 30);
-            friends.Add(user5, 120);
-            friends.Add(user6, 1);
-            friends.Add(user7, 33);
+
+            this.filePath = generateDefaultFilePath();
+            Console.WriteLine(filePath);
+            if (!File.Exists(filePath))
+            {
+                createXml(filePath);
+            }
+            Load(filePath);
+
             var sortedSequence = friends.OrderByDescending(pair => pair.Value);
             Dictionary<User, int> sortedDictionary = sortedSequence.ToDictionary(pair => pair.Key, pair => pair.Value);
 
             friends = sortedDictionary;
 
+
         }
 
-        public StatisticsService(int timeSpentOnApp, Dictionary<User, int> friends)
+
+        private string generateDefaultFilePath()
         {
-            this.timeSpentOnApp = timeSpentOnApp;
-            this.friends = friends;
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Stats.xml");
+
         }
 
-        public int seeAverageTimeSpent()
+        public void createXml(string filePath)
         {
-            return 1;
+            XDocument xDocument = new XDocument(new XElement("Friends"));
+            xDocument.Save(filePath);
+        }
+        private void Load(string filePath)
+        {
+            Console.WriteLine("Reading from file: " + filePath);
+
+            XDocument xDocument = XDocument.Load(filePath);
+            XElement root = xDocument.Element("Friends");
+            if (!root.HasElements)
+            {
+                throw new Exception("No friend elements found in the XML file.");
+            }
+
+            foreach (var friendElem in root.Elements("Friend"))
+            {
+                string username = friendElem.Element("Username")?.Value;
+                int streak = int.Parse(friendElem.Element("Streak")?.Value ?? "0");
+
+                if (!string.IsNullOrEmpty(username))
+                {
+                    // Add user and streak to the dictionary
+                    User user = new User(Guid.NewGuid(), username, "", "", DateTime.Now); // Fill in appropriate values for other properties
+                    friends.Add(user, streak);
+                }
+            }
         }
 
 
@@ -77,6 +109,16 @@ namespace District_3_App.Statistics
 
             return friendStreaks;
 
+        }
+
+       
+        public TextBlock getTextBlock(TextBlock block)
+        {
+            return block;
+        }
+        public int seeAverageTimeSpent()
+        {
+            return this.timeSpentOnApp;
         }
 
         //TO DO:
