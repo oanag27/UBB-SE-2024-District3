@@ -39,6 +39,8 @@ namespace District_3_App.Statistics
 
             friends = sortedDictionary;
 
+            SaveStreaksToXML();
+
 
         }
 
@@ -72,11 +74,28 @@ namespace District_3_App.Statistics
 
                 if (!string.IsNullOrEmpty(username))
                 {
-                    // Add user and streak to the dictionary
-                    User user = new User(Guid.NewGuid(), username, "", "", DateTime.Now); // Fill in appropriate values for other properties
+                    User user = new User(Guid.NewGuid(), username, "", "", DateTime.Now.ToString()); // Fill in appropriate values for other properties
                     friends.Add(user, streak);
                 }
             }
+        }
+
+        public void SaveStreaksToXML()
+        {
+            XDocument xDocument = XDocument.Load(filePath);
+            XElement root = xDocument.Element("Friends");
+
+            root.Elements("Friend").Remove();
+
+            foreach (var kvp in friends)
+            {
+                XElement friendElem = new XElement("Friend",
+                    new XElement("Username", kvp.Key.username),
+                    new XElement("Streak", kvp.Value));
+                root.Add(friendElem);
+            }
+
+            xDocument.Save(filePath);
         }
 
 
@@ -121,12 +140,7 @@ namespace District_3_App.Statistics
             return this.timeSpentOnApp;
         }
 
-        //TO DO:
-        /*
-         * A more efficient method to select top 5 values from dictionary
-         * Create a function that checks the consecutivity of texts 
-         * Compute the time the app runs
-         */
+        
 
     }
 }
