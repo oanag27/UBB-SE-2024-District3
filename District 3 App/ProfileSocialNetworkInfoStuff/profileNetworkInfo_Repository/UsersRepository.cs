@@ -46,43 +46,75 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         //}
         private void LoadUsersFromXml()
         {
-            usersRepositoryList = new List<User>();
-            if (File.Exists(filePath))
+            //usersRepositoryList = new List<User>();
+            //if (File.Exists(filePath))
+            //{
+            //    XDocument doc = XDocument.Load(filePath);
+            //    foreach (var userElement in doc.Root.Elements("User"))
+            //    {
+            //        User user = new User
+            //        {
+            //            id = Guid.Parse(userElement.Attribute("id").Value),
+            //            username = userElement.Attribute("Username").Value,
+            //            email = userElement.Attribute("Email").Value,
+            //            password = userElement.Attribute("Password").Value,
+            //            confirmationPassword = userElement.Attribute("ConfirmationPassword").Value,
+            //            followingCount = (int)userElement.Attribute("Following"),
+            //            followersCount = (int)userElement.Attribute("Followers")
+            //        };
+            //        usersRepositoryList.Add(user);
+            //    }
+            //}
+            try
             {
-                XDocument doc = XDocument.Load(filePath);
-                foreach (var userElement in doc.Root.Elements("User"))
+                usersRepositoryList = new List<User>();
+
+                XDocument xDocument = XDocument.Load(filePath);
+                var users = xDocument.Descendants("User");
+
+                foreach (var user in users)
                 {
-                    User user = new User
+                    User newUser = new User
                     {
-                        id = Guid.Parse(userElement.Attribute("id").Value),
-                        username = userElement.Attribute("Username").Value,
-                        email = userElement.Attribute("Email").Value,
-                        password = userElement.Attribute("Password").Value,
-                        confirmationPassword = userElement.Attribute("ConfirmationPassword").Value
+                        id = (Guid)user.Attribute("id"),
+                        username = (string)user.Attribute("Username"),
+                        email = (string)user.Attribute("Email"),
+                        password = (string)user.Attribute("Password"),
+                        confirmationPassword = (string)user.Attribute("ConfirmationPassword"),
+                        followingCount = (int)user.Attribute("Following"),
+                        followersCount = (int)user.Attribute("Followers")
                     };
-                    usersRepositoryList.Add(user);
+
+                    usersRepositoryList.Add(newUser);
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while loading users from XML: " + ex.Message);
+            }
+
         }
 
 
         private void saveUsersToXml()
         {
+            XDocument xDocument = new XDocument(
+                new XElement("UserAccounts",
+                    usersRepositoryList.Select(user =>
+                        new XElement("User",
+                            new XAttribute("id", user.id),
+                            new XAttribute("Username", user.username),
+                            new XAttribute("Email", user.email),
+                            new XAttribute("Password", user.password),
+                            new XAttribute("ConfirmationPassword", user.confirmationPassword),
+                            new XElement("Following", user.followingCount),
+                            new XElement("Followers", user.followersCount)
+                        )
+                    )
+                )
+            );
 
-            XDocument doc = new XDocument();
-            XElement root = new XElement("UsersAccounts");
-            foreach (var user in usersRepositoryList)
-            {
-                XElement userElement = new XElement("User",
-                    new XAttribute("id", user.id),
-                    new XAttribute("Username", user.username),
-                    new XAttribute("Email", user.email),
-                    new XAttribute("Password", user.password),
-                    new XAttribute("ConfirmationPassword", user.confirmationPassword));
-                root.Add(userElement);
-            }
-            doc.Add(root);
-            doc.Save(filePath);
+            xDocument.Save(filePath);
         }
 
         public User GetUserByName(string username)
