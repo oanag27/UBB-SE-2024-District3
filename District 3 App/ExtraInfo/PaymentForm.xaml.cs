@@ -1,4 +1,5 @@
-﻿using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+﻿using District_3_App.LogIn;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Service;
 using System;
 using System.Collections.Generic;
@@ -25,10 +26,10 @@ namespace District_3_App.ExtraInfo
     public partial class PaymentForm : UserControl
     {
         public Account Account { get; set; }
-        private string xmlFilePath = "E:\\facultate\\Sem4\\issok\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+        
         private ProfileNetworkInfoService profileNetworkInfoService;
 
-
+        private UserManager userManager;
         private XDocument xmlDoc;
         public PaymentForm(ProfileNetworkInfoService profileNetworkInfoService)
         {
@@ -36,54 +37,67 @@ namespace District_3_App.ExtraInfo
             InitializeComponent();
             try
             {
+                string xmlFilePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
                 xmlDoc = XDocument.Load(xmlFilePath);
+                userManager = new UserManager(xmlFilePath);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to load XML file: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            /*string username = "inesina"; 
-            string password = "papa"; */
-            var users = xmlDoc.Descendants("User");
+            /*var users = xmlDoc.Descendants("User");
             Guid id = Guid.NewGuid();
             string username = "test_1";
             string email = "testines@gmail.com";
             string password = "Test-1";
             string confirmationPassword = "Test-1";
-            var user = FindUserByUsernameAndPassword(username, password);
+            var user = FindUserByUsernameAndPassword(username, password);*/
 
-            if (user != null)
+            /*if (user != null)
             {
                 Account = new Account(new User(id,username, password,email,confirmationPassword), "", "", "", "");
                 DataContext = this;
+            }*/
+            string username = "test_1";
+            string password = "Test-1";
+
+            // Authenticate user
+            if (userManager.AuthenticateUser(username, password))
+            {
+                bool isLoggedIn = userManager.IsUserLoggedIn(username);
+
+                if (isLoggedIn)
+                {
+                    User currentUser = userManager.GetUsers().FirstOrDefault(u => u.username == username);
+
+                    if (currentUser != null)
+                    {
+                        Account = new Account(currentUser, "", "", "", "");
+                        DataContext = this;
+                    }
+                    else
+                    {
+                        MessageBox.Show("User details not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No user is currently logged in.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
             }
             else
             {
-                MessageBox.Show("User not found in XML.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("User not found or authentication failed.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            /*Account = new Account(new UserExtraInfo("john_doe", "securepassword"), "", "", "", "");
-            DataContext = this;*/
         }
-        /*private void LoadUsersFromXml(string filePath)
+        /*else
         {
-            if (File.Exists(filePath))
-            {
-                XDocument doc = XDocument.Load(filePath);
-                foreach (var userElement in doc.Root.Elements("User"))
-                {
-                    User user = new User
-                    {
-                        id = Guid.Parse(userElement.Attribute("id").Value),
-                        username = userElement.Attribute("Username").Value,
-                        email = userElement.Attribute("Email").Value,
-                        password = userElement.Attribute("Password").Value,
-                        confirmationPassword = userElement.Attribute("ConfirmationPassword").Value,
-                    };
-                    users.Add(user);
-                }
-            }
+            MessageBox.Show("User not found in XML.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
         }*/
         private XElement FindUserByUsernameAndPassword(string username, string password)
         {
@@ -105,13 +119,11 @@ namespace District_3_App.ExtraInfo
             return user;*/
             foreach (var userElement in xmlDoc.Root.Elements("User"))
             {
-                // Extract user information from XML element
                 string xmlUsername = userElement.Attribute("Username")?.Value;
                 string xmlPassword = userElement.Attribute("Password")?.Value;
 
                 if (xmlUsername == username && xmlPassword == password)
                 {
-                    // If username and password match, return this user
                     return userElement;
                 }
             }
@@ -125,7 +137,6 @@ namespace District_3_App.ExtraInfo
                 MessageBox.Show("Card Number must be a string of 16 digits (numeric input only).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 isValid = false;
             }
-            //Console.WriteLine(ValidateExpirationDate(ExpirationDateTextBox.Text));
             if (!ValidateExpirationDate(ExpirationDateTextBox.Text))
             {
                 MessageBox.Show("Expiration Date must be in MM/YY format (numeric input only).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
