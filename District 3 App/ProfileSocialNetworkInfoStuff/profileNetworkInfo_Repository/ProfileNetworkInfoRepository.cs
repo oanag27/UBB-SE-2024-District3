@@ -24,7 +24,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
 
         public ProfileNetworkInfoRepository()
         {
-            this.filePath = "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml";
+            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\\\Profiles.xml";
             LoadProfilesInXML();
 
             SaveProfilesInXML();
@@ -34,7 +34,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         public void LoadProfilesInXML()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<UserProfileSocialNetworkInfo>));
-            using (FileStream fileStream = new FileStream("C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml", FileMode.Open))
+            using (FileStream fileStream = new FileStream("E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml", FileMode.Open))
             {
                 repositoryList = (List<UserProfileSocialNetworkInfo>)serializer.Deserialize(fileStream);
             }
@@ -44,7 +44,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         public void SaveProfilesInXML()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<UserProfileSocialNetworkInfo>));
-            using (TextWriter writer = new StreamWriter("C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml"))
+            using (TextWriter writer = new StreamWriter("E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml"))
             {
                 serializer.Serialize(writer, repositoryList);
             }

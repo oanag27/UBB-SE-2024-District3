@@ -18,14 +18,14 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
 
         public GroupsRepository()
         {
-            this.filePath = "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
+            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
             this.groupsRepository = LoadGroupsFromXML();
             //this.groupsRepository = new List<Group>();
         }
         public GroupsRepository(List<Group> groupsRepository)
         {
             this.groupsRepository = groupsRepository;
-            this.filePath = "C:\\Users\\Sergiu\\Desktop\\iss_github_HW4\\UBB-SE-2024-District3\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
+            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
 
             SaveGroupsInXML();
         }

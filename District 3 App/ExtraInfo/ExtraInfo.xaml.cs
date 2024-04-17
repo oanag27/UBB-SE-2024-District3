@@ -205,7 +205,7 @@ namespace District_3_App.ExtraInfo
 
         private void VerifiedAccountButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new VerifiedAccount();
+            var newContent = new VerifiedAccount(profileNetworkInfoService);
             //extraInfoGrid.Children.Clear();
             extraInfoGrid.Children.Add(newContent);
             Grid.SetColumn(newContent, 1);

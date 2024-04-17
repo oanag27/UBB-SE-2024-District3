@@ -1,4 +1,5 @@
-﻿using System;
+﻿using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,8 @@ namespace District_3_App.ExtraInfo
         private string expirationDate;
         private string cvv;
 
-        public UserExtraInfo UserExtraInfo { get; private set; }
-
+        //public UserExtraInfo UserExtraInfo { get; private set; }
+        public User User { get; private set; }
         public string CardNumber
         {
             get => cardNumber;
@@ -67,9 +68,9 @@ namespace District_3_App.ExtraInfo
             }
         }
 
-        public Account(UserExtraInfo user, string cardNumber, string holderName, string expirationDate, string cvv)
+        public Account(User user, string cardNumber, string holderName, string expirationDate, string cvv)
         {
-            UserExtraInfo = user;
+            User = user;
             CardNumber = cardNumber;
             HolderName = holderName;
             ExpirationDate = expirationDate;

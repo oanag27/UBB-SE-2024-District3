@@ -1,4 +1,5 @@
-﻿using District_3_App.Statistics;
+﻿using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Service;
+using District_3_App.Statistics;
 using Statistics;
 using System;
 using System.Collections.Generic;
@@ -22,14 +23,16 @@ namespace District_3_App.ExtraInfo
     /// </summary>
     public partial class VerifiedAccount : UserControl
     {
-        public VerifiedAccount()
+        private ProfileNetworkInfoService profileNetworkInfoService;
+        public VerifiedAccount(ProfileNetworkInfoService profileNetworkInfoService)
         {
+            this.profileNetworkInfoService = profileNetworkInfoService;
             InitializeComponent();
         }
 
         private void ChooseBusinessButton_Click(object sender, RoutedEventArgs e)
         {
-            var paymentForm = new PaymentForm();
+            var paymentForm = new PaymentForm(profileNetworkInfoService);
             //VerifiedAccountGrid.Children.Clear();
             /*Grid.SetColumn(paymentForm, 0);
             Grid.SetRow(paymentForm, 1);
@@ -40,7 +43,7 @@ namespace District_3_App.ExtraInfo
 
         private void ChooseFreeButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContent = new VerifiedAccount();
+            var newContent = new VerifiedAccount(profileNetworkInfoService);
             VerifiedAccountGrid.Children.Clear(); 
             Grid.SetColumn(newContent, 0);
             Grid.SetRow(newContent, 1);
