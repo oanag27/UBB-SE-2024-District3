@@ -15,6 +15,7 @@ namespace District_3_App.LogIn
         private List<User> users = new List<User>();
         private Dictionary<string, DateTime> sessions = new Dictionary<string, DateTime>();
         private TimeSpan sessionTimeout = TimeSpan.FromMinutes(0.2);
+        //public string currentUsername;
 
         public UserManager(string filePath)
         {
@@ -31,6 +32,15 @@ namespace District_3_App.LogIn
             }
             return false;
         }
+
+        //public void PrintSessions()
+        //{
+        //    Console.WriteLine("Sessions Dictionary:");
+        //    foreach (var kvp in sessions)
+        //    {
+        //        Console.WriteLine($"Username: {kvp.Key}, LoggedIn: {kvp.Value}");
+        //    }
+        //}
 
         public void StartOrRenewSession(string username)
         {
