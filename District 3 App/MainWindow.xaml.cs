@@ -23,14 +23,15 @@ namespace District_3_App
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static ProfileInfoSettings ProfileInfoSettings = new ProfileInfoSettings(new Guid());
-        private CasualProfileService casualProfileService = new CasualProfileService(null, ProfileInfoSettings);
+        private ProfileInfoSettings ProfileInfoSettings ;
+        private CasualProfileService casualProfileService = new CasualProfileService();
         private UsersRepository userRepository;
         private UserManager userManager;
         public MainWindow()
         {
             InitializeComponent();
             generateFrame();
+            this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
             userRepository = new UsersRepository("Users.xml"); 
             LoadUserProfile();
             userManager = new UserManager("C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml");

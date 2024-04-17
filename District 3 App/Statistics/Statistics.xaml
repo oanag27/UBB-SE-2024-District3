@@ -24,33 +24,33 @@
             <StackPanel Margin="0,20,0,0">
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="1. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
-                    <TextBlock x:Name="Streak1" Text="" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Bestie1" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak1" Text="" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="2. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold" />
-                    <TextBlock x:Name="Streak2" Text="@LongerUsername" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Bestie2" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak2" Text="" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="3. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock x:Name="Streak3" Text="@s" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Bestie3" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak3" Text="" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="4. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock x:Name="Streak4" Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Bestie4" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak4" Text="" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
                 <StackPanel Height="34" Width="228" Orientation="Horizontal">
                     <TextBlock Text="5. " VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock x:Name="Streak5" Text="Username" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Bestie5" Text="" VerticalAlignment="Center" FontSize="16"/>
                     <Image Source="\images\user.png" Width="24" Height="18" Margin="5" VerticalAlignment="Center"/>
-                    <TextBlock Text="5" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="Streak5" Text="" VerticalAlignment="Center" FontSize="16"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
@@ -62,7 +62,7 @@
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="200">
                 <StackPanel Width="88">
                     <TextBlock Text="Today" FontWeight="Bold" FontSize="23"/>
-                    <TextBlock Text="2h20min"  FontSize="17"/>
+                    <TextBlock x:Name="TodaysTime" Text=""  FontSize="17"/>
                 </StackPanel>
                 <Ellipse Width="100" Height="100" Fill="Red"/>
             </StackPanel>

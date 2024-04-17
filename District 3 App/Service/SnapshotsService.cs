@@ -4,6 +4,7 @@ using District_3_App.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
@@ -13,14 +14,17 @@ namespace District_3_App.Service
     internal class SnapshotsService
     {
         private SnapshotsRepo snapshotsRepo;
-        public SnapshotsService(SnapshotsRepo snapshotsRepo) {
-            this.snapshotsRepo = snapshotsRepo;
+        private Guid userId;
+        public SnapshotsService(Guid currentUserId) {
+            this.snapshotsRepo= new SnapshotsRepo(currentUserId);
+           this.userId= currentUserId;
         }
 
         public bool addHighlight(string newHighlightName, string newHighlightCover, List<Guid> guids)
         {
             HighlightsRepo repo = snapshotsRepo.GetHighlightsRepo();
             // aici ar trebui apelat din post repository
+
 
             Highlight h = new Highlight(newHighlightName, newHighlightCover);
            
@@ -37,7 +41,7 @@ namespace District_3_App.Service
             }
             while (newHighlightCover == null)
             {
-                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")))
+                foreach (MockPhotoPost photoPost in repo.GetConnectedUserPosts(new Guid()))
                 {
                     if (photoPost != null)
                     {
@@ -53,7 +57,7 @@ namespace District_3_App.Service
 
             foreach (Guid postId in guids)
             {
-                repo.AddPostToHighlight(new Guid("11111111-1111-1111-1111-111111111111"), postId, h.getHighlightId());
+                repo.AddPostToHighlight(this.userId, postId, h.getHighlightId());
             }
             return true;
         }
@@ -69,13 +73,18 @@ namespace District_3_App.Service
         {
             return snapshotsRepo.removePostFromHighlight(postId, highlightId);
         }
-        public List<Highlight> getHighlightsOfUser(Guid guid)
+        public List<Highlight> getHighlightsOfUser()
         {
             return snapshotsRepo.GetHighlightsOfUser();
         }
         public Highlight GetHighlight(Guid highlightId)
         {
             return snapshotsRepo.GetHighlight(highlightId);
+        }
+
+        public List<MockPhotoPost> GetPostsOfHighlight( Guid highlightId)
+        {
+            return snapshotsRepo.getPostsOfHighlight(highlightId);
         }
     }
 }

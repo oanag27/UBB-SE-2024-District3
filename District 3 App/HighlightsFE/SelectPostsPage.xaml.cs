@@ -1,6 +1,7 @@
 ﻿using District_3_App.Enitities.Mocks;
 using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.Repository;
+using District_3_App.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,11 +35,14 @@ namespace District_3_App.HighlightsFE
     {
         private List<PhotoInfo> photosInfo = new List<PhotoInfo>();
         private List<Guid> selectedPostsGuids = new List<Guid>();
-        HighlightsRepo highlightsRepo = new HighlightsRepo();
+        // HighlightsRepo highlightsRepo = new HighlightsRepo();
+        private CasualProfileService casualProfileService = new CasualProfileService();
+        private SnapshotsService snapshotsService;
         public SelectPostsPage()
         {
             InitializeComponent();
-            List<MockPhotoPost> posts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111"));
+            this.snapshotsService = casualProfileService.getSnapshotsService();
+            List<MockPhotoPost> posts = casualProfileService.GetConnectedUserPosts();
 
             foreach (MockPhotoPost post in posts)
             {
@@ -87,7 +91,7 @@ namespace District_3_App.HighlightsFE
 
          private void SubmitPostsButton_Click(object sender, RoutedEventArgs e)
         {
-            if (highlightsRepo.GetHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111")).Count() > 0)
+            if (snapshotsService.getHighlightsOfUser().Count() > 0)
             {
                 SelectHighlight selectHighlight = new SelectHighlight(selectedPostsGuids);
                 selectHighlight.ShowDialog();
