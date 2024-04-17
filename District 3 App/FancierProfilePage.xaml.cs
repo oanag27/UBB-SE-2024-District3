@@ -20,11 +20,10 @@ namespace District_3_App
     public partial class FancierProfilePage : UserControl
     {
         private ProfileInfoSettings profileInfoSettings;
+        private CasualProfileService casualProfileService=new CasualProfileService();
         private string motto;
         public FancierProfilePage()
         {
-            ProfileInfoSettings profileInfoSettings = new ProfileInfoSettings(new Guid("11111111-1111-1111-1111-111111111111"));
-            CasualProfileService casualProfileService = new CasualProfileService(null, profileInfoSettings);
             this.profileInfoSettings=casualProfileService.getProfileInfoSettings();
             InitializeComponent();
             MottosComboBox.SelectionChanged += MottosComboBox_SelectionChanged;

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -34,11 +35,13 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         public void LoadProfilesInXML()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<UserProfileSocialNetworkInfo>));
+            XmlDocument xmlDoc = new XmlDocument();
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             string relativePath = baseDirectory.Substring(0, baseDirectory.IndexOf("bin\\Debug"));
 
             string currfilePath = System.IO.Path.Combine(relativePath, "ProfileSocialNetworkInfoStuff");
             filePath = System.IO.Path.Combine(currfilePath, "Profiles.xml");
+            //MessageBox.Show(filePath);
 
             using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
             {
