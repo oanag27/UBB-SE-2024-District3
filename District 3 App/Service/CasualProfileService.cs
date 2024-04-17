@@ -1,4 +1,7 @@
 ﻿using District_3_App.Enitities.Mocks;
+using District_3_App.LogIn;
+using District_3_App.ProfileSocialNetworkInfoStuff.entities;
+using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +24,13 @@ namespace District_3_App.Service
             return null;
         }
         public Guid getConnectedUserId() {
+            UserManager userManager= new UserManager("C:\\Users\\40723\\Source\\Repos\\913-Herta-Diana\\UBB-SE-2024-District3\\District 3 App\\Users.xml");
+            IReadOnlyList<User> users=userManager.GetUsers();
+            foreach(User user in users)
+            {
+                if (userManager.IsUserLoggedIn(user.username))
+                    return user.id;
+            }
             return new Guid("11111111-1111-1111-1111-111111111111");
         }
         public List<MockPhotoPost> GetConnectedUserPosts()
