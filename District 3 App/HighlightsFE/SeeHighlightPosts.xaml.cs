@@ -23,19 +23,19 @@ namespace District_3_App.HighlightsFE
     {
         private List<PhotoInfo> photosInfo = new List<PhotoInfo>();
         private SnapshotsService snapshotsService;
-
+        private CasualProfileService casualProfileService;
 
         public SeeHighlightPosts(Guid highlightId)
         {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
-            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1, null);
+           
+            casualProfileService = new CasualProfileService();
             snapshotsService = casualProfileService.getSnapshotsService();
 
             InitializeComponent();
+
+            
             Highlight h = snapshotsService.GetHighlight(highlightId);
-            List<MockPhotoPost> postsToShow = highlightsRepo.GetPostsOfHighlight(new Guid("11111111-1111-1111-1111-111111111111"), highlightId);
+            List<MockPhotoPost> postsToShow = snapshotsService.GetPostsOfHighlight(highlightId);
 
             foreach (MockPhotoPost post in postsToShow)
             {

@@ -24,13 +24,11 @@ namespace District_3_App.HighlightsFE
         public List<HighlightInfo> Highlights { get; set; }
         private Guid? currentlyOpenHighlightId = null;
         private SnapshotsService snapshotsService;
+        private CasualProfileService casualProfileService;
 
         public HighlightsOnMain()
-        {
-            HighlightsRepo highlightsRepo = new HighlightsRepo();
-            SnapshotsRepo snapshotsRepo = new SnapshotsRepo(highlightsRepo);
-            SnapshotsService snapshotsService1 = new SnapshotsService(snapshotsRepo);
-            CasualProfileService casualProfileService = new CasualProfileService(snapshotsService1, null);
+        { 
+            casualProfileService = new CasualProfileService();
             snapshotsService = casualProfileService.getSnapshotsService();
             InitializeComponent();
             LoadHighlights();
@@ -38,7 +36,7 @@ namespace District_3_App.HighlightsFE
 
         private void LoadHighlights()
         {
-            List<Highlight> highlights = snapshotsService.getHighlightsOfUser(new Guid("11111111-1111-1111-1111-111111111111"));
+            List<Highlight> highlights = snapshotsService.getHighlightsOfUser();
 
             if (highlights == null || highlights.Count == 0)
             {
@@ -48,8 +46,8 @@ namespace District_3_App.HighlightsFE
             Highlights = new List<HighlightInfo>();
             foreach (Highlight highlight in highlights)
             {
-                HighlightsRepo highlightsRepo = new HighlightsRepo();
-                List<MockPhotoPost> userPosts = highlightsRepo.GetConnectedUserPosts(new Guid("11111111-1111-1111-1111-111111111111")); 
+                //HighlightsRepo highlightsRepo = new HighlightsRepo();
+                List<MockPhotoPost> userPosts = casualProfileService.GetConnectedUserPosts();
                 MockPhotoPost coverPost = userPosts.FirstOrDefault(post => post.getPostId().ToString() == highlight.getCover());
 
                 if (coverPost != null)
