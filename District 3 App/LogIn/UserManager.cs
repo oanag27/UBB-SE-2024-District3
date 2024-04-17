@@ -81,6 +81,10 @@ namespace District_3_App.LogIn
                 }
             }
         }
+        public IReadOnlyList<User> GetUsers()
+        {
+            return users.AsReadOnly();
+        }
     }
 }
 
