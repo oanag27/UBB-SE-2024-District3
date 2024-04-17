@@ -26,12 +26,14 @@ namespace District_3_App
         private static ProfileInfoSettings ProfileInfoSettings = new ProfileInfoSettings(new Guid());
         private CasualProfileService casualProfileService = new CasualProfileService(null, ProfileInfoSettings);
         private UsersRepository userRepository;
+        private UserManager userManager;
         public MainWindow()
         {
             InitializeComponent();
             generateFrame();
             userRepository = new UsersRepository("Users.xml"); 
             LoadUserProfile();
+            userManager = new UserManager("C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml");
         }
         private void LoadUserProfile()
         {
@@ -104,6 +106,8 @@ namespace District_3_App
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
+            //string username = userManager.currentUsername;
+            //userManager.LogOutUser(username);
             mainGrid.Children.Clear();
             var newContent = new SignUp();
             Grid.SetColumn(newContent, 2);
