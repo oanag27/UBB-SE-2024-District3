@@ -38,11 +38,13 @@
         <Label Content="Sync Contacts" HorizontalAlignment="Left" Margin="68,107,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="See who viewed your profile" HorizontalAlignment="Left" Margin="68,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.175,0.579" FontSize="16"/>
         <!-- Use the custom loading button template -->
-        <Button Template="{StaticResource LoadingButtonTemplate}" Click="LoadUsernamesContacts_Click" HorizontalAlignment="Left" Margin="181,110,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="0.09,0.483" ClickMode="Press"/>
-        <Button Template="{StaticResource LoadingButtonEyeTemplate}" Click="LoadUsernamesViewers_Click" HorizontalAlignment="Left" Margin="282,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.092,-0.076" Height="29" Width="18"/>
+        <Button  Click="LoadUsernamesContacts_Click" HorizontalAlignment="Left" Margin="181,110,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="0.09,0.483" ClickMode="Press"/>
+        <Button  Click="LoadUsernamesViewers_Click" HorizontalAlignment="Left" Margin="282,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.092,-0.076" Height="29" Width="18"/>
         <ComboBox x:Name="usernamesContactsComboBox" ItemTemplate="{StaticResource ComboBoxItemTemplate}" HorizontalContentAlignment="Stretch" HorizontalAlignment="Left" Margin="70,143,0,0" VerticalAlignment="Top" Width="221" />
         <TextBlock HorizontalAlignment="Left" Margin="81,146,0,0" TextWrapping="Wrap" Text="See contacts" VerticalAlignment="Top" RenderTransformOrigin="-0.074,-3.498"/>
         <ComboBox x:Name="usernamesViewersComboBox" HorizontalAlignment="Left" Margin="70,330,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.981,0.598"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,333,0,0" TextWrapping="Wrap" Text="See everyone" VerticalAlignment="Top" RenderTransformOrigin="0.456,0.425"/>
+        <Image Source="/FriendsSettings/buttonEye.png" Margin="305,306,481,132" />
+        <Image Source="/FriendsSettings/button.png" Margin="204,114,581,321" />
     </Grid>
 </UserControl>

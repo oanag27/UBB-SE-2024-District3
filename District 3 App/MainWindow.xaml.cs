@@ -39,8 +39,8 @@ namespace District_3_App
             InitializeComponent();
             generateFrame();
             this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
-            userRepository = new UsersRepository("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\Lab5\\District 3 App\\Users.xml");
-            userManager = new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\Lab5\\District 3 App\\Users.xml");
+            userRepository = new UsersRepository("C:\\Users\\herta\\Desktop\\CasualProfile\\District 3 App\\Users.xml");
+            userManager = new UserManager("C:\\Users\\herta\\Desktop\\CasualProfile\\District 3 App\\Users.xml");
             LoadUserProfile();
             
         }

@@ -28,7 +28,7 @@ namespace District_3_App.LogIn
         public SignInPage()
         {
             InitializeComponent();
-            string filePath = "C:\\Users\\herta\\Desktop\\Sem4\\ISS\\Lab5\\District 3 App\\Users.xml";
+            string filePath = "C:\\Users\\herta\\Desktop\\CasualProfile\\District 3 App\\Users.xml";
             usersRepository = new UsersRepository(filePath);
             userManager = new UserManager(filePath);
         }

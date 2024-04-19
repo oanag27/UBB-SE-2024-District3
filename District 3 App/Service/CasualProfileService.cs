@@ -30,7 +30,7 @@ namespace District_3_App.Service
             return null;
         }
         public Guid getConnectedUserId() {
-            UserManager userManager= new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\Users.xml");
+            UserManager userManager= new UserManager("C:\\Users\\herta\\Desktop\\CasualProfile\\District 3 App\\Users.xml");
             IReadOnlyList<User> users=userManager.GetUsers();
             foreach(User user in users)
             {
