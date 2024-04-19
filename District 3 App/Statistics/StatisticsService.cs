@@ -157,10 +157,18 @@ namespace District_3_App.Statistics
 
 
                             if (day == DateTime.Now.Day)
+                            {
                                 timeSpentOnAppToday += timeValue;
-                            if (week == GetIso8601WeekOfYear(DateTime.Now))
                                 timeSpentOnAppWeekly += timeValue;
-                            if (month == DateTime.Now.Month)
+                                timeSpentOnAppMonthly += timeValue;
+
+                            }
+                            else if (week == GetIso8601WeekOfYear(DateTime.Now))
+                            {
+                                timeSpentOnAppWeekly += timeValue;
+                                timeSpentOnAppMonthly += timeValue;
+                            }
+                            else if (month == DateTime.Now.Month)
                                 timeSpentOnAppMonthly += timeValue;
                         }
 

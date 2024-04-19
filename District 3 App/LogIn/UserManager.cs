@@ -14,6 +14,14 @@ namespace District_3_App.LogIn
     {
         private List<User> users = new List<User>();
         static User? currentUser;
+
+        public string getCurrentUser()
+        {
+            if (currentUser == null)
+                return "";
+
+           return currentUser.username; 
+        }
         public UserManager(string filePath)
         {
             LoadUsersFromXml(filePath);

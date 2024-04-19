@@ -39,9 +39,10 @@ namespace District_3_App
             InitializeComponent();
             generateFrame();
             this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
-            userRepository = new UsersRepository("Users.xml"); 
+            userRepository = new UsersRepository("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\Lab5\\District 3 App\\Users.xml");
+            userManager = new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\Lab5\\District 3 App\\Users.xml");
             LoadUserProfile();
-            userManager = new UserManager("Users.xml");
+            
         }
         protected override void OnClosing(CancelEventArgs e)
         {
@@ -139,25 +140,64 @@ namespace District_3_App
         }
         private void LoadUserProfile()
         {
-            string username = string.IsNullOrWhiteSpace(Username) ? "test_0" : Username;
-            // Get the user from the repository
-            User user = userRepository.GetUserByName(username);
+            User user;
+            if (userManager!=null)
+            {
+                 user = userRepository.GetUserByName(userManager.getCurrentUser());
+                
+            }
+            else
+            {
+                 user = null;
+
+            }
+            
             if (user != null)
             {
                 // Display the username
                 UsernameTextBlock.Text = $"{user.username}";
+                
 
                 // Display the followers count
-                FollowerCountTextBlock.Text = $"{userRepository.getFollowersCount(username)}";
+                FollowerCountTextBlock.Text = $"{userRepository.getFollowersCount(user.username)}";
 
                 // Display the following count
-                FollowingTextBlock.Text = $"{userRepository.getFollowingCount(username)}";
+                FollowingTextBlock.Text = $"{userRepository.getFollowingCount(user.username)}";
             }
             else
             {
                 // User not found
                 MessageBox.Show("User not found.");
             }
+        }
+
+
+        public void UpdateAboutYou(
+           string email, string phoneNumber, string dateOfBirth, string name,
+           string education, string educationLevel,
+           string educationStartDate, string educationEndDate,
+           string educationLocation, string hobbies, string music, string places,
+           string work, string position, string workStartDate,
+           string workEndDate, string workLocation, string description)
+        {
+            TextBlockEmail.Text = email;
+            TextBlockPhoneNumber.Text = phoneNumber;
+            TextBlockDateOfBirth.Text = dateOfBirth;
+            TextBlockName.Text = name;
+            TextBlockEducation.Text = education;
+            TextBlockEducationLevel.Text = educationLevel;
+            TextBlockEducationStartDate.Text = educationStartDate;
+            TextBlockEducationEndDate.Text = educationEndDate;
+            TextBlockEducationLocation.Text = educationLocation;
+            TextBlockHobbies.Text = hobbies;
+            TextBlockMusic.Text = music;
+            TextBlockPlaces.Text = places;
+            TextBlockWork.Text = work;
+            TextBlockWorkPosition.Text = position;
+            TextBlockWorkStartDate.Text = workStartDate;
+            TextBlockWorkEndDate.Text = workEndDate;
+            TextBlockWorkLocation.Text = workLocation;
+            TextBlockDescription.Text = description;
         }
         private void Button_Click_Home(object sender, RoutedEventArgs e)
         {

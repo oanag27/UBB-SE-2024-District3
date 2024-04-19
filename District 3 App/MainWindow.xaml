@@ -235,28 +235,88 @@
                                 <TextBlock Text="About Me" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
                                 <!-- Date of Birth -->
-                                <TextBlock Text="Date of Birth: [Insert Date]" Margin="0,0,0,5"/>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Date of Birth: "/>
+                                    <TextBlock x:Name="TextBlockDateOfBirth" Text=""/>
+                                </StackPanel>
 
                                 <!-- Contact Info -->
-                                <TextBlock Text="Contact Info: [Insert Email]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Places: [Insert Places]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Hobbies: [Insert Hobbies]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Music: [Insert Music]" Margin="0,0,0,5"/>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Name: "/>
+                                    <TextBlock x:Name="TextBlockName" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Phone Number: "/>
+                                    <TextBlock x:Name="TextBlockPhoneNumber" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Contact info: "/>
+                                    <TextBlock x:Name="TextBlockEmail" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Places: "/>
+                                    <TextBlock x:Name="TextBlockPlaces" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Hobbies: "/>
+                                    <TextBlock x:Name="TextBlockHobbies" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Music: "/>
+                                    <TextBlock x:Name="TextBlockMusic" Text=""/>
+                                </StackPanel>
 
                                 <!-- Education -->
-                                <TextBlock Text="Education:" FontWeight="Bold" Margin="0,10,0,5"/>
-                                <TextBlock Text="Start Date: [Insert Start Date]" Margin="0,0,0,5"/>
-                                <TextBlock Text="End Date: [Insert End Date]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Location: [Insert Location]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Education Level: [Insert Level]" Margin="0,0,0,10"/>
+                                <StackPanel Margin="0,10,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Education: "/>
+                                    <TextBlock x:Name="TextBlockEducation" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Start Date: "/>
+                                    <TextBlock x:Name="TextBlockEducationStartDate" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="End Date: "/>
+                                    <TextBlock x:Name="TextBlockEducationEndDate" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Location: "/>
+                                    <TextBlock x:Name="TextBlockEducationLocation" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                                    <TextBlock Text="Level: "/>
+                                    <TextBlock x:Name="TextBlockEducationLevel" Text=""/>
+                                </StackPanel>
 
                                 <!-- Work -->
-                                <TextBlock Text="Work:" FontWeight="Bold" Margin="0,0,0,5"/>
-                                <TextBlock Text="Start Date: [Insert Start Date]" Margin="0,0,0,5"/>
-                                <TextBlock Text="End Date: [Insert End Date]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Description: [Insert Description]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Location: [Insert Location]" Margin="0,0,0,5"/>
-                                <TextBlock Text="Position: [Insert Position]" Margin="0,0,0,10"/>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Work: "/>
+                                    <TextBlock x:Name="TextBlockWork" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Start Date: "/>
+                                    <TextBlock x:Name="TextBlockWorkStartDate" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="End Date: "/>
+                                    <TextBlock x:Name="TextBlockWorkEndDate" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Work Description: "/>
+                                    <TextBlock x:Name="TextBlockWorkDescription" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                                    <TextBlock Text="Location: "/>
+                                    <TextBlock x:Name="TextBlockWorkLocation" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                                    <TextBlock Text="Position: "/>
+                                    <TextBlock x:Name="TextBlockWorkPosition" Text=""/>
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                                    <TextBlock Text="Description: "/>
+                                    <TextBlock x:Name="TextBlockDescription" Text=""/>
+                                </StackPanel>
 
                             </StackPanel>
                         </Border>
@@ -279,7 +339,7 @@
                         <Image Source="\images\square.png" Width="60" Height="60" Margin="0,0,10,0"/>
                         <TextBlock Text="H4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </StackPanel>-->
-                    <highlights:HighlightsOnMain />
+                    <highlights:HighlightsOnMain/>
                 </StackPanel>
                 <StackPanel Grid.Row="4"  Margin="0,20,0,0">
                     <UniformGrid Columns="3">
