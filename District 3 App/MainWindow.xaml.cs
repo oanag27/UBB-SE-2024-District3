@@ -18,9 +18,6 @@ using System.Windows.Shapes;
 
 namespace District_3_App
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private ProfileInfoSettings ProfileInfoSettings ;
@@ -107,8 +104,7 @@ namespace District_3_App
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            //string username = userManager.currentUsername;
-            //userManager.LogOutUser(username);
+            userManager.LogOutUser();
             mainGrid.Children.Clear();
             var newContent = new SignUp();
             Grid.SetColumn(newContent, 2);
