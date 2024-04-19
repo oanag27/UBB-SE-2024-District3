@@ -1,15 +1,12 @@
 ﻿using District_3_App.Enitities.Mocks;
-<<<<<<< HEAD
 using District_3_App.ExtraInfo;
 using District_3_App.LogIn;
 using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 
 
-=======
 using District_3_App.LogIn;
 using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Service;
->>>>>>> 5728a024134be8d0a96df7e9e719346d3fb27bce
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +30,7 @@ namespace District_3_App.Service
             return null;
         }
         public Guid getConnectedUserId() {
-            UserManager userManager= new UserManager("E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\Users.xml");
+            UserManager userManager= new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\Users.xml");
             IReadOnlyList<User> users=userManager.GetUsers();
             foreach(User user in users)
             {

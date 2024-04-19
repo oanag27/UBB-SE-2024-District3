@@ -18,7 +18,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
 
         public GroupsRepository()
         {
-            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
+            this.filePath = "C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
             this.groupsRepository = LoadGroupsFromXML();
             //this.groupsRepository = new List<Group>();
         }

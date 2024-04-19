@@ -25,7 +25,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
 
         public ProfileNetworkInfoRepository()
         {
-            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\\\Profiles.xml";
+            this.filePath = "C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\ProfileSocialNetworkInfoStuff\\Profiles.xml";
             LoadProfilesInXML();
 
             SaveProfilesInXML();

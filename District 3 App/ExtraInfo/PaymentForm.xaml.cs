@@ -37,7 +37,7 @@ namespace District_3_App.ExtraInfo
             InitializeComponent();
             try
             {
-                string xmlFilePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+                string xmlFilePath = "C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\Users.xml";
                 xmlDoc = XDocument.Load(xmlFilePath);
                 userManager = new UserManager(xmlFilePath);
             }

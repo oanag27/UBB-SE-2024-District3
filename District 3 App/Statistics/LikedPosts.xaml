@@ -17,19 +17,19 @@
                     </Style>
                 </UniformGrid.Resources>
 
-                <Image Source="C:\Users\herta\OneDrive\Pictures\hd-wallpaper-g598bd113c_1920.jpg" Margin="5" Stretch="Uniform"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\hd-wallpaper-g598bd113c_1920.jpg" Margin="5" Stretch="Uniform"/>
+                <Image x:Name="img2" Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\tpjhc5wp18b71.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_233118616_WElVq2Sajc1swjWTAj1IsBRFMGNm0vzN.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_605374009_hEUHatmKPzuHTIacg7rLneAgnLHUgegM.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
-                <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_303624505_u0bFT1Rnoj8CMUSs8wMCwoKlnWlh5Jiq.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_605374009_hEUHatmKPzuHTIacg7rLneAgnLHUgegM.jpg" Margin="5"/>
+                <Image Source="C:\Users\herta\Desktop\Sem4\ISS\App\District 3 App\Statistics\pics\240_F_74159556_67n5823V7Ei87a4g6JJnYHC0yMSo1AEy.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>
                 <Image Source="C:\Users\herta\OneDrive\Pictures\tpjhc5wp18b71.jpg" Margin="5"/>

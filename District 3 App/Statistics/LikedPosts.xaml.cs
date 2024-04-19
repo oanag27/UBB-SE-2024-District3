@@ -1,4 +1,5 @@
-﻿using System;
+﻿using District_3_App.Statistics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace Statistics
         public LikedPosts()
         {
             InitializeComponent();
+
+           
         }
     }
 }

@@ -81,8 +81,8 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
                         email = (string)user.Attribute("Email"),
                         password = (string)user.Attribute("Password"),
                         confirmationPassword = (string)user.Attribute("ConfirmationPassword"),
-                        followingCount = (int)user.Attribute("Following"),
-                        followersCount = (int)user.Attribute("Followers")
+                         followingCount = (int)user.Element("Following"),
+                        followersCount = (int)user.Element("Followers")
                     };
 
                     usersRepositoryList.Add(newUser);

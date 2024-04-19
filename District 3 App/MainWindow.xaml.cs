@@ -34,7 +34,7 @@ namespace District_3_App
             this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
             userRepository = new UsersRepository("Users.xml"); 
             LoadUserProfile();
-            userManager = new UserManager("C:\\Users\\groza\\UBB-SE-2024-District3\\District 3 App\\Users.xml");
+            userManager = new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\Users.xml");
         }
         private void LoadUserProfile()
         {
