@@ -25,7 +25,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
         public GroupsRepository(List<Group> groupsRepository)
         {
             this.groupsRepository = groupsRepository;
-            this.filePath = "E:\\facultate\\Sem4\\issFinal\\UBB-SE-2024-District3\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
+            this.filePath = "C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\ProfileSocialNetworkInfoStuff\\Groups.xml";
 
             SaveGroupsInXML();
         }
@@ -41,7 +41,7 @@ namespace District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Reposi
 
             string currfilePath = System.IO.Path.Combine(relativePath, "ProfileSocialNetworkInfoStuff");
             filePath = System.IO.Path.Combine(currfilePath, "Groups.xml");
-            
+
             xmlDoc.Load(filePath);
 
             foreach (XmlNode groupNode in xmlDoc.SelectNodes("//group"))
