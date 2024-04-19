@@ -28,4 +28,12 @@
     <Following>0</Following>
     <Followers>0</Followers>
   </User>
+  <User id="1f9122c6-9951-4cb9-abe7-1a30c44820da" Username="user_8" Email="user8@yahoo.com" Password="User-8" ConfirmationPassword="User-8">
+    <Following>0</Following>
+    <Followers>0</Followers>
+  </User>
+  <User id="00d98515-354e-4cb2-8027-f62b8c36bb4f" Username="user_9" Email="user9@yahoo.com" Password="User-9" ConfirmationPassword="User-9">
+    <Following>0</Following>
+    <Followers>0</Followers>
+  </User>
 </UserAccounts>
