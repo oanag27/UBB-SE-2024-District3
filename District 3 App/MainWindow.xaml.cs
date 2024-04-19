@@ -5,6 +5,9 @@ using District_3_App.ProfileSocialNetworkInfoStuff.entities;
 using District_3_App.ProfileSocialNetworkInfoStuff.profileNetworkInfo_Repository;
 using District_3_App.Service;
 using Log_In;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,6 +18,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace District_3_App
 {
@@ -25,14 +29,113 @@ namespace District_3_App
         private UsersRepository userRepository;
         private UserManager userManager;
         public string Username { get; set; }
+        private Stopwatch timer = new Stopwatch();
+        protected int time;
+        DateTime currentDate;
+
         public MainWindow()
         {
+            timer.Start();
             InitializeComponent();
             generateFrame();
             this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
             userRepository = new UsersRepository("Users.xml"); 
             LoadUserProfile();
             userManager = new UserManager("Users.xml");
+        }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            base.OnClosing(e);
+
+            timer.Stop();
+
+            TimeSpan elapsedTime = timer.Elapsed;
+            string formattedTime = string.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+
+                elapsedTime.Hours, elapsedTime.Minutes, elapsedTime.Seconds, elapsedTime.Milliseconds / 10);
+
+            time = (int)elapsedTime.TotalSeconds;
+
+            currentDate = DateTime.Now;
+
+            SaveTimeToXml(time);
+
+
+
+        }
+        private void SaveTimeToXml(int time)
+        {
+            string filePath = "TimeData.xml";
+
+            try
+            {
+                // Check if the XML file exists
+                if (File.Exists(filePath))
+                {
+                    // Load the existing XML document
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load(filePath);
+
+                    // Get the root element
+                    XmlElement root = xmlDoc.DocumentElement;
+
+                    // Create the entry element
+                    XmlElement entryElement = xmlDoc.CreateElement("Entry");
+
+                    // Create the time element
+                    XmlElement timeElement = xmlDoc.CreateElement("Time");
+                    timeElement.InnerText = time.ToString();
+
+                    // Create the date element
+                    XmlElement dateElement = xmlDoc.CreateElement("Date");
+                    dateElement.InnerText = DateTime.Now.ToString("yyyy-MM-dd");
+
+                    // Append time and date elements to the entry element
+                    entryElement.AppendChild(timeElement);
+                    entryElement.AppendChild(dateElement);
+
+                    // Append the entry element to the root element
+                    root.AppendChild(entryElement);
+
+                    // Save the XML document back to the file
+                    xmlDoc.Save(filePath);
+                }
+                else
+                {
+                    // If the file doesn't exist, create a new XML document and save the time value
+                    XmlDocument xmlDoc = new XmlDocument();
+
+                    // Create the root element
+                    XmlElement root = xmlDoc.CreateElement("TimeData");
+                    xmlDoc.AppendChild(root);
+
+                    // Create the entry element
+                    XmlElement entryElement = xmlDoc.CreateElement("Entry");
+
+                    // Create the time element
+                    XmlElement timeElement = xmlDoc.CreateElement("Time");
+                    timeElement.InnerText = time.ToString();
+
+                    // Create the date element
+                    XmlElement dateElement = xmlDoc.CreateElement("Date");
+                    dateElement.InnerText = DateTime.Now.ToString("yyyy-MM-dd");
+
+                    // Append time and date elements to the entry element
+                    entryElement.AppendChild(timeElement);
+                    entryElement.AppendChild(dateElement);
+
+                    // Append the entry element to the root element
+                    root.AppendChild(entryElement);
+
+                    // Save the XML document to a file
+                    xmlDoc.Save(filePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                MessageBox.Show($"Error saving time data to XML file: {ex.Message}");
+            }
         }
         private void LoadUserProfile()
         {
