@@ -24,6 +24,7 @@ namespace District_3_App
         private CasualProfileService casualProfileService = new CasualProfileService();
         private UsersRepository userRepository;
         private UserManager userManager;
+        public string Username { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -31,13 +32,11 @@ namespace District_3_App
             this.ProfileInfoSettings=casualProfileService.getProfileInfoSettings();
             userRepository = new UsersRepository("Users.xml"); 
             LoadUserProfile();
-            userManager = new UserManager("C:\\Users\\herta\\Desktop\\Sem4\\ISS\\App\\District 3 App\\Users.xml");
+            userManager = new UserManager("Users.xml");
         }
         private void LoadUserProfile()
         {
-
-            string username = "test_0";
-
+            string username = string.IsNullOrWhiteSpace(Username) ? "test_0" : Username;
             // Get the user from the repository
             User user = userRepository.GetUserByName(username);
             if (user != null)

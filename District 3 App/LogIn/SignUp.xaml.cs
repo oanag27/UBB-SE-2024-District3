@@ -30,7 +30,7 @@ namespace District_3_App.LogIn
         public SignUp()
         {
             InitializeComponent();
-            string filePath = "C:\\Users\\Darius\\Documents\\GitHub\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+            string filePath = "Users.xml";
             usersRepository = new UsersRepository(filePath);
             UserManager = new UserManager(filePath);
         }

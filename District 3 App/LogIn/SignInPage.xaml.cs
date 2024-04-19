@@ -28,7 +28,7 @@ namespace District_3_App.LogIn
         public SignInPage()
         {
             InitializeComponent();
-            string filePath = "C:\\Users\\Darius\\Documents\\GitHub\\UBB-SE-2024-District3\\District 3 App\\Users.xml";
+            string filePath = "Users.xml";
             usersRepository = new UsersRepository(filePath);
             userManager = new UserManager(filePath);
         }
@@ -81,6 +81,7 @@ namespace District_3_App.LogIn
                 {
                     userManager.StartOrRenewSession(user);
                     var newContent = new MainWindow();
+                    newContent.Username = user.username;
                     newContent.Show();
                     Window.GetWindow(this).Close();
                 }
